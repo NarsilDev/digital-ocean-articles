@@ -236,7 +236,7 @@ kubectl config view --raw
 
 3. Copy the entire content of the kubeconfig, it's a long output now that certificates and private key are visible, be sure to grab it all.
 
-4. Create a new `~/.kube/config` in your  local client and paste the **entire text**, once again double check you didn't miss any portion.
+4. Close Create a new `~/.kube/config` in your  local client and paste the **entire text**, once again double check you didn't miss any portion.
 
     ```command
 [environment local]
@@ -2171,6 +2171,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MjU5MjAwNiwtODU3NDY1MjE4LC0yMj
-M5NzA4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
+eyJoaXN0b3J5IjpbLTEyNzQ0NTEwLC0zODI1OTIwMDYsLTg1Nz
+Q2NTIxOCwtMjIzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0
+XX0=
 -->
