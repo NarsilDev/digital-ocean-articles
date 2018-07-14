@@ -1833,7 +1833,343 @@ As you can tell, the last few sections improved security within namespaces and p
 
 As far as Kubernetes is concerned, using PSP is the closest it can get in terms of improving the security of the application. The next chapter will introduce the basic concepts to consider when designing containerized applications.
 
+## Step Ten - Application Level Security
 
+Container security is a topic that deserves a tutorial on its own. The technology is advancing so fast that the security aspect constitutes a huge challenge. This chapter will provide an overview of the main aspects of container security affecting Kubernetes clusters.
+
+### Applications as Micro-services
+
+Applications are, in the end, the reason for cluster existence. Orchestration technologies arose as a solution for high-availability easy to scale micro-services (applications). Up to this point, this guide has covered many different potential attack vectors targeting infrastructure, nodes, cluster, but very few about applications. 
+
+Micro-services are not exempt from attacks, on the contrary, they pose a high-security risk if they are not properly configured. To illustrate this point, a very simple application will be deployed into the cluster.
+
+1. First, create a new local directory `~/kube-security/myapp` and then change to it:
+
+    ```command
+[environment local]
+mkdir ~/kube-security/myapp && cd ~/kube-security/myapp
+    ```
+
+2. Create the application file `app.sh`: 
+
+    ```command
+[environment local]
+nano ~/kube-security/myapp/app.sh
+    ```
+
+3. Copy and paste the following script on it:
+
+    ```
+[label ~/kube-security/myapp/app.sh]
+#!/bin/sh
+echo "############  MY AWESOME APP  ############"
+echo "#                                        #"
+echo "#  Pod  hostname: " `hostname`
+echo "#  Node hostname: " `cat /tmp/hostname`
+echo "#----------------------------------------#"
+    ```
+
+4. Now create the `Dockerfile` in the same directory:
+
+    ```command
+[environment local]
+nano ~/kube-security/myapp/Dockerfile
+    ```
+
+5. Copy and paste the following content:
+
+    ```
+[label /myapp/Dockerfile]
+FROM alpine:latest
+RUN mkdir /home/app
+ADD ./app.sh /home/app
+RUN chmod +x /home/app/app.sh
+WORKDIR /home/app
+    ```
+
+6. Now. create the Docker image using the following command:
+
+    ```command
+[environment local]
+docker build -f Dockerfile -t <^>your_dockerhub_username<^>/my_app:standard .
+    ```
+
+7. Log into your Docker Hub account and push the image running the following commands:
+
+    ```command
+[environment local]
+docker login
+docker push <^>your_dockerhub_username<^>/my_app:standard
+    ```
+
+8. Now you can return to your previous working directory `~/kube-security`:
+
+    ```command
+[environment local]
+cd ..
+    ```
+
+9. Create the application pod definition file using the usual command:
+
+    ```command
+[environment local]
+nano ~/kube-security/standard-app-pod.yaml
+    ```
+
+10. Copy and paste the pod definition shown below:
+
+    ```
+[label ~/kube-security/standard-app-pod.yaml]
+apiVersion: v1
+kind: Pod
+metadata:
+  name: standard-app-pod
+spec:
+  containers:
+  - name: standard-container
+    image: <^>your_dockerhub_username<^>/my_app:standard
+    volumeMounts:
+    - mountPath: /tmp
+      name: test-volume
+    command: [ "/bin/sh", "-c", "--" ]
+    args: [ "while true; do sleep 30; done;" ]
+  volumes:
+  - name: test-volume
+    hostPath:
+      path: /etc
+    ```
+
+11. Change to **sammy** user in the **dmz** namespace and create the pod using the following commands:
+
+    ```command
+[environment local]
+kubectl config use-context sammy-dmz
+kubectl create -f standard-app-pod.yaml
+    ```
+
+12. Test the application to confirm that everything is working as expected:
+
+    ```command
+[environment local]
+kubectl exec standard-app-pod -- ./app.sh
+    ```
+
+13. The resulting output will be similar to this one:
+
+    ```
+[secondary_label Output]
+############  MY AWESOME APP  ############
+#                                        #
+#  Pod hostname :  standard-app-pod
+#  Node hostname:  <^>worker<^>
+#----------------------------------------#
+    ```
+
+As you can see, the script `app.sh` just prints to the console the running pod hostname and its corresponding node hostname. You may be asking where is the point of this example? 
+
+14. Start an interactive console inside the application's container running the following command:
+
+    ```command
+[environment local]
+kubectl exec -it standard-app-pod -- /bin/sh
+    ```
+
+15. Change to the `tmp` directory where the host's `/etc` is mounted through the container volume:
+
+    ```super_user
+[environment third]
+cd /tmp
+    ```
+
+16. Now **edit** the `hostname` file (you can use `vi`) and change its value to `hacked-worker`.
+
+17. Exit the container by either pressing **Ctrl+D** or typing **exit** and pressing **ENTER**.
+
+18. Run again the application and watch the new output:
+
+    ```command
+[environment local]
+kubectl exec standard-app-pod -- ./app.sh
+    ```
+
+The new output should look similar to the following:
+
+```
+[secondary_label Output]
+############  MY AWESOME APP  ############
+#                                        #
+#  Container ID :  standard-app-pod
+#  Node hostname:  <^>hacked-worker<^>
+#----------------------------------------#
+```
+
+You just **modified** the node's hostname through the container, in theory, applications inside containers are isolated from the host but that was not the case. Let's analyze how that was possible:
+
+- Standard Docker images (like **alpine**) use **root** as the default user. That is great for development environments because you have access to the entire file system, but for production using **root** should be avoided at all cost.
+- The example pod intentionally used a `hostPath` volume. That is a risky practice because you are granting the container direct access to host's file system.
+
+The combination of the above conditions allowed a simple hack. Using the concepts learned in the prior sections you can mitigate the inherent risk of this scenario. If you try creating the same pod in the **default** namespace it will fail for several reasons:
+
+- For starters you need authorizing the user **sammy** for using an appropriate PSP.
+- As explained previously, admission controllers can mutate pods meaning that even when no security context is specified the PSP can force the container to run with a non-root user. The problem is that it won't allow a `hostPath` volume and will fail.
+
+Any application with intentions of running in the **default** namespace is expected to:
+
+* **Pass authentication and authorization checks:** in this guide pods where deployed manually by normal users, in practice, each application **should have** a service account bound to it. Proper permissions may be granted depending of application scope.
+* **Comply with current Pod Security Policies:** meaning the application should be prepared for execution with non-privileged users, should use safe volume types, and won't try accessing host's resources.
+* **Comply with namespace quotas and limits:** all deployments will be validated by the `ResourceQuota` and `LimitRanger` admission controllers against the hard limits you set previously. 
+* **Comply with namespace network policies:** as explained in the corresponding section, you can **isolate** complete namespaces or individual pods that meet certain criteria. This allows you to restrict potentially dangerous application even further if necessary.
+
+The coming sections will introduce some additional security best practices to ensure that your container layer is as secure as possible.
+
+### Container Image and Registry Security
+
+Formally speaking, nothing stops you from using a public container registry for storing your images. But from a security standpoint, that's not recommended . Your application image and all base images used to build it are exposed to the Internet which means they are vulnerable to malicious hacks.
+
+Ideally, your production cluster should use a [private container registry](https://www.digitalocean.com/community/tutorials/how-to-build-docker-images-and-host-a-docker-image-repository-with-gitlab) where you can safely store approved base images and of course your main applications images as well. 
+
+You could also go further and enhance security forcing containers to **always** pull images. Implementing this practice is very easy:
+
+- Include in the containers section of your pod specification the `imagePullPolicy: Always`. This is a good practice to force the policy at the container level.
+- The default image pull policy is `IfNotPresent`, this saves some bandwidth when the image is already present in the cluster. You can override that setting enabling `AlwaysPullImages` admission controller and forcing image policy to always. 
+
+<$>[note]
+**Note:** in order to use private repositories you need additional configuration in your cluster and store authentication **secrets** beforehand. For more information please read the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/containers/images/#using-a-private-registry)
+<$>
+
+### Service Accounts
+
+It has been mentioned several times during this guide that applications should have its own service account. Two important arguments supporting this practice are the ability to identify the applications easier (logs, audits, monitoring) and the power of controlling its authorization level in real time. 
+
+Truth is, all pods deployed so far **had**, in fact, a service account assigned to them. Kubernetes automatically creates a **default** service account with its corresponding credentials on each namespace. When creating a pod, if you do not explicitly specify a service account, that account (default) is assigned to it. 
+
+You can confirm the above checking the `standard-app-pod` application using the following command:
+
+```command
+[environment local]
+kubectl get pods/standard-app-pod -o yaml
+```
+
+A long output will appear with descriptive information about the pod. Under the containers specification section you will see the service account information as shown below:
+
+```
+[secondary_label Output
+serviceAccountName: <^>default<^>
+```
+
+If you create more pods in the `dmz` zone they will use the same service account, try it deploying a new pod using the following command:
+
+```command
+[environment local]
+kubectl run nginx --image=nginx --port=80 --restart=Never
+```
+
+Get the details in a similar way than before running the following command:
+
+```command
+[environment local]
+kubectl get pods/nginx -o yaml
+```
+
+Both share the same `default` service account. You can also corroborate that each namespace has its own `default` service account running:
+
+```command
+[environment local]
+kubectl config use-context kubeadmin-dmz 
+kubectl get sa --all-namespaces
+```
+
+The first portion of the output will be similar to:
+
+```
+[secondary_label Output]
+NAMESPACE     NAME                                 SECRETS   AGE
+default       <^>default<^>                              1         8d
+dmz           <^>default<^>                              1         8d
+kube-public   <^>default<^>                              1         8d
+```
+
+Not all application are created equal, from a security perspective is not optimal using the same service account for all processes. Create a new SA called `standard-app-pod` using the following command:
+
+```command
+[environment local]
+kubectl create sa standard-app-sa
+```
+
+Kubernetes automatically bound a secret to the SA so its ready for use. Let's test it.
+
+First delete the old `standard-app-pod` application:
+
+```command
+[environment local]
+kubectl delete pod standard-app-pod
+```
+
+Now create a new pod file including the recently added service account:
+
+```command
+[environment local]
+nano ~/kube-security/standard-app-pod-sa.yaml
+```
+
+Copy and paste the following content into the file:
+
+```
+[label ~/kube-security/standard-app-pod-sa.yaml]
+apiVersion: v1
+kind: Pod
+metadata:
+  name: standard-app-pod-sa
+spec:
+  serviceAccountName: standard-app-sa
+  containers:
+  - name: standard-container
+    image: <^>your_dockerhub_username<^>/my_app:standard
+    volumeMounts:
+    - mountPath: /tmp
+      name: test-volume
+    command: [ "/bin/sh", "-c", "--" ]
+    args: [ "while true; do sleep 30; done;" ]
+  volumes:
+  - name: test-volume
+    hostPath:
+      path: /etc
+```
+
+Create the pod as usual using the commandl:
+
+```command
+[environment local]
+kubectl create -f standard-app-pod-sa.yaml
+```
+
+And now inspect the pod to confirm that is using the new service account:
+
+```command
+[environment local]
+kubectl get pods/standard-app-pod-sa -o yaml
+```
+
+You will see an output similar to the following:
+
+```
+[secondary_label standard-app-pod-sa]
+serviceAccount: <^>standard-app-sa<^>
+serviceAccountName: <^>standard-app-sa<^>
+```
+
+One key benefit of this approach is flexibility, you could assign separate service accounts to each micro-service or you could group some applications using the same SA. Then you can control applications access to resources using RBAC authorization. You can even generate your own credentials for service accounts if you want/need to. From a security perspective, possibilities are endless. Using service accounts is the recommended practice for authorization control over your applications.
+
+## Conclusion
+
+Throughout this guide, you have learned what can be considered as a Kubernetes end-to-end basic security template. Each chapter covered a different angle respecting possible security breaches:
+
+- Risks inherent to any infrastructure facing the Internet.
+- The challenge associated with a properly secured authentication mechanism.
+- The recommended best practices regarding intra-cluster deployments and security policies.
+- Applications as the window to outside world and thus all the added hacking opportunities that must be prevented.
+
+Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzczODc0NzYsLTcwNDAxNDc0NF19
+eyJoaXN0b3J5IjpbODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
 -->
