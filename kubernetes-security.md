@@ -271,10 +271,10 @@ Up to this point, you have a local client connecting with the cluster using a se
 
 Adding more users to the cluster is not a trivial task. As discussed earlier, Kubernetes API is unaware of user management.  This section will guide you through the process of creating two new remote users: a regular namespace administrator **adm** and a normal user **sammy**, each one having independent kubeconfig files.
 
-1. One more time, you'll need an active SSH session on your Master node:
+1. One more time, you'll need an active SSH session on your Master node connect using the following command:
 
     ```command
-[environment second]
+[environment local]
 ssh ubuntu@<^>master_ip<^>
     ```
 
@@ -2173,7 +2173,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNDY1NDQzMywtMzgyNTkyMDA2LC04NT
-c0NjUyMTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0
-NF19
+eyJoaXN0b3J5IjpbMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1Nz
+Q2NTIxOCwtMjIzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0
+XX0=
 -->
