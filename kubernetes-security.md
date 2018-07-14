@@ -307,14 +307,14 @@ nano ~/certs/ca.key
 chmod 644 ~/certs/ca.crt && chmod 600 ~/certs/ca.key
     ```
 
-6. Grant `root` ownership to the certificates for enhanced security running the following command:
+6. Granting `root` ownership to the certificates will bring them enhanced security, do it running the following command:
 
     ```command
 [environment local]
 sudo chown root:root ~/certs/ca.key && sudo chown root:root ~/certs/ca.crt
     ```
 
-8. Once you have Master node certificates at hand you can proceed to create users private keys using the following commands:
+7. Once you have Master node certificates at hand you can proceed to create users private keys using the following commands:
 
     ```command
 [environment local]
@@ -2166,7 +2166,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NTkyMjQ2NywyODMwMDc1NTAsNTk5OT
+eyJoaXN0b3J5IjpbMTkwMTE5NTk2NywyODMwMDc1NTAsNTk5OT
 I3NDA0LDEzNjIzODQxNTAsLTEzMjIyOTE1NTUsMTUwNjYwMzQz
 LC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMj
 k4MzI1NywtNzA0MDE0NzQ0XX0=
