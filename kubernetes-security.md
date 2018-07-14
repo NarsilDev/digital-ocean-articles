@@ -234,7 +234,7 @@ ssh ubuntu@<^>master_ip<^>
 kubectl config view --raw
     ```
 
-3. Copy the entire content of the kubeconfig, it's a long output now that certificates and private key are visible, be sure to grab it all and then close the SSH session pressing **Ctrl+D**.
+3. Copy the entire content of the kubeconfig, it's a long output now that certificates and private key are visible, be sure to grab it all, and then close the SSH session pressing **Ctrl+D**.
 
 4. Create a new `~/.kube/config` in your  local client and paste the **entire text**, once again double check you didn't miss any portion.
 
@@ -2171,7 +2171,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTA3NzE5MiwtMzgyNTkyMDA2LC04NT
+eyJoaXN0b3J5IjpbMjExNzA2NDI1NiwtMzgyNTkyMDA2LC04NT
 c0NjUyMTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0
 NF19
 -->
