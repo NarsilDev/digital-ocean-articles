@@ -278,7 +278,7 @@ Adding more users to the cluster is not a trivial task. As discussed earlier, Ku
 ssh ubuntu@<^>master_ip<^>
     ```
 
-2. By default, all cluster certificates are stored in `/etc/kubernetes/pki/` (including Certificate Authority public certificate and private key). The objective is transferring `ca.crt` and `ca.key` to a safe location on your local machine, this guide will assume that location is `~/certs`. Using `cat`print out the first certificate and copy its contents to the clipboard:
+2. By default, all cluster certificates are stored in `/etc/kubernetes/pki/` (including Certificate Authority public certificate and private key). The objective is transferring `ca.crt` and `ca.key` to a safe location on your local machine, this guide will assume that location is `~/certs`. Using `cat`print out the first certificate and copy its contents to a :
 
     ```command
 [environment second]
@@ -2173,7 +2173,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDU4NDQ4NzgsMTUwNjYwMzQzLC0zOD
-I1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMjk4MzI1
-NywtNzA0MDE0NzQ0XX0=
+eyJoaXN0b3J5IjpbMTQ3MjA2NjA2NCwxNTA2NjAzNDMsLTM4Mj
+U5MjAwNiwtODU3NDY1MjE4LC0yMjM5NzA4NTUsODIyOTgzMjU3
+LC03MDQwMTQ3NDRdfQ==
 -->
