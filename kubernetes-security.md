@@ -257,6 +257,8 @@ You will get as a response the cluster-specific information. similar to the show
 [secondary_label Output]
 Kubernetes master is running at https://<^>master_ip<^>:6443
 KubeDNS is running at https://<^>master_ip<^>:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 
 <$>[warning]
@@ -2171,7 +2173,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwOTMyOTgyLC0zODI1OTIwMDYsLTg1Nz
-Q2NTIxOCwtMjIzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0
-XX0=
+eyJoaXN0b3J5IjpbMjAyNDY1NDQzMywtMzgyNTkyMDA2LC04NT
+c0NjUyMTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0
+NF19
 -->
