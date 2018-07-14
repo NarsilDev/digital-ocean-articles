@@ -78,7 +78,7 @@ A Kubernetes context is nothing more than a way to describe how to authenticate 
 Start a new SSH session in the cluster Master node:
 
 ```command
-[environment second]
+[environment local]
 ssh ubuntu@<^>master_ip<^>
 ```
 
@@ -2171,6 +2171,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwND
-AxNDc0NF19
+eyJoaXN0b3J5IjpbLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMj
+k4MzI1NywtNzA0MDE0NzQ0XX0=
 -->
