@@ -300,7 +300,7 @@ nano ~/certs/ca.crt
 nano ~/certs/ca.key
     ```
 
-6. Paste the private key, then save and exit. You need to change permissions for both files running the following command:
+6. After saving your files, you need to change permissions for both files running the following command:
 
     ```command
 [environment local]
@@ -2166,8 +2166,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgzMDA3NTUwLDU5OTkyNzQwNCwxMzYyMz
-g0MTUwLC0xMzIyMjkxNTU1LDE1MDY2MDM0MywtMzgyNTkyMDA2
-LC04NTc0NjUyMTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwND
-AxNDc0NF19
+eyJoaXN0b3J5IjpbLTExMzIwNjQyNDUsMjgzMDA3NTUwLDU5OT
+kyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1LDE1MDY2MDM0
+MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMzk3MDg1NSw4Mj
+I5ODMyNTcsLTcwNDAxNDc0NF19
 -->
