@@ -350,7 +350,7 @@ kubectl config set-credentials adm --client-certificate=~/certs/adm.crt  --clien
 
     ```command
 [environment local]
-sudo kubeadm alpha phase kubeconfig user --client-name=adm --cert-dir="/home/ubuntu/certs"
+sudo kubeadm alpha phase kubeconfig user --client-name=adm --cert-dir="/home/<^>linux-user<^>/certs"
     ```
 
 13. Copy the entire output and then create a new file for the user, for example: `
@@ -2166,7 +2166,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MDAzNDkxNywyODMwMDc1NTAsNTk5OT
+eyJoaXN0b3J5IjpbLTU3MTExMDk4MiwyODMwMDc1NTAsNTk5OT
 I3NDA0LDEzNjIzODQxNTAsLTEzMjIyOTE1NTUsMTUwNjYwMzQz
 LC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMj
 k4MzI1NywtNzA0MDE0NzQ0XX0=
