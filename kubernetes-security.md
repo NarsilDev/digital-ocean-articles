@@ -286,8 +286,7 @@ sudo cat /etc/kubernetes/pki/ca.crt
 sudo cat /etc/kubernetes/pki/ca.key
     ```
 
-3. Create the corresponding files in your local client and paste the certificate:
-
+3. Once you have the information copied close the SSH session and create the corresponding directory in the local machine:
     ```command
 [environment local]
 mkdir ~/certs
@@ -298,6 +297,7 @@ nano ~/certs/ca.crt
 
     ```command
 [environment second]
+nano ~/certs/ca.crt
 sudo cat /etc/kubernetes/pki/ca.key
     ```
 
@@ -2174,7 +2174,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDc5NzUzODcsLTEzMjIyOTE1NTUsMT
-UwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcw
-ODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0XX0=
+eyJoaXN0b3J5IjpbLTY1ODI4MzEyNCwtMTMyMjI5MTU1NSwxNT
+A2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1MjE4LC0yMjM5NzA4
+NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
 -->
