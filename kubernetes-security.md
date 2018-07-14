@@ -292,7 +292,7 @@ sudo cat /etc/kubernetes/pki/ca.key
 mkdir ~/certs
     ```
 
-4. Save and exit and repeat the procedure for `ca.key` running `cat` again:
+4. Now copy the :
 
     ```command
 [environment second]
@@ -2173,7 +2173,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MjM4NDE1MCwtMTMyMjI5MTU1NSwxNT
-A2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1MjE4LC0yMjM5NzA4
-NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
+eyJoaXN0b3J5IjpbLTE4MzMzODY0NDUsMTM2MjM4NDE1MCwtMT
+MyMjI5MTU1NSwxNTA2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1
+MjE4LC0yMjM5NzA4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ
+==
 -->
