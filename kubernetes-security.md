@@ -292,10 +292,10 @@ sudo cat /etc/kubernetes/pki/ca.key
 mkdir ~/certs
     ```
 
-4. Now copy the :
+4. Now paste the content of the public certificate and the private key in their corresponding files:
 
     ```command
-[environment second]
+[environment local]
 nano ~/certs/ca.crt
 sudo cat /etc/kubernetes/pki/ca.key
     ```
@@ -2173,7 +2173,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzMzODY0NDUsMTM2MjM4NDE1MCwtMT
+eyJoaXN0b3J5IjpbLTExMzAzNTgzNTYsMTM2MjM4NDE1MCwtMT
 MyMjI5MTU1NSwxNTA2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1
 MjE4LC0yMjM5NzA4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ
 ==
