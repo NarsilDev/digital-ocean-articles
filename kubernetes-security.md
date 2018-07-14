@@ -300,14 +300,14 @@ nano ~/certs/ca.crt
 nano ~/certs/ca.key
     ```
 
-6. After saving your files, you need to change permissions for both files running the following command:
+5. After saving the files, you will need changing permissions for both of them running the following command:
 
     ```command
 [environment local]
 chmod 644 ~/certs/ca.crt && chmod 600 ~/certs/ca.key
     ```
 
-7. Grant `root` ownership to the certificates for enhanced security running the following command:
+6. Grant `root` ownership to the certificates for enhanced security running the following command:
 
     ```command
 [environment local]
@@ -2166,8 +2166,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzIwNjQyNDUsMjgzMDA3NTUwLDU5OT
-kyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1LDE1MDY2MDM0
-MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMzk3MDg1NSw4Mj
-I5ODMyNTcsLTcwNDAxNDc0NF19
+eyJoaXN0b3J5IjpbLTk1NTkyMjQ2NywyODMwMDc1NTAsNTk5OT
+I3NDA0LDEzNjIzODQxNTAsLTEzMjIyOTE1NTUsMTUwNjYwMzQz
+LC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMj
+k4MzI1NywtNzA0MDE0NzQ0XX0=
 -->
