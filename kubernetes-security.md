@@ -297,7 +297,7 @@ mkdir ~/certs
     ```command
 [environment local]
 nano ~/certs/ca.crt
-sudo cat /etc/kubernetes/pki/ca.key
+nano ~/certs/ca.key
     ```
 
 5. Copy its content and then create the file in your local machine as before:
@@ -2173,8 +2173,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzAzNTgzNTYsMTM2MjM4NDE1MCwtMT
-MyMjI5MTU1NSwxNTA2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1
-MjE4LC0yMjM5NzA4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ
-==
+eyJoaXN0b3J5IjpbNTk5OTI3NDA0LDEzNjIzODQxNTAsLTEzMj
+IyOTE1NTUsMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIx
+OCwtMjIzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0XX0=
 -->
