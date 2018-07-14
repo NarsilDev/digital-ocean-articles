@@ -244,7 +244,7 @@ mkdir ~/.kube
 nano ~/.kube/config
     ```
 
-5. That's it! You have a local kubeconfig with all relevant information, including cluster's CA and **kubernetes-admin** credentials. Check your connection running from your local machine:
+5. Save and close the file and that's it! You have a local kubeconfig with all relevant information, including cluster's CA and **kubernetes-admin** credentials. Check your connection running from your local machine:
 
 ```command
 [environment local]
@@ -2171,7 +2171,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzA2NDI1NiwtMzgyNTkyMDA2LC04NT
-c0NjUyMTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0
-NF19
+eyJoaXN0b3J5IjpbLTgwOTMyOTgyLC0zODI1OTIwMDYsLTg1Nz
+Q2NTIxOCwtMjIzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0
+XX0=
 -->
