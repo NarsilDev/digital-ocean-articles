@@ -220,7 +220,7 @@ In the previous section, you learned that kubeconfig is a portable file allowing
 
 Fortunately, setting up `kubectl` remote access couldn't be easier. Assuming the local client machine (named **manager** for convenience) already have `kubectl` installed, the only thing you need is transferring the `~/.kube/config` from your Master node.
 
-1. In case you closed your session, connect to the Kubernetes Master node again:
+1. If your session in the Master node is still active go directly:
 
 
     ```command
@@ -2172,6 +2172,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODQzMDI3MjYsLTg1NzQ2NTIxOCwtMj
-IzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0XX0=
+eyJoaXN0b3J5IjpbMTk1OTEyODcwMSwtODU3NDY1MjE4LC0yMj
+M5NzA4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
 -->
