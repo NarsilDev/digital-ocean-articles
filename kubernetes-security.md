@@ -314,7 +314,7 @@ chmod 644 ~/certs/ca.crt && chmod 600 ~/certs/ca.key
 sudo chown root:root ~/certs/ca.key && sudo chown root:root ~/certs/ca.crt
     ```
 
-7. Once you have Master node certificates at hand you can proceed to create users private keys using the following commands:
+7. Now that you have the certificates at hand you can proceed creating users private keys using the following commands:
 
     ```command
 [environment local]
@@ -2166,8 +2166,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTE5NTk2NywyODMwMDc1NTAsNTk5OT
-I3NDA0LDEzNjIzODQxNTAsLTEzMjIyOTE1NTUsMTUwNjYwMzQz
-LC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMj
-k4MzI1NywtNzA0MDE0NzQ0XX0=
+eyJoaXN0b3J5IjpbLTE1NjY3OTA4NzYsMjgzMDA3NTUwLDU5OT
+kyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1LDE1MDY2MDM0
+MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMzk3MDg1NSw4Mj
+I5ODMyNTcsLTcwNDAxNDc0NF19
 -->
