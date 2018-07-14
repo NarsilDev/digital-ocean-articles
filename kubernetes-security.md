@@ -278,7 +278,7 @@ Adding more users to the cluster is not a trivial task. As discussed earlier, Ku
 ssh ubuntu@<^>master_ip<^>
     ```
 
-2. By default, all cluster certificates are stored in `/etc/kubernetes/pki/` (including Certificate Authority public certificate and private key). The objective is transferring `ca.crt` and `ca.key` to a safe location on your local machine, this guide will assume that location is `~/certs`. Using `cat`print out the each certificate and copy its contents to a temporally file/notepad:
+2. By default, all cluster certificates are stored in `/etc/kubernetes/pki/` (including Certificate Authority public certificate and private key). The objective is transferring `ca.crt` and `ca.key` to a safe location on your local machine, this guide will assume that location is `~/certs`. Using `cat`print out the each certificate and copy its contents into a temporally file/notepad:
 
     ```command
 [environment second]
@@ -286,7 +286,7 @@ sudo cat /etc/kubernetes/pki/ca.crt
 sudo cat /etc/kubernetes/pki/ca.key
     ```
 
-3. Once you have the information copied close the SSH session and create the corresponding directory in the local machine:
+3. Once you have the information copied close the SSH session and create the new directory in the local machine:
     ```command
 [environment local]
 mkdir ~/certs
@@ -297,13 +297,6 @@ mkdir ~/certs
     ```command
 [environment local]
 nano ~/certs/ca.crt
-nano ~/certs/ca.key
-    ```
-
-5. Copy its content and then create the file in your local machine as before:
-
-    ```command
-[environment local]
 nano ~/certs/ca.key
     ```
 
@@ -2173,7 +2166,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5OTI3NDA0LDEzNjIzODQxNTAsLTEzMj
-IyOTE1NTUsMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIx
-OCwtMjIzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0XX0=
+eyJoaXN0b3J5IjpbMjgzMDA3NTUwLDU5OTkyNzQwNCwxMzYyMz
+g0MTUwLC0xMzIyMjkxNTU1LDE1MDY2MDM0MywtMzgyNTkyMDA2
+LC04NTc0NjUyMTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwND
+AxNDc0NF19
 -->
