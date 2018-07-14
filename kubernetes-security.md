@@ -322,7 +322,7 @@ openssl genrsa -out ~/certs/sammy.key 4096
 openssl genrsa -out ~/certs/adm.key 4096
     ```
 
-9. Now generate the certificate signing requests specifying in the subject the user name as common name (CN) and the user group as organization (O):
+8. Now generate the certificate signing requests specifying in the subject the user name as common name (CN) and the user group as organization (O):
 
     ```command
 [environment local]
@@ -330,7 +330,7 @@ openssl req -new -key ~/certs/sammy.key -out ~/certs/sammy.csr -subj "/CN=sammy/
 openssl req -new -key ~/certs/adm.key -out ~/certs/adm.csr -subj "/CN=adm/O=administrator"
     ```
 
-10. Sign the certificates using the cluster CA and private key and assign them an expiration date of 90 days using the following commands:
+9. Sign the certificates using the cluster CA and private key and assign them an expiration date of 90 days using the following commands:
 
     ```command
 [environment local]
@@ -2166,8 +2166,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjY3OTA4NzYsMjgzMDA3NTUwLDU5OT
-kyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1LDE1MDY2MDM0
-MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMzk3MDg1NSw4Mj
-I5ODMyNTcsLTcwNDAxNDc0NF19
+eyJoaXN0b3J5IjpbMTk4OTc4MDY3NSwyODMwMDc1NTAsNTk5OT
+I3NDA0LDEzNjIzODQxNTAsLTEzMjIyOTE1NTUsMTUwNjYwMzQz
+LC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMj
+k4MzI1NywtNzA0MDE0NzQ0XX0=
 -->
