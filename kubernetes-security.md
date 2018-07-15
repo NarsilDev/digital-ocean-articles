@@ -786,14 +786,14 @@ From a security perspective kubelets, should pass the authentication and authori
 First start a SSH session in any of your nodes, this guide only uses one node called **worker** so connect to it using the usual command:
 
 ```command
-[environment second]
+[environment third]
 ssh ubuntu@<^>worker_ip<^>
 ```
 
 Now from the node run the following command:
 
 ```command
-[environment second]
+[environment thrid]
 sudo cat /var/lib/kubelet/config.yaml
 ```
 
@@ -2172,10 +2172,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyODYzMjM5OCwtODE0MTA3OTQwLDUxMD
-A5MDk3MiwtMjYzMTY3OTE1LC03MTc3OTUzNDksMTk1ODc1OTA4
-MCwtNzE3Nzk1MzQ5LDExMjUxMzA5OTksMTUxMzY0NzIyLDI4Mz
-AwNzU1MCw1OTk5Mjc0MDQsMTM2MjM4NDE1MCwtMTMyMjI5MTU1
-NSwxNTA2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1MjE4LC0yMj
-M5NzA4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
+eyJoaXN0b3J5IjpbMTM3NzI0MzU2MiwyMDI4NjMyMzk4LC04MT
+QxMDc5NDAsNTEwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNzc5NTM0
+OSwxOTU4NzU5MDgwLC03MTc3OTUzNDksMTEyNTEzMDk5OSwxNT
+EzNjQ3MjIsMjgzMDA3NTUwLDU5OTkyNzQwNCwxMzYyMzg0MTUw
+LC0xMzIyMjkxNTU1LDE1MDY2MDM0MywtMzgyNTkyMDA2LC04NT
+c0NjUyMTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0
+NF19
 -->
