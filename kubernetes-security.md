@@ -378,6 +378,8 @@ sudo kubeadm alpha phase kubeconfig user --client-name=sammy --cert-dir="/home/<
 nano ~/.kube/config-sammy
     ```
 
+15. Paste the  `kubeadm` output into `~/.kube/config-sammy`, then save and close the file.
+
 15. These files are ready for distribution because they only contain the SSL/TLS credentials of their respective user. Later on, once the files are saved on their corresponding client machine, you may want to rename `config-adm` and `config-sammy` to the default `config` filename to avoid using `--kubeconfig=<^>config-name<^>` flag each time you issue a command.
 
 <$>[note]
@@ -2170,8 +2172,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjE3NDIyMiwxNTEzNjQ3MjIsMjgzMD
-A3NTUwLDU5OTkyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1
-LDE1MDY2MDM0MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMz
-k3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0NF19
+eyJoaXN0b3J5IjpbLTE3Mjk2OTg5OTUsMTUxMzY0NzIyLDI4Mz
+AwNzU1MCw1OTk5Mjc0MDQsMTM2MjM4NDE1MCwtMTMyMjI5MTU1
+NSwxNTA2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1MjE4LC0yMj
+M5NzA4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
 -->
