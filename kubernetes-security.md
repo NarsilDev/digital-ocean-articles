@@ -1838,7 +1838,12 @@ kubectl get pods
 
 You will see an output similar to the following one:
 
-
+```
+[secondary_label Output]
+NAME          READY     STATUS                       RESTARTS   AGE
+nginx         0/1       CreateContainerConfigError   0          8m
+nginx-sammy   1/1       <^>Running<^>                      0          10s
+```
 
 The pod was created without any error using the least permissive user because this namespace is now entitled to accept any security context (or no context at all).
 
@@ -2195,7 +2200,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNTYzNjE4NiwzNzAzMzIxOTQsLTkwNT
+eyJoaXN0b3J5IjpbLTE4ODA1MTM1NSwzNzAzMzIxOTQsLTkwNT
 YzMzMzNiwtMTYxMTY0NDQ1MSwtMTg5NzY1OTkzOSwtMTM4NjA4
 Njk3MSwtMzA3NDQ1MDU4LDE5MzYyMzMxOTMsNzIxNDIxNzUxLC
 00MzI4NzkyNDcsMTIyODQwMTQ2NCwxMzc3MjQzNTYyLDIwMjg2
