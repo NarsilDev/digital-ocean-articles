@@ -1701,7 +1701,7 @@ This time you will see an error similar to this one:
 Error from server (Forbidden): pods "nginx-adm" is forbidden: <^>unable to validate against any pod security policy<^>: []
 ```
 
-Listing pods will confirm the object was indeed rejected, there is no `nginx-adm` pod. A similar result wil be obtained with the normal user **sammy**. The main reason behind why this is happening is related to how PSP and RBAC work together. As explained earlier, pod security policies first try to validate policies and then look for authorized users. The controller found `restrictive-psp` policy but neither **adm** or **sammy** have authorization to **use** the PSP. On the other hand, **kubernetes-admin** is a superuser, and as such has no authorization limits, **but** the `nginx` pod failed as well because it didn't comply with the non-root policy.
+Listing pods will would confirm the object was indeed rejected, there is no `nginx-adm` pod. A similar result wil be obtained with the normal user **sammy**. The main reason behind why this is happening is related to how PSP and RBAC work together. As explained earlier, pod security policies first try to validate policies and then look for authorized users. The controller found `restrictive-psp` policy but neither **adm** or **sammy** have authorization to **use** the PSP. On the other hand, **kubernetes-admin** is a superuser, and as such has no authorization limits, **but** the `nginx` pod failed as well because it didn't comply with the non-root policy.
 
 Long story short, you need meeting two conditions in order to successfully using pod security policies:
 
@@ -2191,11 +2191,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTE2NDQ0NTEsLTE4OTc2NTk5MzksLT
-EzODYwODY5NzEsLTMwNzQ0NTA1OCwxOTM2MjMzMTkzLDcyMTQy
-MTc1MSwtNDMyODc5MjQ3LDEyMjg0MDE0NjQsMTM3NzI0MzU2Mi
-wyMDI4NjMyMzk4LC04MTQxMDc5NDAsNTEwMDkwOTcyLC0yNjMx
-Njc5MTUsLTcxNzc5NTM0OSwxOTU4NzU5MDgwLC03MTc3OTUzND
-ksMTEyNTEzMDk5OSwxNTEzNjQ3MjIsMjgzMDA3NTUwLDU5OTky
-NzQwNF19
+eyJoaXN0b3J5IjpbMTEzMTA4MjE4NCwtMTYxMTY0NDQ1MSwtMT
+g5NzY1OTkzOSwtMTM4NjA4Njk3MSwtMzA3NDQ1MDU4LDE5MzYy
+MzMxOTMsNzIxNDIxNzUxLC00MzI4NzkyNDcsMTIyODQwMTQ2NC
+wxMzc3MjQzNTYyLDIwMjg2MzIzOTgsLTgxNDEwNzk0MCw1MTAw
+OTA5NzIsLTI2MzE2NzkxNSwtNzE3Nzk1MzQ5LDE5NTg3NTkwOD
+AsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1MTM2NDcyMiwyODMw
+MDc1NTBdfQ==
 -->
