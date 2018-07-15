@@ -1328,7 +1328,16 @@ Additionally, you can now check the namespace assigned limits running the follow
 
 ```command
 [environment local]
-kubectl describe limits --namespace=default```
+kubectl describe limits --namespace=default
+```
+
+The output will be similar to the shown below:
+
+```
+[secondary_label Output]
+NAME         READY     STATUS    RESTARTS   AGE
+quota-test   1/1       Running   0          21m
+```
 
 Before continuing, change the **default** namespace pod limit (currently one). Do it modifying the `ResourceQuota` object directly on the API server, for ease editing the object, environmental variable `KUBE_EDITOR` is set to `nano` before passing the command:
 
@@ -2178,11 +2187,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTgyMjQ2MSwtMTM4NjA4Njk3MSwtMz
-A3NDQ1MDU4LDE5MzYyMzMxOTMsNzIxNDIxNzUxLC00MzI4Nzky
-NDcsMTIyODQwMTQ2NCwxMzc3MjQzNTYyLDIwMjg2MzIzOTgsLT
-gxNDEwNzk0MCw1MTAwOTA5NzIsLTI2MzE2NzkxNSwtNzE3Nzk1
-MzQ5LDE5NTg3NTkwODAsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LD
-E1MTM2NDcyMiwyODMwMDc1NTAsNTk5OTI3NDA0LDEzNjIzODQx
-NTBdfQ==
+eyJoaXN0b3J5IjpbLTE3MDE2MjkyNTMsLTEzODYwODY5NzEsLT
+MwNzQ0NTA1OCwxOTM2MjMzMTkzLDcyMTQyMTc1MSwtNDMyODc5
+MjQ3LDEyMjg0MDE0NjQsMTM3NzI0MzU2MiwyMDI4NjMyMzk4LC
+04MTQxMDc5NDAsNTEwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNzc5
+NTM0OSwxOTU4NzU5MDgwLC03MTc3OTUzNDksMTEyNTEzMDk5OS
+wxNTEzNjQ3MjIsMjgzMDA3NTUwLDU5OTkyNzQwNCwxMzYyMzg0
+MTUwXX0=
 -->
