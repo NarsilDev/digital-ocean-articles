@@ -1902,13 +1902,13 @@ echo "#----------------------------------------#"
 
     ```command
 [environment local]
-nano ~/kube-security/myapp/Dockerfile
+nano Dockerfile
     ```
 
 5. Copy and paste the following content:
 
     ```
-[label /myapp/Dockerfile]
+[label ~/kube-security/myapp/Dockerfile]
 FROM alpine:latest
 RUN mkdir /home/app
 ADD ./app.sh /home/app
@@ -2200,7 +2200,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MTc4MTYyMSwtMTg4MDUxMzU1LDM3MD
+eyJoaXN0b3J5IjpbMTA3NTU3NTYzNiwtMTg4MDUxMzU1LDM3MD
 MzMjE5NCwtOTA1NjMzMzM2LC0xNjExNjQ0NDUxLC0xODk3NjU5
 OTM5LC0xMzg2MDg2OTcxLC0zMDc0NDUwNTgsMTkzNjIzMzE5My
 w3MjE0MjE3NTEsLTQzMjg3OTI0NywxMjI4NDAxNDY0LDEzNzcy
