@@ -854,7 +854,7 @@ spec:
   - Egress
 ```
 
-Create the policy as usual using the command:
+Save and close, then create the policy running from your local client the following command:
 
 ```command
 [environment local]
@@ -2172,11 +2172,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NzI0MzU2MiwyMDI4NjMyMzk4LC04MT
-QxMDc5NDAsNTEwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNzc5NTM0
-OSwxOTU4NzU5MDgwLC03MTc3OTUzNDksMTEyNTEzMDk5OSwxNT
-EzNjQ3MjIsMjgzMDA3NTUwLDU5OTkyNzQwNCwxMzYyMzg0MTUw
-LC0xMzIyMjkxNTU1LDE1MDY2MDM0MywtMzgyNTkyMDA2LC04NT
-c0NjUyMTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0
-NF19
+eyJoaXN0b3J5IjpbMTI3NzM2MDQ0MCwxMzc3MjQzNTYyLDIwMj
+g2MzIzOTgsLTgxNDEwNzk0MCw1MTAwOTA5NzIsLTI2MzE2Nzkx
+NSwtNzE3Nzk1MzQ5LDE5NTg3NTkwODAsLTcxNzc5NTM0OSwxMT
+I1MTMwOTk5LDE1MTM2NDcyMiwyODMwMDc1NTAsNTk5OTI3NDA0
+LDEzNjIzODQxNTAsLTEzMjIyOTE1NTUsMTUwNjYwMzQzLC0zOD
+I1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMjk4MzI1
+N119
 -->
