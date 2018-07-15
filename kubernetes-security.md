@@ -929,7 +929,7 @@ ping <^>default-test_IP_address<^>
 ping <^>dmz-test_IP_address<^>
     ```
 
-As expected, you won't get any response. Cancel the ping request pressing **Ctrl+C** and then close `default-test` session pressing **Ctrl+D**. Keep `dmz-test` session active.
+As expected, you won't get any response either. Cancel the ping request pressing **Ctrl+C** and then close `default-test` session pressing **Ctrl+D**. Keep `dmz-test` session active.
 
 After establishing that pods created in the **default** namespace are indeed isolated, the next logical step is allowing some connections.
 
@@ -2172,11 +2172,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODQwMTQ2NCwxMzc3MjQzNTYyLDIwMj
-g2MzIzOTgsLTgxNDEwNzk0MCw1MTAwOTA5NzIsLTI2MzE2Nzkx
-NSwtNzE3Nzk1MzQ5LDE5NTg3NTkwODAsLTcxNzc5NTM0OSwxMT
-I1MTMwOTk5LDE1MTM2NDcyMiwyODMwMDc1NTAsNTk5OTI3NDA0
-LDEzNjIzODQxNTAsLTEzMjIyOTE1NTUsMTUwNjYwMzQzLC0zOD
-I1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMjk4MzI1
-N119
+eyJoaXN0b3J5IjpbLTQzMjg3OTI0NywxMjI4NDAxNDY0LDEzNz
+cyNDM1NjIsMjAyODYzMjM5OCwtODE0MTA3OTQwLDUxMDA5MDk3
+MiwtMjYzMTY3OTE1LC03MTc3OTUzNDksMTk1ODc1OTA4MCwtNz
+E3Nzk1MzQ5LDExMjUxMzA5OTksMTUxMzY0NzIyLDI4MzAwNzU1
+MCw1OTk5Mjc0MDQsMTM2MjM4NDE1MCwtMTMyMjI5MTU1NSwxNT
+A2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1MjE4LC0yMjM5NzA4
+NTVdfQ==
 -->
