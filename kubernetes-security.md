@@ -289,15 +289,15 @@ sudo cat /etc/kubernetes/pki/ca.key
 3. Once you have the information copied close the SSH session and create the new directory in the local machine:
     ```command
 [environment local]
-mkdir /home/<^>linux-user<^>/certs
+mkdir ~/certs
     ```
 
 4. Now paste the content of the public certificate and the private key in their corresponding files:
 
     ```command
 [environment local]
-nano /home/<^>linux-user<^>/certs/ca.crt
-nano /home/<^>linux-user<^>/certs/ca.key
+nano ~/certs/ca.crt
+nano ~/certs/ca.key
     ```
 
 5. After saving the files, you will need changing permissions for both of them running the following command:
@@ -2172,9 +2172,9 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNzc5NTM0OSwxOTU4NzU5MDgwLC03MT
-c3OTUzNDksMTEyNTEzMDk5OSwxNTEzNjQ3MjIsMjgzMDA3NTUw
-LDU5OTkyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1LDE1MD
-Y2MDM0MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMzk3MDg1
-NSw4MjI5ODMyNTcsLTcwNDAxNDc0NF19
+eyJoaXN0b3J5IjpbLTIzNzUwMTQ5MCwtNzE3Nzk1MzQ5LDE5NT
+g3NTkwODAsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1MTM2NDcy
+MiwyODMwMDc1NTAsNTk5OTI3NDA0LDEzNjIzODQxNTAsLTEzMj
+IyOTE1NTUsMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIx
+OCwtMjIzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0XX0=
 -->
