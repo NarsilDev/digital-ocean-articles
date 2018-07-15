@@ -596,7 +596,7 @@ Next create the cluster role file, in this case called `pod-viewer.yaml`:
 nano ~/kube-security/pod-viewer.yaml
 ```
 
-Paste into the file the following:
+Paste into the file the following content:
 
 ```
 [label pod-viewer.yaml]
@@ -2172,9 +2172,10 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MzE2NzkxNSwtNzE3Nzk1MzQ5LDE5NT
-g3NTkwODAsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1MTM2NDcy
-MiwyODMwMDc1NTAsNTk5OTI3NDA0LDEzNjIzODQxNTAsLTEzMj
-IyOTE1NTUsMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIx
-OCwtMjIzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0XX0=
+eyJoaXN0b3J5IjpbNTEwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNz
+c5NTM0OSwxOTU4NzU5MDgwLC03MTc3OTUzNDksMTEyNTEzMDk5
+OSwxNTEzNjQ3MjIsMjgzMDA3NTUwLDU5OTkyNzQwNCwxMzYyMz
+g0MTUwLC0xMzIyMjkxNTU1LDE1MDY2MDM0MywtMzgyNTkyMDA2
+LC04NTc0NjUyMTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwND
+AxNDc0NF19
 -->
