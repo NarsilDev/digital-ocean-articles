@@ -652,7 +652,7 @@ nano ~/kube-security/default-pod-viewer.yaml
 Paste the following role and save the file:
 
 ```
-[label default-pod-viewer.yaml]
+[label ~/kube-security/default-pod-viewer.yaml]
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -668,7 +668,7 @@ As you see, this role grants the same permissions than the last one, being the d
 
 ```command
 [environment local]
-kubectl create -f default-pod-viewer.yaml
+kubectl create -f ~/kube-security/default-pod-viewer.yaml
 ```
 
 You can also bind the role using a custom file. First create the new role binding:
@@ -2172,10 +2172,10 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNz
-c5NTM0OSwxOTU4NzU5MDgwLC03MTc3OTUzNDksMTEyNTEzMDk5
-OSwxNTEzNjQ3MjIsMjgzMDA3NTUwLDU5OTkyNzQwNCwxMzYyMz
-g0MTUwLC0xMzIyMjkxNTU1LDE1MDY2MDM0MywtMzgyNTkyMDA2
-LC04NTc0NjUyMTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwND
-AxNDc0NF19
+eyJoaXN0b3J5IjpbLTgxNDEwNzk0MCw1MTAwOTA5NzIsLTI2Mz
+E2NzkxNSwtNzE3Nzk1MzQ5LDE5NTg3NTkwODAsLTcxNzc5NTM0
+OSwxMTI1MTMwOTk5LDE1MTM2NDcyMiwyODMwMDc1NTAsNTk5OT
+I3NDA0LDEzNjIzODQxNTAsLTEzMjIyOTE1NTUsMTUwNjYwMzQz
+LC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMj
+k4MzI1NywtNzA0MDE0NzQ0XX0=
 -->
