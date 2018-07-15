@@ -1019,7 +1019,7 @@ ip a
 ping <^>network-test_IP_address<^>
     ```
 
-The request will succeed as expected because now the **dmz** namespace and all its pods have ingress permissions. Cancel the ping request pressing **Ctrl+C** and then close all running sessions typing **exit** and pressing **ENTER**.
+The request will succeed as expected because now the **dmz** namespace and all its pods have ingress permissions. Cancel the ping request pressing **Ctrl+C** and then close all disposable containers running sessions typing **exit** and pressing **ENTER**.
 
 Using network policies you are implementing an additional layer of protection. Depending on your deployment requirements you can define as many rules as needed. A key benefit of this approach is that you can start denying all network access and then open your pods connections only to the necessary services/pods.
 
@@ -2172,11 +2172,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIxNDIxNzUxLC00MzI4NzkyNDcsMTIyOD
-QwMTQ2NCwxMzc3MjQzNTYyLDIwMjg2MzIzOTgsLTgxNDEwNzk0
-MCw1MTAwOTA5NzIsLTI2MzE2NzkxNSwtNzE3Nzk1MzQ5LDE5NT
-g3NTkwODAsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1MTM2NDcy
-MiwyODMwMDc1NTAsNTk5OTI3NDA0LDEzNjIzODQxNTAsLTEzMj
-IyOTE1NTUsMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIx
-OF19
+eyJoaXN0b3J5IjpbMTkzNjIzMzE5Myw3MjE0MjE3NTEsLTQzMj
+g3OTI0NywxMjI4NDAxNDY0LDEzNzcyNDM1NjIsMjAyODYzMjM5
+OCwtODE0MTA3OTQwLDUxMDA5MDk3MiwtMjYzMTY3OTE1LC03MT
+c3OTUzNDksMTk1ODc1OTA4MCwtNzE3Nzk1MzQ5LDExMjUxMzA5
+OTksMTUxMzY0NzIyLDI4MzAwNzU1MCw1OTk5Mjc0MDQsMTM2Mj
+M4NDE1MCwtMTMyMjI5MTU1NSwxNTA2NjAzNDMsLTM4MjU5MjAw
+Nl19
 -->
