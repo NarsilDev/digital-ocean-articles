@@ -278,7 +278,7 @@ Adding more users to the cluster is not a trivial task. As discussed earlier, Ku
 ssh ubuntu@<^>master_ip<^>
     ```
 
-2. By default, all cluster certificates are stored in `/etc/kubernetes/pki/` (including Certificate Authority public certificate and private key). The objective is transferring `ca.crt` and `ca.key` to a safe location on your local machine, this guide will assume that location is `~/certs`. Using `cat`print out the each certificate and copy its contents into a temporally file/notepad:
+2. By default, all cluster certificates are stored in `/etc/kubernetes/pki/` (including Certificate Authority public certificate and private key). The objective is transferring `ca.crt` and `ca.key` to a safe location on your local machine, this guide will assume that location is `/home/<^>linux-user<^>/certs`. Using `cat`print out the each certificate and copy its contents into a temporally file/notepad:
 
     ```command
 [environment second]
@@ -289,61 +289,61 @@ sudo cat /etc/kubernetes/pki/ca.key
 3. Once you have the information copied close the SSH session and create the new directory in the local machine:
     ```command
 [environment local]
-mkdir ~/certs
+mkdir /home/<^>linux-user<^>/certs
     ```
 
 4. Now paste the content of the public certificate and the private key in their corresponding files:
 
     ```command
 [environment local]
-nano ~/certs/ca.crt
-nano ~/certs/ca.key
+nano /home/<^>linux-user<^>/certs/ca.crt
+nano /home/<^>linux-user<^>/certs/ca.key
     ```
 
 5. After saving the files, you will need changing permissions for both of them running the following command:
 
     ```command
 [environment local]
-chmod 644 ~/certs/ca.crt && chmod 600 ~/certs/ca.key
+chmod 644 /home/<^>linux-user<^>/certs/ca.crt && chmod 600 /home/<^>linux-user<^>/certs/ca.key
     ```
 
 6. Granting `root` ownership to the certificates will bring them enhanced security, do it running the following command:
 
     ```command
 [environment local]
-sudo chown root:root ~/certs/ca.key && sudo chown root:root ~/certs/ca.crt
+sudo chown root:root /home/<^>linux-user<^>/certs/ca.key && sudo chown root:root /home/<^>linux-user<^>/certs/ca.crt
     ```
 
 7. Now that you have the certificates at hand you can proceed creating users private keys using the following commands:
 
     ```command
 [environment local]
-openssl genrsa -out ~/certs/sammy.key 4096
-openssl genrsa -out ~/certs/adm.key 4096
+openssl genrsa -out /home/<^>linux-user<^>/certs/sammy.key 4096
+openssl genrsa -out /home/<^>linux-user<^>/certs/adm.key 4096
     ```
 
 8. Now generate the certificate signing requests specifying in the subject the user name as common name (CN) and the user group as organization (O):
 
     ```command
 [environment local]
-openssl req -new -key ~/certs/sammy.key -out ~/certs/sammy.csr -subj "/CN=sammy/O=developer" 
-openssl req -new -key ~/certs/adm.key -out ~/certs/adm.csr -subj "/CN=adm/O=administrator"
+openssl req -new -key /home/<^>linux-user<^>/certs/sammy.key -out /home/<^>linux-user<^>/certs/sammy.csr -subj "/CN=sammy/O=developer" 
+openssl req -new -key /home/<^>linux-user<^>/certs/adm.key -out /home/<^>linux-user<^>/certs/adm.csr -subj "/CN=adm/O=administrator"
     ```
 
 9. Sign the certificates using the cluster CA and private key and assign them an expiration date of 90 days using the following commands:
 
     ```command
 [environment local]
-sudo openssl x509 -req -in ~/certs/sammy.csr -CA ~/certs/ca.crt -CAkey ~/certs/ca.key -CAcreateserial -out ~/certs/sammy.crt -days 90
-sudo openssl x509 -req -in ~/certs/adm.csr -CA ~/certs/ca.crt -CAkey ~/certs/ca.key -CAcreateserial -out ~/certs/adm.crt -days 90
+sudo openssl x509 -req -in /home/<^>linux-user<^>/certs/sammy.csr -CA /home/<^>linux-user<^>/certs/ca.crt -CAkey /home/<^>linux-user<^>/certs/ca.key -CAcreateserial -out /home/<^>linux-user<^>/certs/sammy.crt -days 90
+sudo openssl x509 -req -in /home/<^>linux-user<^>/certs/adm.csr -CA /home/<^>linux-user<^>/certs/ca.crt -CAkey /home/<^>linux-user<^>/certs/ca.key -CAcreateserial -out /home/<^>linux-user<^>/certs/adm.crt -days 90
     ```
 
 10. Now add the new credentials to the local `kubeconfig` running these commands:
     
     ```command
 [environment local]
-kubectl config set-credentials sammy --client-certificate=~/certs/sammy.crt  --client-key=~/certs/sammy.key 
-kubectl config set-credentials adm --client-certificate=~/certs/adm.crt  --client-key=~/certs/adm.key
+kubectl config set-credentials sammy --client-certificate=/home/<^>linux-user<^>/certs/sammy.crt  --client-key=/home/<^>linux-user<^>/certs/sammy.key 
+kubectl config set-credentials adm --client-certificate=/home/<^>linux-user<^>/certs/adm.crt  --client-key=/home/<^>linux-user<^>/certs/adm.key
     ```
 
 11. The configuration file now holds the credentials of all users, including **kubernetes-admin** what would be a problem, because the last thing you want is distributing a configuration with a superuser profile. Fortunately, using `kubeadm` you can generate an independent kubeconfig for each user running the following command:
@@ -2172,8 +2172,9 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTEzMDk5OSwxNTEzNjQ3MjIsMjgzMD
-A3NTUwLDU5OTkyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1
-LDE1MDY2MDM0MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMz
-k3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0NF19
+eyJoaXN0b3J5IjpbLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1MT
+M2NDcyMiwyODMwMDc1NTAsNTk5OTI3NDA0LDEzNjIzODQxNTAs
+LTEzMjIyOTE1NTUsMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1Nz
+Q2NTIxOCwtMjIzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0
+XX0=
 -->
