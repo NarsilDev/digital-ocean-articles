@@ -311,15 +311,15 @@ chmod 644 ~/certs/ca.crt && chmod 600 ~/certs/ca.key
 
     ```command
 [environment local]
-sudo chown root:root /home/<^>linux-user<^>/certs/ca.key && sudo chown root:root /home/<^>linux-user<^>/certs/ca.crt
+sudo chown root:root ~/certs/ca.key && sudo chown root:root ~/certs/ca.crt
     ```
 
 7. Now that you have the certificates at hand you can proceed creating users private keys using the following commands:
 
     ```command
 [environment local]
-openssl genrsa -out /home/<^>linux-user<^>/certs/sammy.key 4096
-openssl genrsa -out /home/<^>linux-user<^>/certs/adm.key 4096
+openssl genrsa -out ~/certs/sammy.key 4096
+openssl genrsa -out ~/certs/adm.key 4096
     ```
 
 8. Now generate the certificate signing requests specifying in the subject the user name as common name (CN) and the user group as organization (O):
@@ -2172,9 +2172,9 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjY5NTA2MywtNzE3Nzk1MzQ5LDE5NT
-g3NTkwODAsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1MTM2NDcy
-MiwyODMwMDc1NTAsNTk5OTI3NDA0LDEzNjIzODQxNTAsLTEzMj
-IyOTE1NTUsMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIx
-OCwtMjIzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0XX0=
+eyJoaXN0b3J5IjpbOTE1MjU0ODA1LC03MTc3OTUzNDksMTk1OD
+c1OTA4MCwtNzE3Nzk1MzQ5LDExMjUxMzA5OTksMTUxMzY0NzIy
+LDI4MzAwNzU1MCw1OTk5Mjc0MDQsMTM2MjM4NDE1MCwtMTMyMj
+I5MTU1NSwxNTA2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1MjE4
+LC0yMjM5NzA4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
 -->
