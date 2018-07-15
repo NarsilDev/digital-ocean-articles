@@ -360,7 +360,7 @@ sudo kubeadm alpha phase kubeconfig user --client-name=adm --cert-dir="/home/<^>
 nano ~/.kube/config-adm
     ```
 
-13. Paste the `kubeadm` output, save and close the file and then repeat the procedure for the other user:
+13. Paste the `kubeadm` output into `~/.kube/config-adm`, save and close the file and then repeat the procedure for the other user:
 
     ```command
 [environment local]
@@ -2166,7 +2166,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTU3MDcwNywxNTEzNjQ3MjIsMjgzMD
+eyJoaXN0b3J5IjpbMTA4MTg5NzI3MSwxNTEzNjQ3MjIsMjgzMD
 A3NTUwLDU5OTkyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1
 LDE1MDY2MDM0MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMz
 k3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0NF19
