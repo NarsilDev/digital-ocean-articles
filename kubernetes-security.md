@@ -681,7 +681,7 @@ nano ~/kube-security/default-adm-pod-view.yaml
 And now paste the following definition into the file:
 
 ```
-[label default-adm-pod-view.yaml]
+[label ~/kube-security/default-adm-pod-view.yaml]
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -708,7 +708,7 @@ And now create the new one, this time referencing the file containing the role b
 
 ```command
 [environment local]
-kubectl create -f default-adm-pod-view.yaml
+kubectl create -f ~/kube-security/default-adm-pod-view.yaml
 ```
 
 You can confirm the user permissions using:
@@ -2172,10 +2172,10 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNDEwNzk0MCw1MTAwOTA5NzIsLTI2Mz
-E2NzkxNSwtNzE3Nzk1MzQ5LDE5NTg3NTkwODAsLTcxNzc5NTM0
-OSwxMTI1MTMwOTk5LDE1MTM2NDcyMiwyODMwMDc1NTAsNTk5OT
-I3NDA0LDEzNjIzODQxNTAsLTEzMjIyOTE1NTUsMTUwNjYwMzQz
-LC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOTcwODU1LDgyMj
-k4MzI1NywtNzA0MDE0NzQ0XX0=
+eyJoaXN0b3J5IjpbLTE5NDU2MDMzNjQsLTgxNDEwNzk0MCw1MT
+AwOTA5NzIsLTI2MzE2NzkxNSwtNzE3Nzk1MzQ5LDE5NTg3NTkw
+ODAsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1MTM2NDcyMiwyOD
+MwMDc1NTAsNTk5OTI3NDA0LDEzNjIzODQxNTAsLTEzMjIyOTE1
+NTUsMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMj
+IzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0XX0=
 -->
