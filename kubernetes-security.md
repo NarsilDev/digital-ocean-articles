@@ -346,7 +346,7 @@ kubectl config set-credentials sammy --client-certificate=~/certs/sammy.crt  --c
 kubectl config set-credentials adm --client-certificate=~/certs/adm.crt  --client-key=~/certs/adm.key
     ```
 
-11. The configuration file now holds the credentials of all users, including **kubernetes-admin** what would be a problem, because the last thing you want is distributing a configuration with a superuser profile. Fortunately, using `kubeadm` you can generate an independent kubeconfig for each user running the following command (please notice this command requires the **absolute path** to certificates directory): 
+11. The configuration file now holds the credentials of all users, including **kubernetes-admin** what would be a problem, because the last thing you want is distributing a configuration with a superuser profile. Fortunately, using `kubeadm` you can generate an independent kubeconfig for each user running the following command (please notice this command requires the ): 
 
     ```command
 [environment local]
@@ -354,7 +354,7 @@ sudo kubeadm alpha phase kubeconfig user --client-name=adm --cert-dir="/home/<^>
     ```
 
 <$>[note]
-**Note:** the command `kubeadm alpha phase kubeconfig user` is an alpha feature, and will only generate the kubeconfig template, you must create the file and save it into user's `~/.kube/` before adding more namespaces to user's profile through `kubectl`.
+**Note:** the command requires the **absolute path** to certificates directory
 <$>
 
 12. Copy the resulting output (starting from **apiVersion**) and then create a new file for the user, for example: 
@@ -2170,8 +2170,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MzQyMTg5OSwxNTEzNjQ3MjIsMjgzMD
-A3NTUwLDU5OTkyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1
-LDE1MDY2MDM0MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMz
-k3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0NF19
+eyJoaXN0b3J5IjpbNzM1ODQyMDIsMTUxMzY0NzIyLDI4MzAwNz
+U1MCw1OTk5Mjc0MDQsMTM2MjM4NDE1MCwtMTMyMjI5MTU1NSwx
+NTA2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1MjE4LC0yMjM5Nz
+A4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
 -->
