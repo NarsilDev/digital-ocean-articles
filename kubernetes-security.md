@@ -704,7 +704,7 @@ Notice that two new sections are present: **subjects** and **roleRef**. A subjec
 kubectl delete rolebinding adm-pod-view
 ```
 
-And now create the new one, this time referencing the file containing the role binding definition:
+And now create the new role binding, this time referencing the file containing the definition:
 
 ```command
 [environment local]
@@ -2172,10 +2172,10 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDU2MDMzNjQsLTgxNDEwNzk0MCw1MT
-AwOTA5NzIsLTI2MzE2NzkxNSwtNzE3Nzk1MzQ5LDE5NTg3NTkw
-ODAsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1MTM2NDcyMiwyOD
-MwMDc1NTAsNTk5OTI3NDA0LDEzNjIzODQxNTAsLTEzMjIyOTE1
-NTUsMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMj
-IzOTcwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0XX0=
+eyJoaXN0b3J5IjpbMjAyODYzMjM5OCwtODE0MTA3OTQwLDUxMD
+A5MDk3MiwtMjYzMTY3OTE1LC03MTc3OTUzNDksMTk1ODc1OTA4
+MCwtNzE3Nzk1MzQ5LDExMjUxMzA5OTksMTUxMzY0NzIyLDI4Mz
+AwNzU1MCw1OTk5Mjc0MDQsMTM2MjM4NDE1MCwtMTMyMjI5MTU1
+NSwxNTA2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1MjE4LC0yMj
+M5NzA4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
 -->
