@@ -1836,6 +1836,10 @@ And list pods to confirm everything is working as expected:
 kubectl get pods
 ```
 
+You will see an output similar to the following one:
+
+
+
 The pod was created without any error using the least permissive user because this namespace is now entitled to accept any security context (or no context at all).
 
 Clean-up the namespace running the commands:
@@ -2191,11 +2195,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcwMzMyMTk0LC05MDU2MzMzMzYsLTE2MT
-E2NDQ0NTEsLTE4OTc2NTk5MzksLTEzODYwODY5NzEsLTMwNzQ0
-NTA1OCwxOTM2MjMzMTkzLDcyMTQyMTc1MSwtNDMyODc5MjQ3LD
-EyMjg0MDE0NjQsMTM3NzI0MzU2MiwyMDI4NjMyMzk4LC04MTQx
-MDc5NDAsNTEwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNzc5NTM0OS
-wxOTU4NzU5MDgwLC03MTc3OTUzNDksMTEyNTEzMDk5OSwxNTEz
-NjQ3MjJdfQ==
+eyJoaXN0b3J5IjpbLTUwNTYzNjE4NiwzNzAzMzIxOTQsLTkwNT
+YzMzMzNiwtMTYxMTY0NDQ1MSwtMTg5NzY1OTkzOSwtMTM4NjA4
+Njk3MSwtMzA3NDQ1MDU4LDE5MzYyMzMxOTMsNzIxNDIxNzUxLC
+00MzI4NzkyNDcsMTIyODQwMTQ2NCwxMzc3MjQzNTYyLDIwMjg2
+MzIzOTgsLTgxNDEwNzk0MCw1MTAwOTA5NzIsLTI2MzE2NzkxNS
+wtNzE3Nzk1MzQ5LDE5NTg3NTkwODAsLTcxNzc5NTM0OSwxMTI1
+MTMwOTk5XX0=
 -->
