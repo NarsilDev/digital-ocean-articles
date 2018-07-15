@@ -1812,14 +1812,14 @@ Create the new objects running as usual:
 ```command
 [environment local]
 kubectl create -f ~/kube-security/allow-all-psp-clusterrole.yaml 
-kubectl create -f allow-all-psp-rolebinding.yaml
+kubectl create -f ~/kube-security/allow-all-psp-rolebinding.yaml
 ```
 
 In order to test the new policy switch to **sammy** user working on **dmz** namespace using this command:
 
 ```command
 [environment local]
-kubectl use-context sammy-dmz
+kubectl config use-context sammy-dmz
 ```
 
 Now try creating a pod:
@@ -2191,11 +2191,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTM5ODcxMjgsLTkwNTYzMzMzNiwtMT
-YxMTY0NDQ1MSwtMTg5NzY1OTkzOSwtMTM4NjA4Njk3MSwtMzA3
-NDQ1MDU4LDE5MzYyMzMxOTMsNzIxNDIxNzUxLC00MzI4NzkyND
-csMTIyODQwMTQ2NCwxMzc3MjQzNTYyLDIwMjg2MzIzOTgsLTgx
-NDEwNzk0MCw1MTAwOTA5NzIsLTI2MzE2NzkxNSwtNzE3Nzk1Mz
-Q5LDE5NTg3NTkwODAsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1
-MTM2NDcyMl19
+eyJoaXN0b3J5IjpbMzcwMzMyMTk0LC05MDU2MzMzMzYsLTE2MT
+E2NDQ0NTEsLTE4OTc2NTk5MzksLTEzODYwODY5NzEsLTMwNzQ0
+NTA1OCwxOTM2MjMzMTkzLDcyMTQyMTc1MSwtNDMyODc5MjQ3LD
+EyMjg0MDE0NjQsMTM3NzI0MzU2MiwyMDI4NjMyMzk4LC04MTQx
+MDc5NDAsNTEwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNzc5NTM0OS
+wxOTU4NzU5MDgwLC03MTc3OTUzNDksMTEyNTEzMDk5OSwxNTEz
+NjQ3MjJdfQ==
 -->
