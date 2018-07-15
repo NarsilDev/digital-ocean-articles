@@ -1768,7 +1768,7 @@ nano ~/kube-security/allow-all-psp-clusterrole.yaml
 Copy and paste the following declaration:
 
 ```
-[label allow-all-psp-clusterrole.yaml]
+[label ~/kube-security/allow-all-psp-clusterrole.yaml]
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -1791,7 +1791,7 @@ nano ~/kube-security/allow-all-psp-rolebinding.yaml
 Copy and paste the following declaration:
 
 ```
-[label allow-all-psp-rolebinding.yaml]
+[label ~/kube-security/allow-all-psp-rolebinding.yaml]
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -1811,7 +1811,7 @@ Create the new objects running as usual:
 
 ```command
 [environment local]
-kubectl create -f allow-all-psp-clusterrole.yaml 
+kubectl create -f ~/kube-security/allow-all-psp-clusterrole.yaml 
 kubectl create -f allow-all-psp-rolebinding.yaml
 ```
 
@@ -2191,11 +2191,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNTYzMzMzNiwtMTYxMTY0NDQ1MSwtMT
-g5NzY1OTkzOSwtMTM4NjA4Njk3MSwtMzA3NDQ1MDU4LDE5MzYy
-MzMxOTMsNzIxNDIxNzUxLC00MzI4NzkyNDcsMTIyODQwMTQ2NC
-wxMzc3MjQzNTYyLDIwMjg2MzIzOTgsLTgxNDEwNzk0MCw1MTAw
-OTA5NzIsLTI2MzE2NzkxNSwtNzE3Nzk1MzQ5LDE5NTg3NTkwOD
-AsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1MTM2NDcyMiwyODMw
-MDc1NTBdfQ==
+eyJoaXN0b3J5IjpbLTExNTM5ODcxMjgsLTkwNTYzMzMzNiwtMT
+YxMTY0NDQ1MSwtMTg5NzY1OTkzOSwtMTM4NjA4Njk3MSwtMzA3
+NDQ1MDU4LDE5MzYyMzMxOTMsNzIxNDIxNzUxLC00MzI4NzkyND
+csMTIyODQwMTQ2NCwxMzc3MjQzNTYyLDIwMjg2MzIzOTgsLTgx
+NDEwNzk0MCw1MTAwOTA5NzIsLTI2MzE2NzkxNSwtNzE3Nzk1Mz
+Q5LDE5NTg3NTkwODAsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1
+MTM2NDcyMl19
 -->
