@@ -1718,7 +1718,7 @@ nano ~/kube-security/allow-all-psp.yaml
 Copy and paste the following content into the file:
 
 ```
-[label allow-all-psp.yaml]
+[label ~/kube-security/allow-all-psp.yaml]
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:
@@ -1755,7 +1755,7 @@ Change again to the superuser context and create the new policy like before:
 ```command
 [environment local]
 kubectl config use-context kubeadmin-dmz
-kubectl create -f allow-all-psp.yaml
+kubectl create -f ~/kube-security/allow-all-psp.yaml
 ```
 
 From this point, you only need applying what you learned in the RBAC authorization section, first create a cluster role allowing the **use** verb for the PSP resource:
@@ -2191,7 +2191,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTA4MjE4NCwtMTYxMTY0NDQ1MSwtMT
+eyJoaXN0b3J5IjpbLTkwNTYzMzMzNiwtMTYxMTY0NDQ1MSwtMT
 g5NzY1OTkzOSwtMTM4NjA4Njk3MSwtMzA3NDQ1MDU4LDE5MzYy
 MzMxOTMsNzIxNDIxNzUxLC00MzI4NzkyNDcsMTIyODQwMTQ2NC
 wxMzc3MjQzNTYyLDIwMjg2MzIzOTgsLTgxNDEwNzk0MCw1MTAw
