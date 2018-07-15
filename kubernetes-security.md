@@ -1251,7 +1251,7 @@ You will see an error similar to this one:
 
 ```
 [secondary_label Output]
-Error from server (Forbidden): error when creating "another-pod.yaml": pods "another-pod" is forbidden: <^>exceeded quota:<^> resource-quota-default, <^>requested: pods=1, used: pods=1, limited: pods=1<^>
+Error from server (Forbidden): error when creating "/home/<^>linux-user<^>/kube-security/another-pod.yaml": pods "another-pod" is forbidden: <^>exceeded quota:<^> resource-quota-default, <^>requested: pods=1, used: pods=1, limited: pods=1<^>
 ```
 
 It's time to check the admission controllers theory, listing the pods using the command:
@@ -2172,11 +2172,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNzQ0NTA1OCwxOTM2MjMzMTkzLDcyMT
-QyMTc1MSwtNDMyODc5MjQ3LDEyMjg0MDE0NjQsMTM3NzI0MzU2
-MiwyMDI4NjMyMzk4LC04MTQxMDc5NDAsNTEwMDkwOTcyLC0yNj
-MxNjc5MTUsLTcxNzc5NTM0OSwxOTU4NzU5MDgwLC03MTc3OTUz
-NDksMTEyNTEzMDk5OSwxNTEzNjQ3MjIsMjgzMDA3NTUwLDU5OT
-kyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1LDE1MDY2MDM0
-M119
+eyJoaXN0b3J5IjpbLTEzODYwODY5NzEsLTMwNzQ0NTA1OCwxOT
+M2MjMzMTkzLDcyMTQyMTc1MSwtNDMyODc5MjQ3LDEyMjg0MDE0
+NjQsMTM3NzI0MzU2MiwyMDI4NjMyMzk4LC04MTQxMDc5NDAsNT
+EwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNzc5NTM0OSwxOTU4NzU5
+MDgwLC03MTc3OTUzNDksMTEyNTEzMDk5OSwxNTEzNjQ3MjIsMj
+gzMDA3NTUwLDU5OTkyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkx
+NTU1XX0=
 -->
