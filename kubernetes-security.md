@@ -1339,11 +1339,9 @@ Name:       limit-ranges-default
 Namespace:  default
 Type        Resource  Min  Max  Default Request  Default Limit  Max Limit/Request Ratio
 ----        --------  ---  ---  ---------------  -------------  -----------------------
-Container   cpu       -    -    <^>300m             500m           -
-Container   memory    -    -    256Mi            512Mi          -
+Container   cpu       -    -    <^>300m             500m<^>           -
+Container   memory    -    -    <^>256Mi            512Mi<^>          -
 ```
-
-<^>
 
 Before continuing, change the **default** namespace pod limit (currently one). Do it modifying the `ResourceQuota` object directly on the API server, for ease editing the object, environmental variable `KUBE_EDITOR` is set to `nano` before passing the command:
 
@@ -2193,7 +2191,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTY0NTczNDMsLTEzODYwODY5NzEsLT
+eyJoaXN0b3J5IjpbLTE4OTc2NTk5MzksLTEzODYwODY5NzEsLT
 MwNzQ0NTA1OCwxOTM2MjMzMTkzLDcyMTQyMTc1MSwtNDMyODc5
 MjQ3LDEyMjg0MDE0NjQsMTM3NzI0MzU2MiwyMDI4NjMyMzk4LC
 04MTQxMDc5NDAsNTEwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNzc5
