@@ -353,6 +353,10 @@ kubectl config set-credentials adm --client-certificate=~/certs/adm.crt  --clien
 sudo kubeadm alpha phase kubeconfig user --client-name=adm --cert-dir="/home/<^>linux-user<^>/certs"
     ```
 
+<$>[note]
+**Note:** the command `kubeadm alpha phase kubeconfig user` is an alpha feature, and will only generate the kubeconfig template, you must create the file and save it into user's `~/.kube/` before adding more namespaces to user's profile through `kubectl`.
+<$>
+
 12. Copy the resulting output (starting from **apiVersion**) and then create a new file for the user, for example: 
 
     ```command
@@ -2166,8 +2170,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE2MTcwMTI5LDE1MTM2NDcyMiwyODMwMD
-c1NTAsNTk5OTI3NDA0LDEzNjIzODQxNTAsLTEzMjIyOTE1NTUs
-MTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIxOCwtMjIzOT
-cwODU1LDgyMjk4MzI1NywtNzA0MDE0NzQ0XX0=
+eyJoaXN0b3J5IjpbLTY5MzQyMTg5OSwxNTEzNjQ3MjIsMjgzMD
+A3NTUwLDU5OTkyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1
+LDE1MDY2MDM0MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMz
+k3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0NF19
 -->
