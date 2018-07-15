@@ -1005,7 +1005,7 @@ kubectl run network-test --rm -ti --restart=Never --namespace=default --labels="
 ping <^>dmz-test_IP_address<^>
     ```
 
-4. The ping will succeed this time, because the new network policy has no egress restrictions. Stop the request pressing **Ctl+C** and take note of `network-test` IP address:
+4. The ping will succeed this time, because the new network policy has no egress restrictions. Stop the ping command pressing **Ctl+C** and take note of `network-test` IP address:
 
     ```super_user
 [environment third]
@@ -2172,11 +2172,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMjg3OTI0NywxMjI4NDAxNDY0LDEzNz
-cyNDM1NjIsMjAyODYzMjM5OCwtODE0MTA3OTQwLDUxMDA5MDk3
-MiwtMjYzMTY3OTE1LC03MTc3OTUzNDksMTk1ODc1OTA4MCwtNz
-E3Nzk1MzQ5LDExMjUxMzA5OTksMTUxMzY0NzIyLDI4MzAwNzU1
-MCw1OTk5Mjc0MDQsMTM2MjM4NDE1MCwtMTMyMjI5MTU1NSwxNT
-A2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1MjE4LC0yMjM5NzA4
-NTVdfQ==
+eyJoaXN0b3J5IjpbNzIxNDIxNzUxLC00MzI4NzkyNDcsMTIyOD
+QwMTQ2NCwxMzc3MjQzNTYyLDIwMjg2MzIzOTgsLTgxNDEwNzk0
+MCw1MTAwOTA5NzIsLTI2MzE2NzkxNSwtNzE3Nzk1MzQ5LDE5NT
+g3NTkwODAsLTcxNzc5NTM0OSwxMTI1MTMwOTk5LDE1MTM2NDcy
+MiwyODMwMDc1NTAsNTk5OTI3NDA0LDEzNjIzODQxNTAsLTEzMj
+IyOTE1NTUsMTUwNjYwMzQzLC0zODI1OTIwMDYsLTg1NzQ2NTIx
+OF19
 -->
