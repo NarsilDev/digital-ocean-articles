@@ -1558,7 +1558,7 @@ nano ~/kube-security/restrictive-psp.yaml
 Copy and paste into the file the following content:
 
 ```
-[label restrictive-psp.yaml]
+[label ~/kube-security/restrictive-psp.yaml]
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:
@@ -1622,7 +1622,7 @@ Switch back to **kubernetes-admin** superuser and create the policy:
 ```command
 [environment local]
 kubectl config use-context kubeadmin-dmz
-kubectl create -f restrictive-psp.yaml
+kubectl create -f ~/kube-security/restrictive-psp.yaml
 ```
 
 Now it's time to activate `PodSecurityPolicy` admission controller in the API server, for doing so, you will need starting a SSH session in your Master node as usual:
@@ -2191,11 +2191,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTc2NTk5MzksLTEzODYwODY5NzEsLT
-MwNzQ0NTA1OCwxOTM2MjMzMTkzLDcyMTQyMTc1MSwtNDMyODc5
-MjQ3LDEyMjg0MDE0NjQsMTM3NzI0MzU2MiwyMDI4NjMyMzk4LC
-04MTQxMDc5NDAsNTEwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNzc5
-NTM0OSwxOTU4NzU5MDgwLC03MTc3OTUzNDksMTEyNTEzMDk5OS
-wxNTEzNjQ3MjIsMjgzMDA3NTUwLDU5OTkyNzQwNCwxMzYyMzg0
-MTUwXX0=
+eyJoaXN0b3J5IjpbLTE2MTE2NDQ0NTEsLTE4OTc2NTk5MzksLT
+EzODYwODY5NzEsLTMwNzQ0NTA1OCwxOTM2MjMzMTkzLDcyMTQy
+MTc1MSwtNDMyODc5MjQ3LDEyMjg0MDE0NjQsMTM3NzI0MzU2Mi
+wyMDI4NjMyMzk4LC04MTQxMDc5NDAsNTEwMDkwOTcyLC0yNjMx
+Njc5MTUsLTcxNzc5NTM0OSwxOTU4NzU5MDgwLC03MTc3OTUzND
+ksMTEyNTEzMDk5OSwxNTEzNjQ3MjIsMjgzMDA3NTUwLDU5OTky
+NzQwNF19
 -->
