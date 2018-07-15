@@ -841,7 +841,7 @@ nano ~/kube-security/deny-all.yaml
 And then copy and paste the following definition:
 
 ```
-[label deny-all.yaml]
+[label ~/kube-security/deny-all.yaml]
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -858,7 +858,7 @@ Save and close, then create the policy running from your local client the follow
 
 ```command
 [environment local]
-kubectl create -f deny-all.yaml
+kubectl create -f ~/kube-security/deny-all.yaml
 ```
 
 You can list current network policies and confirm its creation running the following command:
@@ -2172,7 +2172,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NzM2MDQ0MCwxMzc3MjQzNTYyLDIwMj
+eyJoaXN0b3J5IjpbMTIyODQwMTQ2NCwxMzc3MjQzNTYyLDIwMj
 g2MzIzOTgsLTgxNDEwNzk0MCw1MTAwOTA5NzIsLTI2MzE2Nzkx
 NSwtNzE3Nzk1MzQ5LDE5NTg3NTkwODAsLTcxNzc5NTM0OSwxMT
 I1MTMwOTk5LDE1MTM2NDcyMiwyODMwMDc1NTAsNTk5OTI3NDA0
