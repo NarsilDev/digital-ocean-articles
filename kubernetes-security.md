@@ -327,15 +327,15 @@ openssl genrsa -out ~/certs/adm.key 4096
     ```command
 [environment local]
 openssl req -new -key ~/certs/sammy.key -out ~/certs/sammy.csr -subj "/CN=sammy/O=developer" 
-openssl req -new -key ~/certs/adm.key -out /home/<^>linux-user<^>/certs/adm.csr -subj "/CN=adm/O=administrator"
+openssl req -new -key ~/certs/adm.key -out ~/certs/adm.csr -subj "/CN=adm/O=administrator"
     ```
 
 9. Sign the certificates using the cluster CA and private key and assign them an expiration date of 90 days using the following commands:
 
     ```command
 [environment local]
-sudo openssl x509 -req -in /home/<^>linux-user<^>/certs/sammy.csr -CA /home/<^>linux-user<^>/certs/ca.crt -CAkey /home/<^>linux-user<^>/certs/ca.key -CAcreateserial -out /home/<^>linux-user<^>/certs/sammy.crt -days 90
-sudo openssl x509 -req -in /home/<^>linux-user<^>/certs/adm.csr -CA /home/<^>linux-user<^>/certs/ca.crt -CAkey /home/<^>linux-user<^>/certs/ca.key -CAcreateserial -out /home/<^>linux-user<^>/certs/adm.crt -days 90
+sudo openssl x509 -req -in ~/certs/sammy.csr -CA ~/certs/ca.crt -CAkey ~/certs/ca.key -CAcreateserial -out ~/certs/sammy.crt -days 90
+sudo openssl x509 -req -in ~/certs/adm.csr -CA /home/<^>linux-user<^>/certs/ca.crt -CAkey /home/<^>linux-user<^>/certs/ca.key -CAcreateserial -out /home/<^>linux-user<^>/certs/adm.crt -days 90
     ```
 
 10. Now add the new credentials to the local `kubeconfig` running these commands:
@@ -2172,9 +2172,9 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEyNDYyOTU0LC03MTc3OTUzNDksMTk1OD
-c1OTA4MCwtNzE3Nzk1MzQ5LDExMjUxMzA5OTksMTUxMzY0NzIy
-LDI4MzAwNzU1MCw1OTk5Mjc0MDQsMTM2MjM4NDE1MCwtMTMyMj
-I5MTU1NSwxNTA2NjAzNDMsLTM4MjU5MjAwNiwtODU3NDY1MjE4
-LC0yMjM5NzA4NTUsODIyOTgzMjU3LC03MDQwMTQ3NDRdfQ==
+eyJoaXN0b3J5IjpbLTE3NTE2NTA2NDYsLTcxNzc5NTM0OSwxOT
+U4NzU5MDgwLC03MTc3OTUzNDksMTEyNTEzMDk5OSwxNTEzNjQ3
+MjIsMjgzMDA3NTUwLDU5OTkyNzQwNCwxMzYyMzg0MTUwLC0xMz
+IyMjkxNTU1LDE1MDY2MDM0MywtMzgyNTkyMDA2LC04NTc0NjUy
+MTgsLTIyMzk3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0NF19
 -->
