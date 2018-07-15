@@ -371,7 +371,7 @@ nano ~/.kube/config-adm
 sudo kubeadm alpha phase kubeconfig user --client-name=sammy --cert-dir="/home/<^>linux-user<^>/certs"
     ```
 
-14. Copy once again the resulting output and create `sammy` configuration file running:
+14. Copy once again the resulting output (starting from **apiVersion**) and create a new `sammy` configuration file running:
 
     ```command
 [environment local]
@@ -2170,7 +2170,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NTM3OTA5NiwxNTEzNjQ3MjIsMjgzMD
+eyJoaXN0b3J5IjpbLTMwNjE3NDIyMiwxNTEzNjQ3MjIsMjgzMD
 A3NTUwLDU5OTkyNzQwNCwxMzYyMzg0MTUwLC0xMzIyMjkxNTU1
 LDE1MDY2MDM0MywtMzgyNTkyMDA2LC04NTc0NjUyMTgsLTIyMz
 k3MDg1NSw4MjI5ODMyNTcsLTcwNDAxNDc0NF19
