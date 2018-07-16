@@ -2088,6 +2088,7 @@ A long output will appear with descriptive information about the pod. Under the 
 
 ```
 [secondary_label Output
+serviceAccount: <^>default<^>
 serviceAccountName: <^>default<^>
 ```
 
@@ -2205,6 +2206,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTc2MTE0OCwtMjA2Njk4NTMyOSwtNj
-gxOTk2ODg1LC04NDYyMDYxMjRdfQ==
+eyJoaXN0b3J5IjpbMTc5MDI2OTkzMSwtMTU5NzYxMTQ4LC0yMD
+Y2OTg1MzI5LC02ODE5OTY4ODUsLTg0NjIwNjEyNF19
 -->
