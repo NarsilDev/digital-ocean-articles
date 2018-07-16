@@ -771,7 +771,9 @@ kubectl create rolebinding sammy-edit --clusterrole=edit --user=sammy --namespac
 
 As you can tell, what at first seemed difficult or that required a lot of time was accomplished running three commands. Assigning the cluster-wide role **admin** to **adm** was enough for enabling all precedent permission levels for that user. On the other hand, **sammy** needed namespace-specific permissions, therefore, it was necessary applying two independent role bindings. 
 
-
+<$>[note]  
+**Note:** this guide is assigning roles directly through `kubectl` to expedite the tutorial. For production, you might want using the file-based procedure explained in the prior sections in order to maintain a registry of changes in a control version system.  
+<$>
 
 From RBAC authorization viewpoint the work is done because the API server is aware of the new permissions. You can review them using the following commands:
 
@@ -2212,8 +2214,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2NDcyNzg5LDI2MzYxMDg1MiwtMTcyMz
-kzMjc0Myw1OTUzOTE4NjYsODcyNzYxMzQsLTExNjk4Njc4OTEs
-LTc2ODQxNTUwMSwxODEwNTQyOTczLDE3NTQ2ODk1NDEsMTUyND
-Y5MDg0NSwyMDM5NjAyNjEyXX0=
+eyJoaXN0b3J5IjpbLTEyNDE1MDkwMzEsMjYzNjEwODUyLC0xNz
+IzOTMyNzQzLDU5NTM5MTg2Niw4NzI3NjEzNCwtMTE2OTg2Nzg5
+MSwtNzY4NDE1NTAxLDE4MTA1NDI5NzMsMTc1NDY4OTU0MSwxNT
+I0NjkwODQ1LDIwMzk2MDI2MTJdfQ==
 -->
