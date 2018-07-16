@@ -801,7 +801,7 @@ ssh ubuntu@<^>worker_ip<^>
 Now from the node run the following command:
 
 ```command
-[environment thrid]
+[environment third]
 sudo cat /var/lib/kubelet/config.yaml
 ```
 
@@ -2214,8 +2214,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDE1MDkwMzEsMjYzNjEwODUyLC0xNz
-IzOTMyNzQzLDU5NTM5MTg2Niw4NzI3NjEzNCwtMTE2OTg2Nzg5
-MSwtNzY4NDE1NTAxLDE4MTA1NDI5NzMsMTc1NDY4OTU0MSwxNT
-I0NjkwODQ1LDIwMzk2MDI2MTJdfQ==
+eyJoaXN0b3J5IjpbMjExOTcxODYwMywtMTI0MTUwOTAzMSwyNj
+M2MTA4NTIsLTE3MjM5MzI3NDMsNTk1MzkxODY2LDg3Mjc2MTM0
+LC0xMTY5ODY3ODkxLC03Njg0MTU1MDEsMTgxMDU0Mjk3MywxNz
+U0Njg5NTQxLDE1MjQ2OTA4NDUsMjAzOTYwMjYxMl19
 -->
