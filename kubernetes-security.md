@@ -64,7 +64,7 @@ Up to this point, we have examined the cloud layer and the host-centric security
 
 ## Step Three - Kubernetes Cluster Authentication
 
-Before starting this section, its necessary to clarify the difference between **authentication** and **authorization** because this often leads to confusion. When you deploy a new Kubernetes cluster you are also installing by default an SSL certificate and key-pair which allows authenticating your user with the Kubernetes API. That only opens the cluster's door but doesn't grant the user any permissions because privileges are assigned depending on user role later during authorization stage. This is basically a two-step process, for every call sent to the Kubernetes API server the user must successfully authenticate and then pass through the authorization check before being able to do anything.
+Before starting this section, its necessary to clarify the difference between **authentication** and **authorization** because this often leads to confusion. When you deploy a new Kubernetes cluster you are also installing by default an SSL certificate and key-pair which allows authenticating your user with the Kubernetes API server. That only opens the cluster's door but doesn't grant the user any permissions because privileges are assigned depending on user role later during authorization stage. This is basically a two-step process, for every call sent to the Kubernetes API server the user must successfully authenticate and then pass through the authorization check before being able to do anything.
 
 ![Kubernetes Authentication](https://i.imgur.com/a0uzIxE.png)
 
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODQwODQzMzEsLTk1MTg3MzE5LDE3OD
-EzMjU0MjAsLTYwNDIwODA5Miw0MDMwMDI0NjEsOTA3OTY5OTYz
-LDMzMjEzOTQ3Nyw3OTA1NjUyMzMsLTE2NTkwNjU1ODMsMTgwMD
-ExNDgzOCw4MTIxMDUwNTcsMTE5OTM4MzU1MSwtMTM5MzA0MTY2
-MywtMTM4NjU5Njk4LDE4NzcyMDkwMzIsMTE1NTczMTQwMCwxNz
-kwMjY5OTMxLC0xNTk3NjExNDgsLTIwNjY5ODUzMjksLTY4MTk5
-Njg4NV19
+eyJoaXN0b3J5IjpbMTEzOTkzODk2MiwtMTU4NDA4NDMzMSwtOT
+UxODczMTksMTc4MTMyNTQyMCwtNjA0MjA4MDkyLDQwMzAwMjQ2
+MSw5MDc5Njk5NjMsMzMyMTM5NDc3LDc5MDU2NTIzMywtMTY1OT
+A2NTU4MywxODAwMTE0ODM4LDgxMjEwNTA1NywxMTk5MzgzNTUx
+LC0xMzkzMDQxNjYzLC0xMzg2NTk2OTgsMTg3NzIwOTAzMiwxMT
+U1NzMxNDAwLDE3OTAyNjk5MzEsLTE1OTc2MTE0OCwtMjA2Njk4
+NTMyOV19
 -->
