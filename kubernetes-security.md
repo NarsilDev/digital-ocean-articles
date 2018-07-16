@@ -1924,7 +1924,7 @@ RUN chmod +x /home/app/app.sh
 WORKDIR /home/app
     ```
 
-6. Now. create the Docker image using the following command:
+6. Now, create the Docker image using the following command:
 
     ```command
 [environment local]
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1OTQzNjc4NCwtNTQ0NjQ5ODMyLDk5Mz
-k3MDM1NiwtMjYyMjY2MjcsMTMwMDUzNDE5NSwtMTkwOTU3MzA2
-NywtMjMyMjU5NjUyLC0xNzM0NTIzNTU0LDc5MDEyMjc5NywyMT
-E5NzE4NjAzLC0xMjQxNTA5MDMxLDI2MzYxMDg1MiwtMTcyMzkz
-Mjc0Myw1OTUzOTE4NjYsODcyNzYxMzQsLTExNjk4Njc4OTEsLT
-c2ODQxNTUwMSwxODEwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5
-MDg0NV19
+eyJoaXN0b3J5IjpbMTczNzkyNjU0LC01NTk0MzY3ODQsLTU0ND
+Y0OTgzMiw5OTM5NzAzNTYsLTI2MjI2NjI3LDEzMDA1MzQxOTUs
+LTE5MDk1NzMwNjcsLTIzMjI1OTY1MiwtMTczNDUyMzU1NCw3OT
+AxMjI3OTcsMjExOTcxODYwMywtMTI0MTUwOTAzMSwyNjM2MTA4
+NTIsLTE3MjM5MzI3NDMsNTk1MzkxODY2LDg3Mjc2MTM0LC0xMT
+Y5ODY3ODkxLC03Njg0MTU1MDEsMTgxMDU0Mjk3MywxNzU0Njg5
+NTQxXX0=
 -->
