@@ -19,7 +19,7 @@ By the end of the article, you will hopefully have enough information to visuali
 
 In order to complete this tutorial you will need:
 
-* Two Droplets with a minimum of 4 GB of RAM running Ubuntu 16.04 configured using [this initial server setup tutorial,](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04) including a sudo non-root user and a firewall.
+* Two Droplets with a minimum of 2 GB of RAM running Ubuntu 16.04 configured using [this initial server setup tutorial,](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04) including a sudo non-root user and a firewall.
 * A local client PC with Internet connection running Ubuntu 16.04 or Ubuntu 18.04.
 * Docker-ce installed in both ends (client and server). You will find detailed instructions for Docker installation in our guide [How To Install and Use Docker on Ubuntu 16.04.](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
 
@@ -2206,8 +2206,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTMwNDE2NjMsLTEzODY1OTY5OCwxOD
-c3MjA5MDMyLDExNTU3MzE0MDAsMTc5MDI2OTkzMSwtMTU5NzYx
-MTQ4LC0yMDY2OTg1MzI5LC02ODE5OTY4ODUsLTg0NjIwNjEyNF
-19
+eyJoaXN0b3J5IjpbMTE5OTM4MzU1MSwtMTM5MzA0MTY2MywtMT
+M4NjU5Njk4LDE4NzcyMDkwMzIsMTE1NTczMTQwMCwxNzkwMjY5
+OTMxLC0xNTk3NjExNDgsLTIwNjY5ODUzMjksLTY4MTk5Njg4NS
+wtODQ2MjA2MTI0XX0=
 -->
