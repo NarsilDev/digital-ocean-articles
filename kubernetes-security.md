@@ -56,7 +56,7 @@ Nodes are the single most important component of the cluster. Because of how nod
 * **Node hosts monitoring and log audit:** a proactive monitoring of your server logs is crucial to prevent possible failures in your cluster. Suspicious activity (like high CPU load) could be a sign of a denial of service attack but are not the only types of attacks that can be prevented with a good monitoring. More specialized tools can detect containers trying to spawn a shell or writing to host's file system without needing too.
 * **Firewall:** configuring your firewall is highly dependent on your use case. For instance, you may use a private network to connect your nodes as mentioned in the previous section or maybe your project requires a separate **etcd** cluster. In general, the best practice remains the same, once you determine the cluster topology never expose a port which doesn't need to be open.
 
-Going a step further from the explained above, a solution for minimizing hosts vulnerability is not exposing them at all. You can accomplish that goal using a **Bastion Host**, a special node outside of the cluster using a security-hardened operating system that faces the Internet but also belongs to the cluster's private network. The Bastion Host approach can manage and filter traffic not only for SSH sessions but also Kubernetes remote sessions. This solution is ideal for private clusters because you are avoiding direct node access.
+Going a step further from the explained above, a solution for minimizing hosts vulnerability is not exposing them at all. You can accomplish that goal using a **Bastion Host**, a special node outside of the cluster using a security-hardened operating system that faces the Internet but also belongs to the cluster's private network. The Bastion Host approach can manage and filter traffic not only for SSH sessions but also Kubernetes remote sessions. Using a private network **and** a Bastion Host would add a significative level of isolation for cluster's nodes but also mean an extra-layer of configuration that is considered an advanced topic outside of the basic scope of this guide. 
 
 ![Bastion Host](https://i.imgur.com/zzbQOC5.png)
 
@@ -2214,10 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MTMyNTQyMCwtNjA0MjA4MDkyLDQwMz
-AwMjQ2MSw5MDc5Njk5NjMsMzMyMTM5NDc3LDc5MDU2NTIzMywt
-MTY1OTA2NTU4MywxODAwMTE0ODM4LDgxMjEwNTA1NywxMTk5Mz
-gzNTUxLC0xMzkzMDQxNjYzLC0xMzg2NTk2OTgsMTg3NzIwOTAz
-MiwxMTU1NzMxNDAwLDE3OTAyNjk5MzEsLTE1OTc2MTE0OCwtMj
-A2Njk4NTMyOSwtNjgxOTk2ODg1LC04NDYyMDYxMjRdfQ==
+eyJoaXN0b3J5IjpbLTExMjczMzU4MzcsMTc4MTMyNTQyMCwtNj
+A0MjA4MDkyLDQwMzAwMjQ2MSw5MDc5Njk5NjMsMzMyMTM5NDc3
+LDc5MDU2NTIzMywtMTY1OTA2NTU4MywxODAwMTE0ODM4LDgxMj
+EwNTA1NywxMTk5MzgzNTUxLC0xMzkzMDQxNjYzLC0xMzg2NTk2
+OTgsMTg3NzIwOTAzMiwxMTU1NzMxNDAwLDE3OTAyNjk5MzEsLT
+E1OTc2MTE0OCwtMjA2Njk4NTMyOSwtNjgxOTk2ODg1LC04NDYy
+MDYxMjRdfQ==
 -->
