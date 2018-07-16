@@ -40,7 +40,7 @@ This guide assumes you are using a universal custom solution for your Kubernetes
 * **High-Level Firewall:** using a [cloud firewall](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-cloud-firewalls) supplements your host-based solution and also adds an independent layer of protection against several types of attacks. The cloud firewall is also very handy if you are not using a private network for cluster communications because many ports would be exposed to Internet otherwise. It's a best practice to open only the strictly necessary ports at this level (SSH and application ports).
 
 <$>[note]
-**Note:** although private networks offer increased security they also require a supplementary configuration that is outside the scope of this guide. For the purpose of this tutorial, a public cluster will be used.
+**Note:** although private networks offer increased security they also require a supplementary configuration that is outside the basic scope of this guide. For the purpose of this tutorial, a public cluster will be used.
 <$>
 
 Summing up, this high-level layer groups important security improvements that are many times neglected even when they are the foundation of a secure Kubernetes cluster.
@@ -2214,7 +2214,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NTYyMzE3NCwtNjA0MjA4MDkyLDQwMz
+eyJoaXN0b3J5IjpbMTc4MTMyNTQyMCwtNjA0MjA4MDkyLDQwMz
 AwMjQ2MSw5MDc5Njk5NjMsMzMyMTM5NDc3LDc5MDU2NTIzMywt
 MTY1OTA2NTU4MywxODAwMTE0ODM4LDgxMjEwNTA1NywxMTk5Mz
 gzNTUxLC0xMzkzMDQxNjYzLC0xMzg2NTk2OTgsMTg3NzIwOTAz
