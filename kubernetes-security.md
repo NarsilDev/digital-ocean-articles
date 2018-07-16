@@ -28,6 +28,7 @@ In order to complete this tutorial you will need:
 * A Kubernetes 1.11 Cluster installed in the servers. You can follow steps from one to six of the guide [How To Create a Kubernetes 1.10 Cluster Using Kubeadm on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-1-10-cluster-using-kubeadm-on-ubuntu-16-04). However, during "Step 4 — Setting Up the Master Node" you will need using [Calico](https://www.projectcalico.org/) as CNI provider instead of [Flannel](https://github.com/coreos/flannel).
 * Familiarity with Ansible playbooks. For review, check out  [Configuration Management 101: Writing Ansible Playbooks] (https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks).
 * Knowledge of how to launch a container from a Docker image. Look at "Step 5 — Running a Docker Container" in  [How To Install and Use Docker on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04#step-5-%E2%80%94-running-a-docker-container)  if you need a refresher.
+* You will also need a [Docker Hub](https://hub.docker.com/) account for pushing Docker images.
 
 ## Step One - Cloud Provider
 
@@ -2214,11 +2215,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODU5MjE3ODYsLTgxODY3MTQwNCw2OD
-M1NzgzNTYsNzg0MzkwOTg0LDE3Mzc5MjY1NCwtNTU5NDM2Nzg0
-LC01NDQ2NDk4MzIsOTkzOTcwMzU2LC0yNjIyNjYyNywxMzAwNT
-M0MTk1LC0xOTA5NTczMDY3LC0yMzIyNTk2NTIsLTE3MzQ1MjM1
-NTQsNzkwMTIyNzk3LDIxMTk3MTg2MDMsLTEyNDE1MDkwMzEsMj
-YzNjEwODUyLC0xNzIzOTMyNzQzLDU5NTM5MTg2Niw4NzI3NjEz
-NF19
+eyJoaXN0b3J5IjpbLTEyNjgyODA1NzEsLTE3ODU5MjE3ODYsLT
+gxODY3MTQwNCw2ODM1NzgzNTYsNzg0MzkwOTg0LDE3Mzc5MjY1
+NCwtNTU5NDM2Nzg0LC01NDQ2NDk4MzIsOTkzOTcwMzU2LC0yNj
+IyNjYyNywxMzAwNTM0MTk1LC0xOTA5NTczMDY3LC0yMzIyNTk2
+NTIsLTE3MzQ1MjM1NTQsNzkwMTIyNzk3LDIxMTk3MTg2MDMsLT
+EyNDE1MDkwMzEsMjYzNjEwODUyLC0xNzIzOTMyNzQzLDU5NTM5
+MTg2Nl19
 -->
