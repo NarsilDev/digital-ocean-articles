@@ -15,6 +15,7 @@ Considering the myriad of moving parts involved and the variety of deployment sc
 
 By the end of the article, you will hopefully have enough information to visualize Kuberbetes security in a broader context, giving you a unique perspective for complementing these security solutions or adapt them to tackle the challenges of your particular scenario. 
 
+
 ## Prerequisites
 
 In order to complete this tutorial you will need:
@@ -23,9 +24,9 @@ In order to complete this tutorial you will need:
 	- An SSH key pair installed. If you haven't used SSH keys before, you can learn how to set them up by following  [this explanation of how to set up SSH keys on your local machine](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys#generating-and-working-with-ssh-keys).
 	- Ansible installed. You can follow the "Step 1 - Installing Ansible" section in  [How to Install and Configure Ansible on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-16-04)  to install Ansible. 
 	- Kubernetes command line tools `kubectl` and `kubeadm` installed. You can follow the "Step 3 - Installing Kubernetes' Dependencies" section in [How To Create a Kubernetes 1.10 Cluster Using Kubeadm on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-1-10-cluster-using-kubeadm-on-ubuntu-16-04#step-3-%E2%80%94-installing-kubernetes'-dependencies) to install the software omitting the `kubelet` section in the playbook.
-* Two servers running Ubuntu 16.04 with at least 2GB RAM. You should be able to SSH into each server as the root user with your SSH key pair.
-* 
-* Familiarity with Ansible playbooks. For review, check out  [Configuration Management 101: Writing Ansible Playbooks](https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks).
+* Two servers running Ubuntu 16.04 with at least 2GB RAM. You should be able to SSH into each server as the root user with your SSH key pair. This guide designated one server as **master** and the other as **worker** during hostname assignement.
+* A Kubernetes 1.11 Cluster installed in the servers. You can follow steps from one to six of the guide [How To Create a Kubernetes 1.10 Cluster Using Kubeadm on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-1-10-cluster-using-kubeadm-on-ubuntu-16-04). However, during "Step 4 — Setting Up the Master Node" you will need using [Calico](https://www.projectcalico.org/) CNI provider instead of [Flannel](https://github.com/coreos/flannel).
+* Familiarity with Ansible playbooks. For review, check out  [Configuration Management 101: Writing Ansible Playbooks] (https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks).
 * Knowledge of how to launch a container from a Docker image. Look at "Step 5 — Running a Docker Container" in  [How To Install and Use Docker on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04#step-5-%E2%80%94-running-a-docker-container)  if you need a refresher.
 
 
@@ -2215,9 +2216,9 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkwNTY1MjMzLC0xNjU5MDY1NTgzLDE4MD
-AxMTQ4MzgsODEyMTA1MDU3LDExOTkzODM1NTEsLTEzOTMwNDE2
-NjMsLTEzODY1OTY5OCwxODc3MjA5MDMyLDExNTU3MzE0MDAsMT
-c5MDI2OTkzMSwtMTU5NzYxMTQ4LC0yMDY2OTg1MzI5LC02ODE5
-OTY4ODUsLTg0NjIwNjEyNF19
+eyJoaXN0b3J5IjpbLTEyNjQ1NTM3MTYsNzkwNTY1MjMzLC0xNj
+U5MDY1NTgzLDE4MDAxMTQ4MzgsODEyMTA1MDU3LDExOTkzODM1
+NTEsLTEzOTMwNDE2NjMsLTEzODY1OTY5OCwxODc3MjA5MDMyLD
+ExNTU3MzE0MDAsMTc5MDI2OTkzMSwtMTU5NzYxMTQ4LC0yMDY2
+OTg1MzI5LC02ODE5OTY4ODUsLTg0NjIwNjEyNF19
 -->
