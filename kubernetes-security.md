@@ -1868,7 +1868,7 @@ As you can tell, the last few sections improved security within namespaces and p
 - Resources Limits for namespaces and containers.  
 - Security policies (templates) for pods affecting the containers and volumes inside them.
 
-As far as Kubernetes is concerned, using PSP is the closest it can get in terms of improving the security of the application. The next chapter will introduce the basic concepts to consider when designing containerized applications.
+As far as Kubernetes is concerned, using Pod Security Policies is the closest it can get in terms of improving the security of the application. The next chapter will introduce the basic concepts to consider when designing containerized applications.
 
 ## Step Ten - Application Level Security
 
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDY0OTgzMiw5OTM5NzAzNTYsLTI2Mj
-I2NjI3LDEzMDA1MzQxOTUsLTE5MDk1NzMwNjcsLTIzMjI1OTY1
-MiwtMTczNDUyMzU1NCw3OTAxMjI3OTcsMjExOTcxODYwMywtMT
-I0MTUwOTAzMSwyNjM2MTA4NTIsLTE3MjM5MzI3NDMsNTk1Mzkx
-ODY2LDg3Mjc2MTM0LC0xMTY5ODY3ODkxLC03Njg0MTU1MDEsMT
-gxMDU0Mjk3MywxNzU0Njg5NTQxLDE1MjQ2OTA4NDUsMjAzOTYw
-MjYxMl19
+eyJoaXN0b3J5IjpbLTU1OTQzNjc4NCwtNTQ0NjQ5ODMyLDk5Mz
+k3MDM1NiwtMjYyMjY2MjcsMTMwMDUzNDE5NSwtMTkwOTU3MzA2
+NywtMjMyMjU5NjUyLC0xNzM0NTIzNTU0LDc5MDEyMjc5NywyMT
+E5NzE4NjAzLC0xMjQxNTA5MDMxLDI2MzYxMDg1MiwtMTcyMzkz
+Mjc0Myw1OTUzOTE4NjYsODcyNzYxMzQsLTExNjk4Njc4OTEsLT
+c2ODQxNTUwMSwxODEwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5
+MDg0NV19
 -->
