@@ -1459,7 +1459,7 @@ Little by little, the environment surrounding pods and their respective containe
 
 Let's start differentiating a pod security **context** from a pod security **policy**. A good simplification would be looking at contexts as *security-oriented templates* for pods. In other words, they control security parameters for pods and hence they affect all containers and volumes within them. You can decide including or not these specifications, actually, you already created several pods without them.
 
-On the other hand, Pod Security Policies (PSP) are referencing the admission controller `PodSecurityPolicy`.  As you might remember, admission controllers intercept all requests sent to the API server and execute their code before object persistence, meaning that any call failing their verification will be rejected. Therefore, once enabled pod security policies will validate all pods, not only a particular set that you decide to. This particular admission controller determines if the request is valid based on:
+On the other hand, Pod Security Policies (PSP) are referencing the admission controller `PodSecurityPolicy`.  As you might remember, admission controllers intercept all requests sent to the API server and execute their code before object persistence, meaning that any call failing their verification will be rejected. Therefore, once enabled pod security policies will validate all pods, not only a particular set that you decide to. PSP admission controller determines if the request is valid based on:
 
 * **Current Pod Security Policies:** PSP are read in alphabetical order and the first that successfully validates all conditions is used. In other words, you can use PSP as a way to enforce a minimal set of rules for the pod security context.
 * **Role Based Authorization:** the controller checks if the user/service has authorization for using the validated policy. This means that you can create custom-tailored PSP for certain users, services, and applications.
@@ -2214,10 +2214,10 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDUzNDE5NSwtMTkwOTU3MzA2NywtMj
-MyMjU5NjUyLC0xNzM0NTIzNTU0LDc5MDEyMjc5NywyMTE5NzE4
-NjAzLC0xMjQxNTA5MDMxLDI2MzYxMDg1MiwtMTcyMzkzMjc0My
-w1OTUzOTE4NjYsODcyNzYxMzQsLTExNjk4Njc4OTEsLTc2ODQx
-NTUwMSwxODEwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5MDg0NS
-wyMDM5NjAyNjEyXX0=
+eyJoaXN0b3J5IjpbLTI2MjI2NjI3LDEzMDA1MzQxOTUsLTE5MD
+k1NzMwNjcsLTIzMjI1OTY1MiwtMTczNDUyMzU1NCw3OTAxMjI3
+OTcsMjExOTcxODYwMywtMTI0MTUwOTAzMSwyNjM2MTA4NTIsLT
+E3MjM5MzI3NDMsNTk1MzkxODY2LDg3Mjc2MTM0LC0xMTY5ODY3
+ODkxLC03Njg0MTU1MDEsMTgxMDU0Mjk3MywxNzU0Njg5NTQxLD
+E1MjQ2OTA4NDUsMjAzOTYwMjYxMl19
 -->
