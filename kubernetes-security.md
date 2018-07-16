@@ -732,7 +732,7 @@ kubectl delete rolebinding default-adm-pod-view
 Let's review the key elements of K8s authorization so far: 
 
 * **Permissions scope:** you can group your permissions defining a **Role** or a **ClusterRole**. The main difference between them is the cluster-wide scope of the **ClusterRole** opposed to the namespace restricted **Role**.
-* **Permissions binding scope:** similar to the last point, if you confer a **ClusterRoleBinding** you are basically granting permissions access to all namespaces. On the other hand, a **RoleBinding** is  restricted to one namespace.
+* **Permissions binding scope:** similar to the last point, if you confer a **ClusterRoleBinding** you are basically granting permissions access to all namespaces. On the other hand, a **RoleBinding** is restricted to one namespace.
 * **Roles definitions:** indistinctly if you are creating a role or cluster role, you need to define rules specifying the API group, resources affected by the rule and allowed verbs for the rule. You can always use pre-defined Kubernetes roles if that suits you.
 * **Binding entities:** when defining a role or cluster role you need declaring in the **subjects** section the target entity (user, group, service account), the name of the entity and the API group.
 
@@ -2210,8 +2210,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTA3NjY3MDcsMjYzNjEwODUyLC0xNz
-IzOTMyNzQzLDU5NTM5MTg2Niw4NzI3NjEzNCwtMTE2OTg2Nzg5
-MSwtNzY4NDE1NTAxLDE4MTA1NDI5NzMsMTc1NDY4OTU0MSwxNT
-I0NjkwODQ1LDIwMzk2MDI2MTJdfQ==
+eyJoaXN0b3J5IjpbMzIwNTE4NjgxLDI2MzYxMDg1MiwtMTcyMz
+kzMjc0Myw1OTUzOTE4NjYsODcyNzYxMzQsLTExNjk4Njc4OTEs
+LTc2ODQxNTUwMSwxODEwNTQyOTczLDE3NTQ2ODk1NDEsMTUyND
+Y5MDg0NSwyMDM5NjAyNjEyXX0=
 -->
