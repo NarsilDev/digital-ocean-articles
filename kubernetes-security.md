@@ -2012,6 +2012,11 @@ cd /tmp
 
 16. Now **edit** the `hostname` file (you can use `vi`) and change its value to `hacked-worker`.
 
+    ```super_user
+[environment third]
+vi hostname
+    ```
+
 17. Exit the container by either pressing **Ctrl+D** or typing **exit** and pressing **ENTER**.
 
 18. Run again the application and watch the new output:
@@ -2200,6 +2205,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY5MzE0MzE4LC02ODE5OTY4ODUsLTg0Nj
-IwNjEyNF19
+eyJoaXN0b3J5IjpbLTIwNjY5ODUzMjksLTY4MTk5Njg4NSwtOD
+Q2MjA2MTI0XX0=
 -->
