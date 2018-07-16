@@ -21,7 +21,7 @@ In order to complete this tutorial you will need:
 
 * An SSH key pair on your local Linux/Mac OS/BSD machine. If you haven't used SSH keys before, you can learn how to set them up by following  [this explanation of how to set up SSH keys on your local machine](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys#generating-and-working-with-ssh-keys).
     
-* Three servers running Ubuntu 16.04 with at least 1GB RAM. You should be able to SSH into each server as the root user with your SSH key pair.
+* Two servers running Ubuntu 16.04 with at least 2GB RAM. You should be able to SSH into each server as the root user with your SSH key pair.
     
 * Ansible installed on your local machine. If you're running Ubuntu 16.04 as your OS, follow the "Step 1 - Installing Ansible" section in  [How to Install and Configure Ansible on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-16-04)  to install Ansible. For installation instructions on other platforms like Mac OS X or CentOS, follow the  [official Ansible installation documentation](http://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-the-control-machine).
     
@@ -2216,8 +2216,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMDc3NzQ0LDExOTkzODM1NTEsLTEzOT
-MwNDE2NjMsLTEzODY1OTY5OCwxODc3MjA5MDMyLDExNTU3MzE0
-MDAsMTc5MDI2OTkzMSwtMTU5NzYxMTQ4LC0yMDY2OTg1MzI5LC
-02ODE5OTY4ODUsLTg0NjIwNjEyNF19
+eyJoaXN0b3J5IjpbLTQ0ODI0MzM1NywxMTk5MzgzNTUxLC0xMz
+kzMDQxNjYzLC0xMzg2NTk2OTgsMTg3NzIwOTAzMiwxMTU1NzMx
+NDAwLDE3OTAyNjk5MzEsLTE1OTc2MTE0OCwtMjA2Njk4NTMyOS
+wtNjgxOTk2ODg1LC04NDYyMDYxMjRdfQ==
 -->
