@@ -346,7 +346,7 @@ sudo openssl x509 -req -in ~/certs/sammy.csr -CA ~/certs/ca.crt -CAkey ~/certs/c
 sudo openssl x509 -req -in ~/certs/adm.csr -CA ~/certs/ca.crt -CAkey ~/certs/ca.key -CAcreateserial -out ~/certs/adm.crt -days 90
     ```
 
-10. Now add the new credentials to the local `kubeconfig` running these commands:
+10. Now add the new credentials to the local `kubeconfig`, please notice that these commands require using **absolute path**:
     
     ```command
 [environment local]
@@ -2218,5 +2218,5 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzOTYwMjYxMl19
+eyJoaXN0b3J5IjpbMTUyNDY5MDg0NSwyMDM5NjAyNjEyXX0=
 -->
