@@ -354,20 +354,12 @@ kubectl config set-credentials sammy --client-certificate=/home/<^>$USER<^>/cert
 kubectl config set-credentials adm --client-certificate=/home/<^>$USER<^>/certs/adm.crt  --client-key=/home/<^>$USER<^>/certs/adm.key
     ```
 
-<$>[note]
-**Note:** the command requires the **absolute path** to the certificates directory to function properly.
-<$>
-
 11. The configuration file now holds the credentials of all users, including **kubernetes-admin** what would be a problem, because the last thing you want is distributing a configuration with a superuser profile. Fortunately, using `kubeadm` you can generate an independent kubeconfig for each user running the following command:
 
     ```command
 [environment local]
 sudo kubeadm alpha phase kubeconfig user --client-name=adm --cert-dir="/home/<^>$USER<^>/certs"
     ```
-
-<$>[note]
-**Note:** the command requires the **absolute path** to the certificates directory to function properly.
-<$>
 
 12. Copy the resulting output (starting from **apiVersion**) and then create a new file for the user, for example: 
 
@@ -2218,6 +2210,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NDY4OTU0MSwxNTI0NjkwODQ1LDIwMz
-k2MDI2MTJdfQ==
+eyJoaXN0b3J5IjpbMTgxMDU0Mjk3MywxNzU0Njg5NTQxLDE1Mj
+Q2OTA4NDUsMjAzOTYwMjYxMl19
 -->
