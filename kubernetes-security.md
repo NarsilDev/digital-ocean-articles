@@ -277,9 +277,9 @@ Up to this point, you have a local client connecting with the cluster using a se
 
 ### Authenticating New Users using SSL/TLS Certificates
 
-Adding more users to the cluster is not a trivial task. As discussed earlier, Kubernetes API is unaware of user management.  This section will guide you through the process of creating two new remote users: a regular namespace administrator **adm** and a normal user **sammy**, each one having independent kubeconfig files.
+Adding more users to the cluster is not a trivial task. As discussed earlier, Kubernetes API is unaware of user management.  This section will guide you through the process of creating two new users: a regular namespace administrator **adm** and a normal user **sammy**, each one having independent kubeconfig files.
 
-1. One more time, you'll need an active SSH session on your Master node connect using the following command:
+1. One more time, you'll need an active SSH session on your Master node. Connect using the following command:
 
     ```command
 [environment local]
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE2Mjk5NDAwLDU0NTA4NzczMiwyMDMxOT
-IyODQ5LC0zMTc2NjQ2MSwxMTM5OTM4OTYyLC0xNTg0MDg0MzMx
-LC05NTE4NzMxOSwxNzgxMzI1NDIwLC02MDQyMDgwOTIsNDAzMD
-AyNDYxLDkwNzk2OTk2MywzMzIxMzk0NzcsNzkwNTY1MjMzLC0x
-NjU5MDY1NTgzLDE4MDAxMTQ4MzgsODEyMTA1MDU3LDExOTkzOD
-M1NTEsLTEzOTMwNDE2NjMsLTEzODY1OTY5OCwxODc3MjA5MDMy
-XX0=
+eyJoaXN0b3J5IjpbLTI2Nzc2ODg0MCw1NDUwODc3MzIsMjAzMT
+kyMjg0OSwtMzE3NjY0NjEsMTEzOTkzODk2MiwtMTU4NDA4NDMz
+MSwtOTUxODczMTksMTc4MTMyNTQyMCwtNjA0MjA4MDkyLDQwMz
+AwMjQ2MSw5MDc5Njk5NjMsMzMyMTM5NDc3LDc5MDU2NTIzMywt
+MTY1OTA2NTU4MywxODAwMTE0ODM4LDgxMjEwNTA1NywxMTk5Mz
+gzNTUxLC0xMzkzMDQxNjYzLC0xMzg2NTk2OTgsMTg3NzIwOTAz
+Ml19
 -->
