@@ -2040,7 +2040,7 @@ The new output should look similar to the following:
 You just **modified** the node's hostname through the container, in theory, applications inside containers are isolated from the host but this time that was not the case. Let's analyze how that was possible:
 
 - Standard Docker images (like **alpine**) use **root** as the default user. That is great for development environments because you have access to the entire file system, but for production using **root** should be avoided at all cost.
-- The example pod intentionally used a `hostPath` volume. That is a risky practice because you are granting the container direct access to host's file system.
+- The example pod intentionally used a `hostPath` volume. That is a risky practice because you are granting the container direct access to host's file system. If you need using `hostPath` then the best idea is to protect the file system with 
 
 The combination of the above conditions allowed a simple hack. Using the concepts learned in the prior sections you can mitigate the inherent risk of this scenario. If you try creating the same pod in the **default** namespace it will fail for several reasons:
 
@@ -2205,6 +2205,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjE2MDk4NzYsLTIwNjY5ODUzMjksLT
+eyJoaXN0b3J5IjpbLTE5MjU1NTQ5ODYsLTIwNjY5ODUzMjksLT
 Y4MTk5Njg4NSwtODQ2MjA2MTI0XX0=
 -->
