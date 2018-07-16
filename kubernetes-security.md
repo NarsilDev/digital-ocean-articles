@@ -1994,7 +1994,7 @@ kubectl exec standard-app-pod -- ./app.sh
 #----------------------------------------#
     ```
 
-As you can see, the script `app.sh` just prints to the console the running pod hostname and its corresponding node hostname. You may be asking where is the point of this example? 
+As you can see, the script `app.sh` just prints to the console the running pod hostname and its corresponding node hostname. You may be asking where is the point of this example? The following steps will explain the objective of this application.
 
 14. Start an interactive console inside the application's container running the following command:
 
@@ -2200,6 +2200,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjIxMDI0OSwtNjgxOTk2ODg1LC04ND
-YyMDYxMjRdfQ==
+eyJoaXN0b3J5IjpbNTY5MzE0MzE4LC02ODE5OTY4ODUsLTg0Nj
+IwNjEyNF19
 -->
