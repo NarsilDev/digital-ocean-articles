@@ -207,7 +207,7 @@ users:
     client-key-data: REDACTED
 ```
 
-From now on,  switching between contexts is as easy as running the command:
+From now on,  switching between contexts will be as easy as running the command:
 
 ```command
 [environment second]
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMTkyMjg0OSwtMzE3NjY0NjEsMTEzOT
-kzODk2MiwtMTU4NDA4NDMzMSwtOTUxODczMTksMTc4MTMyNTQy
-MCwtNjA0MjA4MDkyLDQwMzAwMjQ2MSw5MDc5Njk5NjMsMzMyMT
-M5NDc3LDc5MDU2NTIzMywtMTY1OTA2NTU4MywxODAwMTE0ODM4
-LDgxMjEwNTA1NywxMTk5MzgzNTUxLC0xMzkzMDQxNjYzLC0xMz
-g2NTk2OTgsMTg3NzIwOTAzMiwxMTU1NzMxNDAwLDE3OTAyNjk5
-MzFdfQ==
+eyJoaXN0b3J5IjpbNTQ1MDg3NzMyLDIwMzE5MjI4NDksLTMxNz
+Y2NDYxLDExMzk5Mzg5NjIsLTE1ODQwODQzMzEsLTk1MTg3MzE5
+LDE3ODEzMjU0MjAsLTYwNDIwODA5Miw0MDMwMDI0NjEsOTA3OT
+Y5OTYzLDMzMjEzOTQ3Nyw3OTA1NjUyMzMsLTE2NTkwNjU1ODMs
+MTgwMDExNDgzOCw4MTIxMDUwNTcsMTE5OTM4MzU1MSwtMTM5Mz
+A0MTY2MywtMTM4NjU5Njk4LDE4NzcyMDkwMzIsMTE1NTczMTQw
+MF19
 -->
