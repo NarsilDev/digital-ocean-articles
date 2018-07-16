@@ -6,7 +6,7 @@ Generally speaking, a cluster is as secure as the infrastructure it belongs to. 
 
 ![Typical Attack Vectors](https://i.imgur.com/B19vDAk.png)
 
-Considering the myriad of moving parts involved and the different deployment scenarios, securing Kubernetes may seem like a daunting task. The goal of this article is providing a solid security foundation for your cluster, a starting point resembling "Initial Server Setup" guides but with a Kubernetes-centric scope. In order to achieve this ambitious objective, the process will be split into more manageable steps:
+Considering the myriad of moving parts involved and the variety of deployment scenarios, securing Kubernetes may seem like a daunting task. The goal of this article is providing a solid security foundation for your cluster, a starting point resembling "Initial Server Setup" guides but with a Kubernetes-centric scope. In order to achieve this ambitious objective, the process will be split into more manageable steps:
 
 * **Cloud Security & Cluster Authentication:** steps from one to five group the best security practices affecting the entire cluster and common to all kind of deployments independently of their particular usage, its main focus is protecting  from direct Internet attacks.
 * **Role Based Permissions & Network Policies:** steps from six to eight dives into Kubernetes RBAC and network policies as a defense mechanism against unauthorized users.
@@ -2206,7 +2206,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NzIwOTAzMiwxMTU1NzMxNDAwLDE3OT
-AyNjk5MzEsLTE1OTc2MTE0OCwtMjA2Njk4NTMyOSwtNjgxOTk2
-ODg1LC04NDYyMDYxMjRdfQ==
+eyJoaXN0b3J5IjpbLTEzODY1OTY5OCwxODc3MjA5MDMyLDExNT
+U3MzE0MDAsMTc5MDI2OTkzMSwtMTU5NzYxMTQ4LC0yMDY2OTg1
+MzI5LC02ODE5OTY4ODUsLTg0NjIwNjEyNF19
 -->
