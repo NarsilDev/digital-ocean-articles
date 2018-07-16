@@ -1066,7 +1066,7 @@ Defining **ResourceQuota** objects allows Kubernetes administrators restricting:
 * **Storage resources:** similar to CPU and memory you can limit namespace storage consumption. Restricting persistent volumes storage resources is a good practice not only to enhance security but also I/O performance.
 * **Objects count:** you can also limit any standard namespace resource type like persistent volume claims, services, secrets, configmaps, pods, replication controllers, load balancers and even resource quotas within the namespace. This offers you a great flexibility, because you may want to restrict certain namespace objects, like pods, for example, to prevent a malicious program to deplete your cluster resources creating many pods in the cluster.
 
-This admission controller is enabled by default when using `kubeadm` during the cluster bootstrapping, so all you need to implement this feature is start creating the definitions.
+The **ResourceQuota** admission controller is enabled by default when using `kubeadm` during the cluster bootstrapping, so all you need to implement this feature is start creating the definitions.
 
 Let's implement this controller in the **default** namespace. The first step is saving the object file:
 
@@ -2214,9 +2214,9 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkwMTIyNzk3LDIxMTk3MTg2MDMsLTEyND
-E1MDkwMzEsMjYzNjEwODUyLC0xNzIzOTMyNzQzLDU5NTM5MTg2
-Niw4NzI3NjEzNCwtMTE2OTg2Nzg5MSwtNzY4NDE1NTAxLDE4MT
-A1NDI5NzMsMTc1NDY4OTU0MSwxNTI0NjkwODQ1LDIwMzk2MDI2
-MTJdfQ==
+eyJoaXN0b3J5IjpbLTE3MzQ1MjM1NTQsNzkwMTIyNzk3LDIxMT
+k3MTg2MDMsLTEyNDE1MDkwMzEsMjYzNjEwODUyLC0xNzIzOTMy
+NzQzLDU5NTM5MTg2Niw4NzI3NjEzNCwtMTE2OTg2Nzg5MSwtNz
+Y4NDE1NTAxLDE4MTA1NDI5NzMsMTc1NDY4OTU0MSwxNTI0Njkw
+ODQ1LDIwMzk2MDI2MTJdfQ==
 -->
