@@ -8,10 +8,10 @@ Generally speaking, a cluster is as secure as the infrastructure it belongs to. 
 
 Considering the myriad of moving parts involved and the variety of deployment scenarios, securing Kubernetes may seem like a daunting task. The goal of this article is providing a solid security foundation for your cluster, a starting point resembling "Initial Server Setup" guides but with a Kubernetes-centric scope. In order to achieve this ambitious objective, the process will be split into more manageable steps:
 
-* **Cloud Security & Cluster Authentication:** steps from one to five group the best security practices affecting the entire cluster and common to all kind of deployments independently of their particular usage, its main focus is protecting  from direct Internet attacks.
-* **Role Based Permissions & Network Policies:** steps from six to eight dives into Kubernetes RBAC and network policies as a defense mechanism against unauthorized users.
-* **Kubernetes Admission Controllers:** this step enforces using resources limitations and pod security policies which prevent privilege escalation attacks. 
-* **Application Level Security:** this final step covers the generalities about securing your application and avoiding it compromising the cluster.
+* **Cloud Security & Cluster Authentication:** steps from one to five will group the best security practices common to all kind of deployments independently of their particular usage, being the main focus protecting the entire cluster from direct Internet attacks.
+* **Role Based Permissions & Network Policies:** steps from six to eight will concentrate on Kubernetes Role Based Access Control (RBAC) and Network Policies as a defense mechanism against unauthorized users.
+* **Kubernetes Admission Controllers:** step nine will be devoted entirely to Admission Controllers as a solution to prevent resource starvation and privilege escalation attacks. 
+* **Application Level Security:** step ten will cover the generalities about securing your application and avoiding it compromising the cluster.
 
 By the end of the article, you will hopefully have enough information to visualize Kuberbetes security in a broader context, giving you a unique perspective for complementing these security solutions or adapt them to tackle the challenges of your particular scenario. 
 
@@ -2206,7 +2206,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODY1OTY5OCwxODc3MjA5MDMyLDExNT
-U3MzE0MDAsMTc5MDI2OTkzMSwtMTU5NzYxMTQ4LC0yMDY2OTg1
-MzI5LC02ODE5OTY4ODUsLTg0NjIwNjEyNF19
+eyJoaXN0b3J5IjpbLTEzOTMwNDE2NjMsLTEzODY1OTY5OCwxOD
+c3MjA5MDMyLDExNTU3MzE0MDAsMTc5MDI2OTkzMSwtMTU5NzYx
+MTQ4LC0yMDY2OTg1MzI5LC02ODE5OTY4ODUsLTg0NjIwNjEyNF
+19
 -->
