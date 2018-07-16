@@ -346,12 +346,12 @@ sudo openssl x509 -req -in ~/certs/sammy.csr -CA ~/certs/ca.crt -CAkey ~/certs/c
 sudo openssl x509 -req -in ~/certs/adm.csr -CA ~/certs/ca.crt -CAkey ~/certs/ca.key -CAcreateserial -out ~/certs/adm.crt -days 90
     ```
 
-10. Now add the new credentials to the local `kubeconfig`, please note that these commands require using a absolute path:
+10. Now add the new credentials to the local `kubeconfig`, *please note that these commands require using a absolute path:*
     
     ```command
 [environment local]
-kubectl config set-credentials sammy --client-certificate=/home/<^>linux-user<^>/certs/sammy.crt  --client-key=/home/<^>linux-user<^>/certs/sammy.key 
-kubectl config set-credentials adm --client-certificate=/home/<^>linux-user<^>/certs/adm.crt  --client-key=/home/<^>linux-user<^>/certs/adm.key
+kubectl config set-credentials sammy --client-certificate=/home/<^>$USER<^>/certs/sammy.crt  --client-key=/home/<^>$USER<^>/certs/sammy.key 
+kubectl config set-credentials adm --client-certificate=/home/<^>$USER<^>/certs/adm.crt  --client-key=/home/<^>$USER<^>/certs/adm.key
     ```
 
 <$>[note]
@@ -362,7 +362,7 @@ kubectl config set-credentials adm --client-certificate=/home/<^>linux-user<^>/c
 
     ```command
 [environment local]
-sudo kubeadm alpha phase kubeconfig user --client-name=adm --cert-dir="/home/<^>linux-user<^>/certs"
+sudo kubeadm alpha phase kubeconfig user --client-name=adm --cert-dir="/home/<^>$USER<^>/certs"
     ```
 
 <$>[note]
@@ -380,7 +380,7 @@ nano ~/.kube/config-adm
 
     ```command
 [environment local]
-sudo kubeadm alpha phase kubeconfig user --client-name=sammy --cert-dir="/home/<^>linux-user<^>/certs"
+sudo kubeadm alpha phase kubeconfig user --client-name=sammy --cert-dir="/home/<^>$USER<^>/certs"
     ```
 
 14. Copy once again the resulting output (starting from **apiVersion**) and create a new `sammy` configuration file running:
@@ -1263,7 +1263,7 @@ You will see an error similar to this one:
 
 ```
 [secondary_label Output]
-Error from server (Forbidden): error when creating "/home/<^>linux-user<^>/kube-security/another-pod.yaml": pods "another-pod" is forbidden: <^>exceeded quota:<^> resource-quota-default, <^>requested: pods=1, used: pods=1, limited: pods=1<^>
+Error from server (Forbidden): error when creating "/home/<^>$USER<^>/kube-security/another-pod.yaml": pods "another-pod" is forbidden: <^>exceeded quota:<^> resource-quota-default, <^>requested: pods=1, used: pods=1, limited: pods=1<^>
 ```
 
 It's time to check the admission controllers theory, listing the pods using the command:
@@ -2218,6 +2218,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcxMzk2MDg4LDE1MjQ2OTA4NDUsMjAzOT
-YwMjYxMl19
+eyJoaXN0b3J5IjpbMTc1NDY4OTU0MSwxNTI0NjkwODQ1LDIwMz
+k2MDI2MTJdfQ==
 -->
