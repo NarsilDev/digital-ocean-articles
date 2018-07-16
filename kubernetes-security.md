@@ -25,15 +25,9 @@ In order to complete this tutorial you will need:
 	- Ansible installed. You can follow the "Step 1 - Installing Ansible" section in  [How to Install and Configure Ansible on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-16-04)  to install Ansible. 
 	- Kubernetes command line tools `kubectl` and `kubeadm` installed. You can follow the "Step 3 - Installing Kubernetes' Dependencies" section in [How To Create a Kubernetes 1.10 Cluster Using Kubeadm on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-1-10-cluster-using-kubeadm-on-ubuntu-16-04#step-3-%E2%80%94-installing-kubernetes'-dependencies) to install the software omitting the `kubelet` section in the playbook.
 * Two servers running Ubuntu 16.04 with at least 2GB RAM. You should be able to SSH into each server as the root user with your SSH key pair. This guide designated one server as **master** and the other as **worker** during hostname assignment.
-* A Kubernetes 1.11 Cluster installed in the servers. You can follow steps from one to six of the guide [How To Create a Kubernetes 1.10 Cluster Using Kubeadm on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-1-10-cluster-using-kubeadm-on-ubuntu-16-04). However, during "Step 4 — Setting Up the Master Node" you will need using [Calico](https://www.projectcalico.org/) CNI provider instead of [Flannel](https://github.com/coreos/flannel).
+* A Kubernetes 1.11 Cluster installed in the servers. You can follow steps from one to six of the guide [How To Create a Kubernetes 1.10 Cluster Using Kubeadm on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-1-10-cluster-using-kubeadm-on-ubuntu-16-04). However, during "Step 4 — Setting Up the Master Node" you will need using [Calico](https://www.projectcalico.org/) as CNI provider instead of [Flannel](https://github.com/coreos/flannel).
 * Familiarity with Ansible playbooks. For review, check out  [Configuration Management 101: Writing Ansible Playbooks] (https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks).
 * Knowledge of how to launch a container from a Docker image. Look at "Step 5 — Running a Docker Container" in  [How To Install and Use Docker on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04#step-5-%E2%80%94-running-a-docker-container)  if you need a refresher.
-
-
-* A local client PC with Internet connection running Ubuntu 16.04 or Ubuntu 18.04.
-* Docker-ce installed in both ends (client and server). You will find detailed instructions for Docker installation in our guide [How To Install and Use Docker on Ubuntu 16.04.](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
-
-https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes
 
 ## Step One - Cloud Provider
 
@@ -2216,9 +2210,10 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMyMTM5NDc3LDc5MDU2NTIzMywtMTY1OT
-A2NTU4MywxODAwMTE0ODM4LDgxMjEwNTA1NywxMTk5MzgzNTUx
-LC0xMzkzMDQxNjYzLC0xMzg2NTk2OTgsMTg3NzIwOTAzMiwxMT
-U1NzMxNDAwLDE3OTAyNjk5MzEsLTE1OTc2MTE0OCwtMjA2Njk4
-NTMyOSwtNjgxOTk2ODg1LC04NDYyMDYxMjRdfQ==
+eyJoaXN0b3J5IjpbOTA3OTY5OTYzLDMzMjEzOTQ3Nyw3OTA1Nj
+UyMzMsLTE2NTkwNjU1ODMsMTgwMDExNDgzOCw4MTIxMDUwNTcs
+MTE5OTM4MzU1MSwtMTM5MzA0MTY2MywtMTM4NjU5Njk4LDE4Nz
+cyMDkwMzIsMTE1NTczMTQwMCwxNzkwMjY5OTMxLC0xNTk3NjEx
+NDgsLTIwNjY5ODUzMjksLTY4MTk5Njg4NSwtODQ2MjA2MTI0XX
+0=
 -->
