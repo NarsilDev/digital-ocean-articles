@@ -157,7 +157,7 @@ kube-public   Active    1d
 kube-system   Active    1d
 ```
 
-Now you have two namespaces to play with, the **default** namespace created during cluster deployment and the recently added **dmz**. The other two namespaces **kube-public** and **kube-system** are reserved and should remain untouched. In order to avoid confusions during this guide, change the default context name (kubernetes-admin@kubernetes) to something more intuitive, like *kubeadmin-default*. To do so run the following the command:
+You have now two namespaces to play with, the **default** namespace created during cluster deployment and the recently added **dmz**. The other two namespaces **kube-public** and **kube-system** are reserved and should remain untouched. In order to avoid confusions during this guide, change the default context name (kubernetes-admin@kubernetes) to something more intuitive, like *kubeadmin-default*. To do so run the following the command:
 
 ```command
 [environment second]
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1NzA1MjkzLC0zMTc2NjQ2MSwxMTM5OT
-M4OTYyLC0xNTg0MDg0MzMxLC05NTE4NzMxOSwxNzgxMzI1NDIw
-LC02MDQyMDgwOTIsNDAzMDAyNDYxLDkwNzk2OTk2MywzMzIxMz
-k0NzcsNzkwNTY1MjMzLC0xNjU5MDY1NTgzLDE4MDAxMTQ4Mzgs
-ODEyMTA1MDU3LDExOTkzODM1NTEsLTEzOTMwNDE2NjMsLTEzOD
-Y1OTY5OCwxODc3MjA5MDMyLDExNTU3MzE0MDAsMTc5MDI2OTkz
-MV19
+eyJoaXN0b3J5IjpbMjAzMTkyMjg0OSwtMzE3NjY0NjEsMTEzOT
+kzODk2MiwtMTU4NDA4NDMzMSwtOTUxODczMTksMTc4MTMyNTQy
+MCwtNjA0MjA4MDkyLDQwMzAwMjQ2MSw5MDc5Njk5NjMsMzMyMT
+M5NDc3LDc5MDU2NTIzMywtMTY1OTA2NTU4MywxODAwMTE0ODM4
+LDgxMjEwNTA1NywxMTk5MzgzNTUxLC0xMzkzMDQxNjYzLC0xMz
+g2NTk2OTgsMTg3NzIwOTAzMiwxMTU1NzMxNDAwLDE3OTAyNjk5
+MzFdfQ==
 -->
