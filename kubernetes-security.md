@@ -2175,7 +2175,7 @@ Create the pod as usual using the commandl:
 
 ```command
 [environment local]
-kubectl create -f standard-app-pod-sa.yaml
+kubectl create -f ~/kube-security/standard-app-pod-sa.yaml
 ```
 
 And now inspect the pod to confirm that is using the new service account:
@@ -2206,7 +2206,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NTczMTQwMCwxNzkwMjY5OTMxLC0xNT
-k3NjExNDgsLTIwNjY5ODUzMjksLTY4MTk5Njg4NSwtODQ2MjA2
-MTI0XX0=
+eyJoaXN0b3J5IjpbMTg3NzIwOTAzMiwxMTU1NzMxNDAwLDE3OT
+AyNjk5MzEsLTE1OTc2MTE0OCwtMjA2Njk4NTMyOSwtNjgxOTk2
+ODg1LC04NDYyMDYxMjRdfQ==
 -->
