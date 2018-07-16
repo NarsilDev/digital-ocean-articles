@@ -1997,7 +1997,7 @@ kubectl exec standard-app-pod -- ./app.sh
 [secondary_label Output]
 ############  MY AWESOME APP  ############
 #                                        #
-#  Pod  hostname :  standard-app-pod
+#  Pod hostname :  standard-app-pod
 #  Node hostname:  <^>worker<^>
 #----------------------------------------#
     ```
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNzkyNjU0LC01NTk0MzY3ODQsLTU0ND
-Y0OTgzMiw5OTM5NzAzNTYsLTI2MjI2NjI3LDEzMDA1MzQxOTUs
-LTE5MDk1NzMwNjcsLTIzMjI1OTY1MiwtMTczNDUyMzU1NCw3OT
-AxMjI3OTcsMjExOTcxODYwMywtMTI0MTUwOTAzMSwyNjM2MTA4
-NTIsLTE3MjM5MzI3NDMsNTk1MzkxODY2LDg3Mjc2MTM0LC0xMT
-Y5ODY3ODkxLC03Njg0MTU1MDEsMTgxMDU0Mjk3MywxNzU0Njg5
-NTQxXX0=
+eyJoaXN0b3J5IjpbNzg0MzkwOTg0LDE3Mzc5MjY1NCwtNTU5ND
+M2Nzg0LC01NDQ2NDk4MzIsOTkzOTcwMzU2LC0yNjIyNjYyNywx
+MzAwNTM0MTk1LC0xOTA5NTczMDY3LC0yMzIyNTk2NTIsLTE3Mz
+Q1MjM1NTQsNzkwMTIyNzk3LDIxMTk3MTg2MDMsLTEyNDE1MDkw
+MzEsMjYzNjEwODUyLC0xNzIzOTMyNzQzLDU5NTM5MTg2Niw4Nz
+I3NjEzNCwtMTE2OTg2Nzg5MSwtNzY4NDE1NTAxLDE4MTA1NDI5
+NzNdfQ==
 -->
