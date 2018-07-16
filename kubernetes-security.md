@@ -1891,7 +1891,6 @@ nano app.sh
     ```
 [label ~/kube-security/myapp/app.sh]
 #!/bin/sh
-
 echo "############  MY AWESOME APP  ############"
 echo "#                                        #"
 echo "#  Pod hostname : " `hostname`
@@ -2201,6 +2200,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTIxMDMwMDMsLTY4MTk5Njg4NSwtOD
-Q2MjA2MTI0XX0=
+eyJoaXN0b3J5IjpbLTE5MjIxMDI0OSwtNjgxOTk2ODg1LC04ND
+YyMDYxMjRdfQ==
 -->
