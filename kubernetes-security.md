@@ -390,7 +390,7 @@ These files are ready for distribution because they only contain the SSL/TLS cre
 **Note:** using `kubeadm alpha phase kubeconfig user` is an alpha feature, and will only generate the kubeconfig template, you must create the file and save it into user's `~/.kube/` before adding more namespaces to user's profile through `kubectl`.
 <$>
 
-For simplicity, instead of using three independent client machines this guide will keep using only the **manager** client but with all contexts properly configured in the same kubeconfig. Since the users' credentials are already included you only need adding **default** and **dmz** namespace information using the following commands:
+For simplicity, instead of using three different client machines this guide will only use the **manager** client but with all contexts properly configured in the same kubeconfig. Since the users' credentials are already included you only need to add the **default** and **dmz** namespaces information using the following commands:
 
 ```command
 [environment local]
@@ -2210,6 +2210,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMDU0Mjk3MywxNzU0Njg5NTQxLDE1Mj
-Q2OTA4NDUsMjAzOTYwMjYxMl19
+eyJoaXN0b3J5IjpbLTIwMjUzOTA1NywxODEwNTQyOTczLDE3NT
+Q2ODk1NDEsMTUyNDY5MDg0NSwyMDM5NjAyNjEyXX0=
 -->
