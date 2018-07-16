@@ -140,7 +140,7 @@ Let's start creating a new namespace:
 kubectl create namespace dmz
 ```
 
-List your namespaces running the following command:
+Now list your namespaces running the following command:
 
 ```command
 [environment second]
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNzY2NDYxLDExMzk5Mzg5NjIsLTE1OD
-QwODQzMzEsLTk1MTg3MzE5LDE3ODEzMjU0MjAsLTYwNDIwODA5
-Miw0MDMwMDI0NjEsOTA3OTY5OTYzLDMzMjEzOTQ3Nyw3OTA1Nj
-UyMzMsLTE2NTkwNjU1ODMsMTgwMDExNDgzOCw4MTIxMDUwNTcs
-MTE5OTM4MzU1MSwtMTM5MzA0MTY2MywtMTM4NjU5Njk4LDE4Nz
-cyMDkwMzIsMTE1NTczMTQwMCwxNzkwMjY5OTMxLC0xNTk3NjEx
-NDhdfQ==
+eyJoaXN0b3J5IjpbOTg1NzA1MjkzLC0zMTc2NjQ2MSwxMTM5OT
+M4OTYyLC0xNTg0MDg0MzMxLC05NTE4NzMxOSwxNzgxMzI1NDIw
+LC02MDQyMDgwOTIsNDAzMDAyNDYxLDkwNzk2OTk2MywzMzIxMz
+k0NzcsNzkwNTY1MjMzLC0xNjU5MDY1NTgzLDE4MDAxMTQ4Mzgs
+ODEyMTA1MDU3LDExOTkzODM1NTEsLTEzOTMwNDE2NjMsLTEzOD
+Y1OTY5OCwxODc3MjA5MDMyLDExNTU3MzE0MDAsMTc5MDI2OTkz
+MV19
 -->
