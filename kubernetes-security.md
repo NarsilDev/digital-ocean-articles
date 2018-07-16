@@ -259,7 +259,7 @@ nano ~/.kube/config
 kubectl cluster-info
 ```
 
-You will get as a response the cluster-specific information. similar to the shown below:
+You will get the cluster-specific information. similar to the shown below:
 
 ```
 [secondary_label Output]
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNjk0MTU5NCw1NDUwODc3MzIsMjAzMT
-kyMjg0OSwtMzE3NjY0NjEsMTEzOTkzODk2MiwtMTU4NDA4NDMz
-MSwtOTUxODczMTksMTc4MTMyNTQyMCwtNjA0MjA4MDkyLDQwMz
-AwMjQ2MSw5MDc5Njk5NjMsMzMyMTM5NDc3LDc5MDU2NTIzMywt
-MTY1OTA2NTU4MywxODAwMTE0ODM4LDgxMjEwNTA1NywxMTk5Mz
-gzNTUxLC0xMzkzMDQxNjYzLC0xMzg2NTk2OTgsMTg3NzIwOTAz
-Ml19
+eyJoaXN0b3J5IjpbNjE2Mjk5NDAwLDU0NTA4NzczMiwyMDMxOT
+IyODQ5LC0zMTc2NjQ2MSwxMTM5OTM4OTYyLC0xNTg0MDg0MzMx
+LC05NTE4NzMxOSwxNzgxMzI1NDIwLC02MDQyMDgwOTIsNDAzMD
+AyNDYxLDkwNzk2OTk2MywzMzIxMzk0NzcsNzkwNTY1MjMzLC0x
+NjU5MDY1NTgzLDE4MDAxMTQ4MzgsODEyMTA1MDU3LDExOTkzOD
+M1NTEsLTEzOTMwNDE2NjMsLTEzODY1OTY5OCwxODc3MjA5MDMy
+XX0=
 -->
