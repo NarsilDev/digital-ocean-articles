@@ -2048,7 +2048,7 @@ The new output should look similar to the following:
 You just **modified** the node's hostname through the container, in theory, applications inside containers are isolated from the host but this time that was not the case. Let's analyze how that was possible:
 
 - Standard Docker images (like **alpine**) use **root** as the default user. That is great for development environments because you have access to the entire file system, but for production using **root** should be avoided at all cost.
-- The example pod intentionally used a `hostPath` volume. That is a risky practice because you are granting the container direct access to host's file system. If you need using `hostPath` then the best idea is protecting the file system with **read only** parameter in the PSP and **non-root** user.
+- The example pod intentionally used a `hostPath` volume. That is a risky practice because you are granting the container direct access to host's file system. If you need using `hostPath` then the best idea is protecting the file system with a **read only** parameter in the PSP and a **non-root** user.
 
 The combination of the above conditions allowed a simple hack. Using the concepts learned in the prior sections you can mitigate the inherent risk of this scenario. If you try creating the same pod in the **default** namespace it will fail for several reasons:
 
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzNTc4MzU2LDc4NDM5MDk4NCwxNzM3OT
-I2NTQsLTU1OTQzNjc4NCwtNTQ0NjQ5ODMyLDk5Mzk3MDM1Niwt
-MjYyMjY2MjcsMTMwMDUzNDE5NSwtMTkwOTU3MzA2NywtMjMyMj
-U5NjUyLC0xNzM0NTIzNTU0LDc5MDEyMjc5NywyMTE5NzE4NjAz
-LC0xMjQxNTA5MDMxLDI2MzYxMDg1MiwtMTcyMzkzMjc0Myw1OT
-UzOTE4NjYsODcyNzYxMzQsLTExNjk4Njc4OTEsLTc2ODQxNTUw
+eyJoaXN0b3J5IjpbLTgxODY3MTQwNCw2ODM1NzgzNTYsNzg0Mz
+kwOTg0LDE3Mzc5MjY1NCwtNTU5NDM2Nzg0LC01NDQ2NDk4MzIs
+OTkzOTcwMzU2LC0yNjIyNjYyNywxMzAwNTM0MTk1LC0xOTA5NT
+czMDY3LC0yMzIyNTk2NTIsLTE3MzQ1MjM1NTQsNzkwMTIyNzk3
+LDIxMTk3MTg2MDMsLTEyNDE1MDkwMzEsMjYzNjEwODUyLC0xNz
+IzOTMyNzQzLDU5NTM5MTg2Niw4NzI3NjEzNCwtMTE2OTg2Nzg5
 MV19
 -->
