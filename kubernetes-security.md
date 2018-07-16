@@ -19,6 +19,16 @@ By the end of the article, you will hopefully have enough information to visuali
 
 In order to complete this tutorial you will need:
 
+* An SSH key pair on your local Linux/Mac OS/BSD machine. If you haven't used SSH keys before, you can learn how to set them up by following  [this explanation of how to set up SSH keys on your local machine](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys#generating-and-working-with-ssh-keys).
+    
+* Three servers running Ubuntu 16.04 with at least 1GB RAM. You should be able to SSH into each server as the root user with your SSH key pair.
+    
+* Ansible installed on your local machine. If you're running Ubuntu 16.04 as your OS, follow the "Step 1 - Installing Ansible" section in  [How to Install and Configure Ansible on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-16-04)  to install Ansible. For installation instructions on other platforms like Mac OS X or CentOS, follow the  [official Ansible installation documentation](http://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-the-control-machine).
+    
+* Familiarity with Ansible playbooks. For review, check out  [Configuration Management 101: Writing Ansible Playbooks](https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks).
+    
+* Knowledge of how to launch a container from a Docker image. Look at "Step 5 — Running a Docker Container" in  [How To Install and Use Docker on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04#step-5-%E2%80%94-running-a-docker-container)  if you need a refresher.
+
 * Two Droplets with a minimum of 2 GB of RAM running Ubuntu 16.04 configured using [this initial server setup tutorial,](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04) including a sudo non-root user and a firewall.
 * A local client PC with Internet connection running Ubuntu 16.04 or Ubuntu 18.04.
 * Docker-ce installed in both ends (client and server). You will find detailed instructions for Docker installation in our guide [How To Install and Use Docker on Ubuntu 16.04.](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
@@ -2206,8 +2216,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTM4MzU1MSwtMTM5MzA0MTY2MywtMT
-M4NjU5Njk4LDE4NzcyMDkwMzIsMTE1NTczMTQwMCwxNzkwMjY5
-OTMxLC0xNTk3NjExNDgsLTIwNjY5ODUzMjksLTY4MTk5Njg4NS
-wtODQ2MjA2MTI0XX0=
+eyJoaXN0b3J5IjpbLTYyMDc3NzQ0LDExOTkzODM1NTEsLTEzOT
+MwNDE2NjMsLTEzODY1OTY5OCwxODc3MjA5MDMyLDExNTU3MzE0
+MDAsMTc5MDI2OTkzMSwtMTU5NzYxMTQ4LC0yMDY2OTg1MzI5LC
+02ODE5OTY4ODUsLTg0NjIwNjEyNF19
 -->
