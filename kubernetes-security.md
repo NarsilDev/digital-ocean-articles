@@ -406,7 +406,7 @@ kubectl config set-context sammy-dmz --namespace=dmz --cluster=kubernetes --user
 kubectl config set-context sammy-default --namespace=default --cluster=kubernetes --user=sammy
 ```
 
-Once you are done, test **adm** remote connection in **default** namespace trying to list the pods running the following commands:
+Once you are done, test **adm** remote connection in the **default** namespace listing the pods using the following commands:
 
 ```command
 [environment local]
@@ -2210,6 +2210,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjUzOTA1NywxODEwNTQyOTczLDE3NT
+eyJoaXN0b3J5IjpbLTc2ODQxNTUwMSwxODEwNTQyOTczLDE3NT
 Q2ODk1NDEsMTUyNDY5MDg0NSwyMDM5NjAyNjEyXX0=
 -->
