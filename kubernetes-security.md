@@ -2030,21 +2030,14 @@ The new output should look similar to the following:
 
 ```
 [secondary_label Output]
-[secondary_label Output]
 ############  MY AWESOME APP  ############
 #                                        #
-#  Pod  hostname :  standard-app-pod
-#  Node hostname:  <^>worker<^>
-#----------------------------------------#
-
-############  MY AWESOME APP  ############
-#                                        #
-#  Container ID :  standard-app-pod
+#  Pod hostname :  standard-app-pod
 #  Node hostname:  <^>hacked-worker<^>
 #----------------------------------------#
 ```
 
-You just **modified** the node's hostname through the container, in theory, applications inside containers are isolated from the host but that was not the case. Let's analyze how that was possible:
+You just **modified** the node's hostname through the container, in theory, applications inside containers are isolated from the host but this time that was not the case. Let's analyze how that was possible:
 
 - Standard Docker images (like **alpine**) use **root** as the default user. That is great for development environments because you have access to the entire file system, but for production using **root** should be avoided at all cost.
 - The example pod intentionally used a `hostPath` volume. That is a risky practice because you are granting the container direct access to host's file system.
@@ -2212,6 +2205,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzA3MzYyNjcsLTIwNjY5ODUzMjksLT
+eyJoaXN0b3J5IjpbLTExNjE2MDk4NzYsLTIwNjY5ODUzMjksLT
 Y4MTk5Njg4NSwtODQ2MjA2MTI0XX0=
 -->
