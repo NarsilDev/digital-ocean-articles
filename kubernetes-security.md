@@ -1449,9 +1449,9 @@ spec:
         <^>memory: 256Mi<^>
 ```
 
-This would be the same result as if you manually declared the **resources** and **requests** into the container specifications. 
+This would be the same result as if you manually declared the **resources** and **requests** into the container specification. 
 
-As you can see, using together  `ResourceQuota` and `LimitRanger` admission controllers you can achieve great control over the cluster resources usage. In this guide, only one resource quota was created but can create as many as you need. Kubernetes flexibility allows you to use these controllers and create a kind of Quality of Service (QoS) template assigning resources depending on the priority of your applications. 
+As you can see, using together  `ResourceQuota` and `LimitRanger` admission controllers you can achieve great control over the cluster resources usage. In this guide, only one resource quota was created but you can create as many as you need. Kubernetes flexibility allows you to use these controllers and create a kind of Quality of Service (QoS) template assigning resources depending on the priority of your applications. 
 
 ### Pod Security Contexts and Pod Security Policies
 
@@ -2214,10 +2214,10 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDk1NzMwNjcsLTIzMjI1OTY1MiwtMT
-czNDUyMzU1NCw3OTAxMjI3OTcsMjExOTcxODYwMywtMTI0MTUw
-OTAzMSwyNjM2MTA4NTIsLTE3MjM5MzI3NDMsNTk1MzkxODY2LD
-g3Mjc2MTM0LC0xMTY5ODY3ODkxLC03Njg0MTU1MDEsMTgxMDU0
-Mjk3MywxNzU0Njg5NTQxLDE1MjQ2OTA4NDUsMjAzOTYwMjYxMl
-19
+eyJoaXN0b3J5IjpbMTMwMDUzNDE5NSwtMTkwOTU3MzA2NywtMj
+MyMjU5NjUyLC0xNzM0NTIzNTU0LDc5MDEyMjc5NywyMTE5NzE4
+NjAzLC0xMjQxNTA5MDMxLDI2MzYxMDg1MiwtMTcyMzkzMjc0My
+w1OTUzOTE4NjYsODcyNzYxMzQsLTExNjk4Njc4OTEsLTc2ODQx
+NTUwMSwxODEwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5MDg0NS
+wyMDM5NjAyNjEyXX0=
 -->
