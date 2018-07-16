@@ -2025,7 +2025,7 @@ cd /tmp
 vi hostname
     ```
 
-17. Exit the container by either pressing **Ctrl+D** or typing **exit** and pressing **ENTER**.
+17. Save the changes and exit the container by either pressing **Ctrl+D** or typing **exit** and pressing **ENTER**.
 
 18. Run again the application and watch the new output:
 
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg0MzkwOTg0LDE3Mzc5MjY1NCwtNTU5ND
-M2Nzg0LC01NDQ2NDk4MzIsOTkzOTcwMzU2LC0yNjIyNjYyNywx
-MzAwNTM0MTk1LC0xOTA5NTczMDY3LC0yMzIyNTk2NTIsLTE3Mz
-Q1MjM1NTQsNzkwMTIyNzk3LDIxMTk3MTg2MDMsLTEyNDE1MDkw
-MzEsMjYzNjEwODUyLC0xNzIzOTMyNzQzLDU5NTM5MTg2Niw4Nz
-I3NjEzNCwtMTE2OTg2Nzg5MSwtNzY4NDE1NTAxLDE4MTA1NDI5
-NzNdfQ==
+eyJoaXN0b3J5IjpbNjgzNTc4MzU2LDc4NDM5MDk4NCwxNzM3OT
+I2NTQsLTU1OTQzNjc4NCwtNTQ0NjQ5ODMyLDk5Mzk3MDM1Niwt
+MjYyMjY2MjcsMTMwMDUzNDE5NSwtMTkwOTU3MzA2NywtMjMyMj
+U5NjUyLC0xNzM0NTIzNTU0LDc5MDEyMjc5NywyMTE5NzE4NjAz
+LC0xMjQxNTA5MDMxLDI2MzYxMDg1MiwtMTcyMzkzMjc0Myw1OT
+UzOTE4NjYsODcyNzYxMzQsLTExNjk4Njc4OTEsLTc2ODQxNTUw
+MV19
 -->
