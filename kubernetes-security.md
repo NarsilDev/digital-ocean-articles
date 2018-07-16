@@ -512,7 +512,7 @@ From the image above you can infer that depending on the attributes read by the 
 * **Reviewing Request Attributes:** once the API call passes the authentication check the server gathers its attributes: user, group, request path, request verbs, namespace, resources, API group. Those attributes are necessary in order to answer *who* is the entity making the request, *what* it wants to do, *where* it wants to execute it and *what* are the resources affected.
 * **Evaluating Attributes Against All Declared Policies:** in Kubernetes terms, authorization policies are called roles. The RBAC module is responsible for finding the user/service *bindings* and deciding if the request complies with the assigned *roles* for the particular combination of actions, resources and namespace specified.
 
-That leads to two key concepts: *roles* and *bindings*. RBAC default is denying all requests to the API server meaning you need to assign permissions depending on your needs. Each role describes what verbs (create, get, delete, list, etc) are allowed for determined resources (pods, nodes, secrets, namespaces). Consider roles as a convenient group of permissions. Once you create the roles, you need to bind them to users or service accounts that need authorization for using resources on a particular namespace or for the whole cluster.
+That leads to two key concepts: *roles* and *bindings*. RBAC default is denying all requests to the API server meaning you need to assign permissions depending on your needs. Each role describes what verbs (create, get, delete, list, etc) are allowed for determined resources (pods, nodes, secrets, namespaces). You can also consider roles as a convenient group of permissions. Once you create the roles, you need to bind them to users or service accounts that need authorization for using resources on a particular namespace or for the whole cluster.
 
 Formally speaking, Kubernetes RBAC recognizes four top-level types of objects for managing permissions:
 
@@ -2210,7 +2210,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjM5MzI3NDMsNTk1MzkxODY2LDg3Mj
-c2MTM0LC0xMTY5ODY3ODkxLC03Njg0MTU1MDEsMTgxMDU0Mjk3
-MywxNzU0Njg5NTQxLDE1MjQ2OTA4NDUsMjAzOTYwMjYxMl19
+eyJoaXN0b3J5IjpbMTA1ODY3OTI1LC0xNzIzOTMyNzQzLDU5NT
+M5MTg2Niw4NzI3NjEzNCwtMTE2OTg2Nzg5MSwtNzY4NDE1NTAx
+LDE4MTA1NDI5NzMsMTc1NDY4OTU0MSwxNTI0NjkwODQ1LDIwMz
+k2MDI2MTJdfQ==
 -->
