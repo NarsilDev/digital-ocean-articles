@@ -1351,7 +1351,7 @@ Container   cpu       -    -    <^>300m             500m<^>           -
 Container   memory    -    -    <^>256Mi            512Mi<^>          -
 ```
 
-Before continuing, change the **default** namespace pod limit (currently one). Do it modifying the `ResourceQuota` object directly on the API server, for ease editing the object, environmental variable `KUBE_EDITOR` is set to `nano` before passing the command:
+Before continuing, change the **default** namespace pod limit (currently one). Do it modifying the `ResourceQuota` object directly on the API server. For easing the editing, environmental variable `KUBE_EDITOR` is set before passing the command:
 
 ```command
 [environment local]
@@ -2214,9 +2214,10 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMjI1OTY1MiwtMTczNDUyMzU1NCw3OT
-AxMjI3OTcsMjExOTcxODYwMywtMTI0MTUwOTAzMSwyNjM2MTA4
-NTIsLTE3MjM5MzI3NDMsNTk1MzkxODY2LDg3Mjc2MTM0LC0xMT
-Y5ODY3ODkxLC03Njg0MTU1MDEsMTgxMDU0Mjk3MywxNzU0Njg5
-NTQxLDE1MjQ2OTA4NDUsMjAzOTYwMjYxMl19
+eyJoaXN0b3J5IjpbLTE5MDk1NzMwNjcsLTIzMjI1OTY1MiwtMT
+czNDUyMzU1NCw3OTAxMjI3OTcsMjExOTcxODYwMywtMTI0MTUw
+OTAzMSwyNjM2MTA4NTIsLTE3MjM5MzI3NDMsNTk1MzkxODY2LD
+g3Mjc2MTM0LC0xMTY5ODY3ODkxLC03Njg0MTU1MDEsMTgxMDU0
+Mjk3MywxNzU0Njg5NTQxLDE1MjQ2OTA4NDUsMjAzOTYwMjYxMl
+19
 -->
