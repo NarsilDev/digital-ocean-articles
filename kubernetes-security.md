@@ -443,7 +443,7 @@ As said in the previous section, the default installation uses certificates for 
 * **--basic-auth-file=**<^>/path/to/PASSWORD_FILE<^>: this flag enables the option for using static username/passwords for authentication. It works in the same way as the bearer token option, you need to provide a csv file with three or four columns that include: password, username, user id and optionally groups.
 * **--oidc-issuer-url / --oidc-username-claim / --oidc-client-id:** an additional authentication method is through OAuth2 providers (Azure Active Directory, Salesforce, Google). Is out of the scope of this guide explaining the complete configuration process, but basically, the authentication providers are responsible of supplying a special kind of token called JSON Web Token (JWT) which includes the relevant user information. That token is then used as the bearer token for authenticating in Kubernetes API.  
 
-You can use different authentication methods simultaneously, but keep in mind what was mentioned in the previous sections, some changes to `kube-apiserver.yaml` may need a complete service restart.
+You can use different authentication methods simultaneously, but keep in mind what was mentioned in the previous sections, changes to `kube-apiserver.yaml` may need a complete service restart in some cases.
 
 Summing-up, when analyzing all the information one can conclude that using an authentication proxy (for example, an OAuth2 service) is possibly the best solution to manage a large user base at the cost of additional complexity during the cluster set up. On the other hand, manual management of user tokens or password files may seem highly inefficient. But even those methods could find a good use case, for example, for demonstration purposes you can supply a preconfigured username and password to your clients in order to access a restricted demo in a cluster or namespace specially configured for that goal. Finally, you have an intermediate solution when using SSL certificates because properly managing their expiration dates you can establish a flexible security policy that suits many use cases.
 
@@ -2210,7 +2210,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcyNzYxMzQsLTExNjk4Njc4OTEsLTc2OD
-QxNTUwMSwxODEwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5MDg0
-NSwyMDM5NjAyNjEyXX0=
+eyJoaXN0b3J5IjpbNTk1MzkxODY2LDg3Mjc2MTM0LC0xMTY5OD
+Y3ODkxLC03Njg0MTU1MDEsMTgxMDU0Mjk3MywxNzU0Njg5NTQx
+LDE1MjQ2OTA4NDUsMjAzOTYwMjYxMl19
 -->
