@@ -77,7 +77,7 @@ This section will concentrate on the authentication phase, the main entrance of 
 
 An important security aspect when evaluating which method suit your needs is the concept of **user** from a cluster perspective. Kubernetes does not have objects which represent normal user accounts, it only manages service accounts. This directly impacts your user management, because there is no built-in procedure for banning normal (human) users. An additional security aspect to consider is that basic auth credentials, as well as tokens, last indefinitely this could be a huge drawback from a security point of view. 
 
-The above force you defining an authentication strategy beforehand. For the purpose of this guide, SSL/TLS certificates will be used as the authentication method. Once you have a better understanding of authentication principles a final wrap up of the benefits and drawbacks of all of them will be made.
+The above force you defining an authentication strategy beforehand. For the purpose of this guide, SSL/TLS certificates will be used as the authentication method. Once you have a better understanding of authentication principles a final wrap up of the benefits and drawbacks of all of them will be discussed.
 
 ### Authenticating using Contexts
 
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzOTkzODk2MiwtMTU4NDA4NDMzMSwtOT
-UxODczMTksMTc4MTMyNTQyMCwtNjA0MjA4MDkyLDQwMzAwMjQ2
-MSw5MDc5Njk5NjMsMzMyMTM5NDc3LDc5MDU2NTIzMywtMTY1OT
-A2NTU4MywxODAwMTE0ODM4LDgxMjEwNTA1NywxMTk5MzgzNTUx
-LC0xMzkzMDQxNjYzLC0xMzg2NTk2OTgsMTg3NzIwOTAzMiwxMT
-U1NzMxNDAwLDE3OTAyNjk5MzEsLTE1OTc2MTE0OCwtMjA2Njk4
-NTMyOV19
+eyJoaXN0b3J5IjpbLTExOTgyMzI5MjgsMTEzOTkzODk2MiwtMT
+U4NDA4NDMzMSwtOTUxODczMTksMTc4MTMyNTQyMCwtNjA0MjA4
+MDkyLDQwMzAwMjQ2MSw5MDc5Njk5NjMsMzMyMTM5NDc3LDc5MD
+U2NTIzMywtMTY1OTA2NTU4MywxODAwMTE0ODM4LDgxMjEwNTA1
+NywxMTk5MzgzNTUxLC0xMzkzMDQxNjYzLC0xMzg2NTk2OTgsMT
+g3NzIwOTAzMiwxMTU1NzMxNDAwLDE3OTAyNjk5MzEsLTE1OTc2
+MTE0OF19
 -->
