@@ -582,7 +582,7 @@ So far, the basics about Kubernetes authorization has been explained. Next secti
 
 ### Customizing Authorization Roles
 
-In the last section, you granted pre-configured view permissions to the test user **adm**. But, what happens if you need a role or cluster role more flexible?
+In the last section, you granted pre-configured view permissions to the test user **adm**. But, what happens if you need a custom role or cluster role?
 
 Just as any other Kubernetes object, you can use a YAML file to describe it, in this case a role. Let's imagine you want a role that allows a determined user to view pods (only pods). The procedure is quite simple:
 
@@ -2210,8 +2210,8 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYzNjEwODUyLC0xNzIzOTMyNzQzLDU5NT
-M5MTg2Niw4NzI3NjEzNCwtMTE2OTg2Nzg5MSwtNzY4NDE1NTAx
-LDE4MTA1NDI5NzMsMTc1NDY4OTU0MSwxNTI0NjkwODQ1LDIwMz
-k2MDI2MTJdfQ==
+eyJoaXN0b3J5IjpbOTA1MTE3NzQ5LDI2MzYxMDg1MiwtMTcyMz
+kzMjc0Myw1OTUzOTE4NjYsODcyNzYxMzQsLTExNjk4Njc4OTEs
+LTc2ODQxNTUwMSwxODEwNTQyOTczLDE3NTQ2ODk1NDEsMTUyND
+Y5MDg0NSwyMDM5NjAyNjEyXX0=
 -->
