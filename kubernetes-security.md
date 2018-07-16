@@ -1692,7 +1692,7 @@ At the end of the description you will find the information regarding the reason
 Error: container has <^>runAsNonRoot<^> and image will run as <^>root<^>
 ```
 
-The error is expected because you are enforcing non-root users in the policy. But why the pod was accepted in the first place? Admission controllers are supposed to act before the object persistence what happened then?
+The error is expected because you are enforcing non-root users in the policy. But why the pod was accepted in the first place? Admission controllers are supposed to act before the object persistence what happened then? 
 
 The best way to understand this behavior is creating another pod but this time with the **adm** user:
 
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY0ODI1MDE1LDk5Mzk3MDM1NiwtMjYyMj
-Y2MjcsMTMwMDUzNDE5NSwtMTkwOTU3MzA2NywtMjMyMjU5NjUy
-LC0xNzM0NTIzNTU0LDc5MDEyMjc5NywyMTE5NzE4NjAzLC0xMj
-QxNTA5MDMxLDI2MzYxMDg1MiwtMTcyMzkzMjc0Myw1OTUzOTE4
-NjYsODcyNzYxMzQsLTExNjk4Njc4OTEsLTc2ODQxNTUwMSwxOD
-EwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5MDg0NSwyMDM5NjAy
-NjEyXX0=
+eyJoaXN0b3J5IjpbMTQ1OTc2ODA0OSw5OTM5NzAzNTYsLTI2Mj
+I2NjI3LDEzMDA1MzQxOTUsLTE5MDk1NzMwNjcsLTIzMjI1OTY1
+MiwtMTczNDUyMzU1NCw3OTAxMjI3OTcsMjExOTcxODYwMywtMT
+I0MTUwOTAzMSwyNjM2MTA4NTIsLTE3MjM5MzI3NDMsNTk1Mzkx
+ODY2LDg3Mjc2MTM0LC0xMTY5ODY3ODkxLC03Njg0MTU1MDEsMT
+gxMDU0Mjk3MywxNzU0Njg5NTQxLDE1MjQ2OTA4NDUsMjAzOTYw
+MjYxMl19
 -->
