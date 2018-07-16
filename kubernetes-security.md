@@ -1045,7 +1045,7 @@ It has been explained several times that each Kubernetes request goes through a 
 
 ![Admission Control](https://i.imgur.com/P6PlgiE.png)
 
-Admission controllers intercept requests after they pass the authentication and authorization and then executes its code just before the object persistence. While the outcome of either authentication or authorization check is a boolean (allow or deny the request) admission controllers are more diverse, they can validate requests in the same manner but also some admission controllers can **mutate** the requests and modify the objects they admit. 
+Admission controllers intercept requests after they pass the authentication and authorization and then *executes its code just before the object persistence.* While the outcome of either authentication or authorization check is a boolean (allow or deny the request) admission controllers are more diverse, they can validate requests in the same manner but also some admission controllers can **mutate** the requests and modify the objects they admit. 
 
 Is beyond the scope of this guide explaining admission controllers theory but from a cluster security perspective, it's important to understand that:
 
@@ -2214,8 +2214,9 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExOTcxODYwMywtMTI0MTUwOTAzMSwyNj
-M2MTA4NTIsLTE3MjM5MzI3NDMsNTk1MzkxODY2LDg3Mjc2MTM0
-LC0xMTY5ODY3ODkxLC03Njg0MTU1MDEsMTgxMDU0Mjk3MywxNz
-U0Njg5NTQxLDE1MjQ2OTA4NDUsMjAzOTYwMjYxMl19
+eyJoaXN0b3J5IjpbMjExNzYyMDA0NSwyMTE5NzE4NjAzLC0xMj
+QxNTA5MDMxLDI2MzYxMDg1MiwtMTcyMzkzMjc0Myw1OTUzOTE4
+NjYsODcyNzYxMzQsLTExNjk4Njc4OTEsLTc2ODQxNTUwMSwxOD
+EwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5MDg0NSwyMDM5NjAy
+NjEyXX0=
 -->
