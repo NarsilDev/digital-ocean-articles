@@ -1911,7 +1911,7 @@ nano Dockerfile
 [label ~/kube-security/myapp/Dockerfile]
 FROM alpine:latest
 RUN mkdir /home/app
-ADD ./app.sh /home/app
+ADD ./app.sh /home/app/
 RUN chmod +x /home/app/app.sh
 WORKDIR /home/app
     ```
@@ -2200,5 +2200,5 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NjIwNjEyNF19
+eyJoaXN0b3J5IjpbLTY4MTk5Njg4NSwtODQ2MjA2MTI0XX0=
 -->
