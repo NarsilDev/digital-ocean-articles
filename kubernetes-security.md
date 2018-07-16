@@ -35,11 +35,13 @@ As mentioned earlier in the introduction, securing your cluster starts with your
 
 This guide assumes you are using a universal custom solution for your Kubernetes deployment. From a security perspective, the factors you should consider for your cloud provider are:
 
-* **Ability to configure private networks:** this is one of the most important security aspects. A cluster is basically a group of hosts that constantly interchange data over the network. Most of this traffic should not reach the Internet, thus, one effective strategy is using a private network. This feature can be activated [during Droplet creation](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet#step-6-%E2%80%94-selecting-additional-options). Depending on your project scope you can even spread your cluster among several regions, in which case a good security practice is using [point-to-point VPNs](https://www.digitalocean.com/community/tutorials/how-to-create-a-point-to-point-vpn-with-wireguard-on-ubuntu-16-04) between data centers to connect Master nodes.
+* **Ability to configure Private Networks:** this is one of the most important security aspects. A cluster is basically a group of hosts that constantly interchange data over the network. Most of this traffic should not reach the Internet, thus, one effective strategy is using a private network. This feature can be activated [during Droplet creation](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet#step-6-%E2%80%94-selecting-additional-options). Depending on your project scope you can even spread your cluster among several regions, in which case a good security practice is using [point-to-point VPNs](https://www.digitalocean.com/community/tutorials/how-to-create-a-point-to-point-vpn-with-wireguard-on-ubuntu-16-04) between data centers to connect Master nodes.
 * **High-Level Monitoring and Alerting:** the importance of proactive monitoring will be mentioned several times during the course of this guide. Ideally, your preemptive system should detect anomalies and send alerts promptly, before malicious scripts can do any harm. With that in mind, an extra layer of [monitoring](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-monitoring) at the cloud level is a big plus.
 * **High-Level Firewall:** using a [cloud firewall](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-cloud-firewalls) supplements your host-based solution and also adds an independent layer of protection against several types of attacks. The cloud firewall is also very handy if you are not using a private network for cluster communications because many ports would be exposed to Internet otherwise. It's a best practice to open only the strictly necessary ports at this level (SSH and application ports).
 
-
+<$>[note]
+**Note:** even when private clusters
+<$>
 
 Summing up, this high-level layer groups important security improvements that are many times neglected even when they are the foundation of a secure Kubernetes cluster.
 
@@ -2212,7 +2214,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTY2OTQyNSw5MDc5Njk5NjMsMzMyMT
+eyJoaXN0b3J5IjpbMTUzOTA1MTU2NSw5MDc5Njk5NjMsMzMyMT
 M5NDc3LDc5MDU2NTIzMywtMTY1OTA2NTU4MywxODAwMTE0ODM4
 LDgxMjEwNTA1NywxMTk5MzgzNTUxLC0xMzkzMDQxNjYzLC0xMz
 g2NTk2OTgsMTg3NzIwOTAzMiwxMTU1NzMxNDAwLDE3OTAyNjk5
