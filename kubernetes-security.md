@@ -528,7 +528,7 @@ The best way to understand the concepts behind access control is returning to ou
 kubectl auth can-i get pods --namespace default --user=adm
 ```
 
-The simple answer on the terminal will be *no*. The command `kubectl auth can-i` evaluates the attributes and then verifies the associated roles for the user. Over again on  **adm**, let's say that you only want to give him permissions to fulfill the request above and list pods. Kubernetes RBAC authorizer has a default set of  cluster roles pre-configured, list them using the following command:
+The simple answer will be *no*. The command `kubectl auth can-i` evaluates the attributes and then verifies the associated roles for the user. Over again on  **adm**, let's say that you only want to give him permissions to fulfill the request above and list pods. Kubernetes RBAC module has a default set of  cluster roles pre-configured, list them using the following command:
 
 ```command
 [environment local]
@@ -2210,7 +2210,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODY3OTI1LC0xNzIzOTMyNzQzLDU5NT
+eyJoaXN0b3J5IjpbMjYzNjEwODUyLC0xNzIzOTMyNzQzLDU5NT
 M5MTg2Niw4NzI3NjEzNCwtMTE2OTg2Nzg5MSwtNzY4NDE1NTAx
 LDE4MTA1NDI5NzMsMTc1NDY4OTU0MSwxNTI0NjkwODQ1LDIwMz
 k2MDI2MTJdfQ==
