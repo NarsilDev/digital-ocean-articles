@@ -436,7 +436,7 @@ Now that you have a better knowledge of authentication principles its time to ev
 
 ### Remote Cluster Authentication using other methods
 
-As said in the previous section, the default installation uses certificates for authentication, you can change those setting editing `/etc/kubernetes/manifests/kube-apiserver.yaml` in the master node and adding or modifying the corresponding flag:
+As said in the previous section, the default installation uses certificates for authentication, you can change those setting editing the `/etc/kubernetes/manifests/kube-apiserver.yaml` file in the Master node and adding or modifying the corresponding flag:
 
 * **--client-ca-file=**<^>/path/to/CA<^>: this option points to the desired Certificate Authority that will be used to validate client certificates presented to the API. You can use the default CA created during installation but can also add a different one if you need to.
 * **--token-auth-file=**<^>/path/to/TOKEN_FILE<^>: this option tells the API where it can find the bearer tokens csv file. This file must have a minimum of three columns: token, user name and user UID followed by optional group names. Each user must have its own line within the file.
@@ -2210,7 +2210,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjk4Njc4OTEsLTc2ODQxNTUwMSwxOD
-EwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5MDg0NSwyMDM5NjAy
-NjEyXX0=
+eyJoaXN0b3J5IjpbODcyNzYxMzQsLTExNjk4Njc4OTEsLTc2OD
+QxNTUwMSwxODEwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5MDg0
+NSwyMDM5NjAyNjEyXX0=
 -->
