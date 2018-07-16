@@ -430,7 +430,7 @@ kubectl config use-context kubeadmin-default
 
 As you can see, authenticating using SSL/TLS certificates is truly straightforward. Its key advantage is that you don't need to modify the API server settings. The default installation uses certificates, you are just adding more users by means of signing their own certificates with the same CA. From a security point of view, that's a major benefit because you don't need direct access to the cluster in order to grant authentication for new users, you only need to keep your cluster credentials safe.
 
-However, there are also two major drawbacks. As mentioned several times now, Kubernetes does not have a built-in mechanism for managing normal users. If you have a large user base the process of generating and managing certificates could become a challenge. The other disadvantage is that all certificates will remain active unless you manually remove them and restart the API service. That's why is highly recommended to add an expiration date for each certificate. It adds the nuisance of generating new certificates but enforces security because you can set different expiration times depending on your own convenience. For example, you can create credentials for a superuser lasting only one day if you need to. Then you can clean-up certificates during next scheduled cluster maintenance.  
+However, there are also two major drawbacks. As mentioned several times now, Kubernetes does not have a built-in mechanism for managing normal users. If you have a large user base the process of generating and managing certificates could become a challenge. The other disadvantage is that all certificates will remain active unless you manually remove them. That's why is highly recommended to add an expiration date for each certificate. It adds the nuisance of generating new certificates but enforces security because you can set different expiration times depending on your own convenience. For example, you can create credentials for a superuser lasting only one day if you need to. Then you can clean-up certificates during next scheduled cluster maintenance.  
 
 Now that you have a better knowledge of authentication principles its time to evaluate the rest of the methods available.
 
@@ -2210,6 +2210,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2ODQxNTUwMSwxODEwNTQyOTczLDE3NT
-Q2ODk1NDEsMTUyNDY5MDg0NSwyMDM5NjAyNjEyXX0=
+eyJoaXN0b3J5IjpbLTExNjk4Njc4OTEsLTc2ODQxNTUwMSwxOD
+EwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5MDg0NSwyMDM5NjAy
+NjEyXX0=
 -->
