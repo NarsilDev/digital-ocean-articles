@@ -81,7 +81,7 @@ The above force you defining an authentication strategy beforehand. For the purp
 
 ### Authenticating using Contexts
 
-A Kubernetes context is nothing more than a way to describe how to authenticate a particular user into a specific cluster-namespace combination. Defining contexts is very easy using Kubernetes multi-purpose command line tool [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/). All important information regarding authentication is stored in its configuration file located by default at `~/.kube/config`. This file is commonly known as *kubeconfig*.
+A Kubernetes context is nothing more than a way to describe how to authenticate a particular user into a specific cluster-namespace combination. Defining contexts is very easy using Kubernetes multi-purpose command line tool [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/). All important information regarding authentication is stored in its configuration file located by default at `~/.kube/config`. This file is commonly known as *kubeconfig*. L
  
 Start a new SSH session in the cluster Master node:
 
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MjQzOTIyNywxMTM5OTM4OTYyLC0xNT
-g0MDg0MzMxLC05NTE4NzMxOSwxNzgxMzI1NDIwLC02MDQyMDgw
-OTIsNDAzMDAyNDYxLDkwNzk2OTk2MywzMzIxMzk0NzcsNzkwNT
-Y1MjMzLC0xNjU5MDY1NTgzLDE4MDAxMTQ4MzgsODEyMTA1MDU3
-LDExOTkzODM1NTEsLTEzOTMwNDE2NjMsLTEzODY1OTY5OCwxOD
-c3MjA5MDMyLDExNTU3MzE0MDAsMTc5MDI2OTkzMSwtMTU5NzYx
-MTQ4XX0=
+eyJoaXN0b3J5IjpbLTE4ODU0ODQ2MjMsMTEzOTkzODk2MiwtMT
+U4NDA4NDMzMSwtOTUxODczMTksMTc4MTMyNTQyMCwtNjA0MjA4
+MDkyLDQwMzAwMjQ2MSw5MDc5Njk5NjMsMzMyMTM5NDc3LDc5MD
+U2NTIzMywtMTY1OTA2NTU4MywxODAwMTE0ODM4LDgxMjEwNTA1
+NywxMTk5MzgzNTUxLC0xMzkzMDQxNjYzLC0xMzg2NTk2OTgsMT
+g3NzIwOTAzMiwxMTU1NzMxNDAwLDE3OTAyNjk5MzEsLTE1OTc2
+MTE0OF19
 -->
