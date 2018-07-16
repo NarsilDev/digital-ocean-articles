@@ -1973,7 +1973,7 @@ spec:
     ```command
 [environment local]
 kubectl config use-context sammy-dmz
-kubectl create -f standard-app-pod.yaml
+kubectl create -f ~/kube-security/standard-app-pod.yaml
     ```
 
 12. Test the application to confirm that everything is working as expected:
@@ -2200,11 +2200,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTU3NTYzNiwtMTg4MDUxMzU1LDM3MD
-MzMjE5NCwtOTA1NjMzMzM2LC0xNjExNjQ0NDUxLC0xODk3NjU5
-OTM5LC0xMzg2MDg2OTcxLC0zMDc0NDUwNTgsMTkzNjIzMzE5My
-w3MjE0MjE3NTEsLTQzMjg3OTI0NywxMjI4NDAxNDY0LDEzNzcy
-NDM1NjIsMjAyODYzMjM5OCwtODE0MTA3OTQwLDUxMDA5MDk3Mi
-wtMjYzMTY3OTE1LC03MTc3OTUzNDksMTk1ODc1OTA4MCwtNzE3
-Nzk1MzQ5XX0=
+eyJoaXN0b3J5IjpbLTg0NjIwNjEyNCwxMDc1NTc1NjM2LC0xOD
+gwNTEzNTUsMzcwMzMyMTk0LC05MDU2MzMzMzYsLTE2MTE2NDQ0
+NTEsLTE4OTc2NTk5MzksLTEzODYwODY5NzEsLTMwNzQ0NTA1OC
+wxOTM2MjMzMTkzLDcyMTQyMTc1MSwtNDMyODc5MjQ3LDEyMjg0
+MDE0NjQsMTM3NzI0MzU2MiwyMDI4NjMyMzk4LC04MTQxMDc5ND
+AsNTEwMDkwOTcyLC0yNjMxNjc5MTUsLTcxNzc5NTM0OSwxOTU4
+NzU5MDgwXX0=
 -->
