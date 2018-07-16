@@ -497,7 +497,7 @@ Up to now, security measures were focused on the global context of the cluster. 
 - Cluster authentication is accomplished using secure SSL/TLS certificates (or alternative secure methods).
 - The **etcd** backend is secured either because is running from the same master node or because is isolated and restricted from the Internet in a separate cluster.
 
-As you can see, many external vulnerabilities are already prevented in the global scope of the cluster. The next sections will cover the security aspects related to users that were able (legitimately or not) to authenticate into the cluster.
+As you can see, many external vulnerabilities can be prevented in the global scope of the cluster. The next sections will cover the security aspects related to users that were able (legitimately or not) to authenticate into the cluster.
 
 ## Step Six - Authorization and Role Based Access Control (RBAC)
 
@@ -2210,7 +2210,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk1MzkxODY2LDg3Mjc2MTM0LC0xMTY5OD
-Y3ODkxLC03Njg0MTU1MDEsMTgxMDU0Mjk3MywxNzU0Njg5NTQx
-LDE1MjQ2OTA4NDUsMjAzOTYwMjYxMl19
+eyJoaXN0b3J5IjpbLTE3MjM5MzI3NDMsNTk1MzkxODY2LDg3Mj
+c2MTM0LC0xMTY5ODY3ODkxLC03Njg0MTU1MDEsMTgxMDU0Mjk3
+MywxNzU0Njg5NTQxLDE1MjQ2OTA4NDUsMjAzOTYwMjYxMl19
 -->
