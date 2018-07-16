@@ -1709,7 +1709,7 @@ This time you will see an error similar to this one:
 Error from server (Forbidden): pods "nginx-adm" is forbidden: <^>unable to validate against any pod security policy<^>: []
 ```
 
-Listing pods will would confirm the object was indeed rejected, there is no `nginx-adm` pod. A similar result wil be obtained with the normal user **sammy**. The main reason behind why this is happening is related to how PSP and RBAC work together. As explained earlier, pod security policies first try to validate policies and then look for authorized users. The controller found `restrictive-psp` policy but neither **adm** or **sammy** have authorization to **use** the PSP. On the other hand, **kubernetes-admin** is a superuser, and as such has no authorization limits, **but** the `nginx` pod failed as well because it didn't comply with the non-root policy.
+Listing pods will would confirm the object was indeed rejected, there is no `nginx-adm` pod. A similar result wil be obtained with the normal user **sammy**. The main reason behind why this is happening is related to how PSP and RBAC work together. As explained earlier, pod security policies first try to validate policies and then look for authorized users. The controller found `restrictive-psp` policy but neither **adm** or **sammy** have authorization to **use** the policy. On the other hand, **kubernetes-admin** is a superuser, and as such has no authorization limits, **but** the `nginx` pod failed as well because it didn't comply with the non-root policy.
 
 Long story short, you need meeting two conditions in order to successfully using pod security policies:
 
@@ -2214,7 +2214,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1OTc2ODA0OSw5OTM5NzAzNTYsLTI2Mj
+eyJoaXN0b3J5IjpbLTU0NDY0OTgzMiw5OTM5NzAzNTYsLTI2Mj
 I2NjI3LDEzMDA1MzQxOTUsLTE5MDk1NzMwNjcsLTIzMjI1OTY1
 MiwtMTczNDUyMzU1NCw3OTAxMjI3OTcsMjExOTcxODYwMywtMT
 I0MTUwOTAzMSwyNjM2MTA4NTIsLTE3MjM5MzI3NDMsNTk1Mzkx
