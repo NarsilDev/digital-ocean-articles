@@ -1049,7 +1049,7 @@ Admission controllers intercept requests after they pass the authentication and 
 
 Is beyond the scope of this guide explaining admission controllers theory but from a cluster security perspective, it's important to understand that:
 
-- Admission controllers can be activated or deactivated editing master node's `/etc/kubernetes/manifests/kube-apiserver.yaml` searching the corresponding `enable-admission-plugins` or `disable-admission-plugins` flag. The different plug-ins are comma separated.
+- Admission controllers can be activated or deactivated editing Master node's `/etc/kubernetes/manifests/kube-apiserver.yaml` searching the corresponding `enable-admission-plugins` or `disable-admission-plugins` flag. The different plug-ins are comma separated.
 - When using `kubeadm` for cluster bootstrapping several admission controllers are activated by default. It's worth mentioning that those admission controllers are not always shown in the `kube-apiserver.yaml` manifest. A list of [what is activated by default](https://github.com/kubernetes/kubernetes/blob/master/pkg/kubeapiserver/options/plugins.go#L130-L140) is included in Kubernetes code.
 - If any of the controllers reject the request then the **entire request is denied immediately** and an error is returned to the user. This is one reason why is important to completely understand each admission controller before activating it.
 - Although admission controllers are optional, some are necessary as stated in the Kubernetes official documentation: *Many advanced features in Kubernetes require an admission controller to be enabled in order to properly support the feature*. This reinforces the prior point, before disabling an admission controller be sure to understand its consequences.
@@ -2214,9 +2214,9 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzYyMDA0NSwyMTE5NzE4NjAzLC0xMj
-QxNTA5MDMxLDI2MzYxMDg1MiwtMTcyMzkzMjc0Myw1OTUzOTE4
-NjYsODcyNzYxMzQsLTExNjk4Njc4OTEsLTc2ODQxNTUwMSwxOD
-EwNTQyOTczLDE3NTQ2ODk1NDEsMTUyNDY5MDg0NSwyMDM5NjAy
-NjEyXX0=
+eyJoaXN0b3J5IjpbNzkwMTIyNzk3LDIxMTk3MTg2MDMsLTEyND
+E1MDkwMzEsMjYzNjEwODUyLC0xNzIzOTMyNzQzLDU5NTM5MTg2
+Niw4NzI3NjEzNCwtMTE2OTg2Nzg5MSwtNzY4NDE1NTAxLDE4MT
+A1NDI5NzMsMTc1NDY4OTU0MSwxNTI0NjkwODQ1LDIwMzk2MDI2
+MTJdfQ==
 -->
