@@ -2124,7 +2124,7 @@ dmz           <^>default<^>                              1         8d
 kube-public   <^>default<^>                              1         8d
 ```
 
-Not all application are created equal, from a security perspective is not optimal using the same service account for all processes. Create a new SA called `standard-app-pod` using the following command:
+Not all application are created equal, from a security perspective is not optimal using the same service account for all processes. Create a new SA called `standard-app-sa` using the following command:
 
 ```command
 [environment local]
@@ -2206,6 +2206,7 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MDI2OTkzMSwtMTU5NzYxMTQ4LC0yMD
-Y2OTg1MzI5LC02ODE5OTY4ODUsLTg0NjIwNjEyNF19
+eyJoaXN0b3J5IjpbMTE1NTczMTQwMCwxNzkwMjY5OTMxLC0xNT
+k3NjExNDgsLTIwNjY5ODUzMjksLTY4MTk5Njg4NSwtODQ2MjA2
+MTI0XX0=
 -->
