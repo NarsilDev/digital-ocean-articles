@@ -83,7 +83,7 @@ The above force you defining an authentication strategy beforehand. For the purp
 
 A Kubernetes context is nothing more than a way to describe how to authenticate a particular user into a specific cluster-namespace combination. Defining contexts is very easy using Kubernetes multi-purpose command line tool [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/). All important information regarding authentication is stored in its configuration file located by default at `~/.kube/config`. This file is commonly known as *kubeconfig*. Let's check the initial content of kubeconfig connecting to the Master node.
  
-Start a new SSH session in the cluster Master node:
+Start a new SSH session in the cluster Master node using the following command:
 
 ```command
 [environment local]
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NjQxMjQyOCwxMTM5OTM4OTYyLC0xNT
-g0MDg0MzMxLC05NTE4NzMxOSwxNzgxMzI1NDIwLC02MDQyMDgw
-OTIsNDAzMDAyNDYxLDkwNzk2OTk2MywzMzIxMzk0NzcsNzkwNT
-Y1MjMzLC0xNjU5MDY1NTgzLDE4MDAxMTQ4MzgsODEyMTA1MDU3
-LDExOTkzODM1NTEsLTEzOTMwNDE2NjMsLTEzODY1OTY5OCwxOD
-c3MjA5MDMyLDExNTU3MzE0MDAsMTc5MDI2OTkzMSwtMTU5NzYx
-MTQ4XX0=
+eyJoaXN0b3J5IjpbLTMxNzY2NDYxLDExMzk5Mzg5NjIsLTE1OD
+QwODQzMzEsLTk1MTg3MzE5LDE3ODEzMjU0MjAsLTYwNDIwODA5
+Miw0MDMwMDI0NjEsOTA3OTY5OTYzLDMzMjEzOTQ3Nyw3OTA1Nj
+UyMzMsLTE2NTkwNjU1ODMsMTgwMDExNDgzOCw4MTIxMDUwNTcs
+MTE5OTM4MzU1MSwtMTM5MzA0MTY2MywtMTM4NjU5Njk4LDE4Nz
+cyMDkwMzIsMTE1NTczMTQwMCwxNzkwMjY5OTMxLC0xNTk3NjEx
+NDhdfQ==
 -->
