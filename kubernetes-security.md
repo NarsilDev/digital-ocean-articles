@@ -22,7 +22,7 @@ In order to complete this tutorial you will need:
 * A local client with Internet connection running Ubuntu 16.04 that meets the following requirements:
 	- An SSH key pair installed. If you haven't used SSH keys before, you can learn how to set them up by following  [this explanation of how to set up SSH keys on your local machine](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys#generating-and-working-with-ssh-keys).
 	- Ansible installed on it. You can follow the "Step 1 - Installing Ansible" section in  [How to Install and Configure Ansible on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-16-04)  to install Ansible. 
-	- Kubernetes command line tools `kubectl` and `kubeadm` installed. 
+	- Kubernetes command line tools `kubectl` and `kubeadm` installed. You can follow the "Step 3
 
 
 * Two servers running Ubuntu 16.04 with at least 2GB RAM. You should be able to SSH into each server as the root user with your SSH key pair.
@@ -2217,9 +2217,9 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTk2MTU3OTAsMTgwMDExNDgzOCw4MT
-IxMDUwNTcsMTE5OTM4MzU1MSwtMTM5MzA0MTY2MywtMTM4NjU5
-Njk4LDE4NzcyMDkwMzIsMTE1NTczMTQwMCwxNzkwMjY5OTMxLC
-0xNTk3NjExNDgsLTIwNjY5ODUzMjksLTY4MTk5Njg4NSwtODQ2
-MjA2MTI0XX0=
+eyJoaXN0b3J5IjpbMTY1NTk2MDYyNCwxODAwMTE0ODM4LDgxMj
+EwNTA1NywxMTk5MzgzNTUxLC0xMzkzMDQxNjYzLC0xMzg2NTk2
+OTgsMTg3NzIwOTAzMiwxMTU1NzMxNDAwLDE3OTAyNjk5MzEsLT
+E1OTc2MTE0OCwtMjA2Njk4NTMyOSwtNjgxOTk2ODg1LC04NDYy
+MDYxMjRdfQ==
 -->
