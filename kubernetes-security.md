@@ -39,6 +39,8 @@ This guide assumes you are using a universal custom solution for your Kubernetes
 * **High-Level Monitoring and Alerting:** the importance of proactive monitoring will be mentioned several times during the course of this guide. Ideally, your preemptive system should detect anomalies and send alerts promptly, before malicious scripts can do any harm. With that in mind, an extra layer of [monitoring](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-monitoring) at the cloud level is a big plus.
 * **High-Level Firewall:** using a [cloud firewall](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-cloud-firewalls) supplements your host-based solution and also adds an independent layer of protection against several types of attacks. The cloud firewall is also very handy if you are not using a private network for cluster communications because many ports would be exposed to Internet otherwise. It's a best practice to open only the strictly necessary ports at this level (SSH and application ports).
 
+
+
 Summing up, this high-level layer groups important security improvements that are many times neglected even when they are the foundation of a secure Kubernetes cluster.
 
 ## Step Two - Node Hosts Security
@@ -2210,10 +2212,10 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3OTY5OTYzLDMzMjEzOTQ3Nyw3OTA1Nj
-UyMzMsLTE2NTkwNjU1ODMsMTgwMDExNDgzOCw4MTIxMDUwNTcs
-MTE5OTM4MzU1MSwtMTM5MzA0MTY2MywtMTM4NjU5Njk4LDE4Nz
-cyMDkwMzIsMTE1NTczMTQwMCwxNzkwMjY5OTMxLC0xNTk3NjEx
-NDgsLTIwNjY5ODUzMjksLTY4MTk5Njg4NSwtODQ2MjA2MTI0XX
-0=
+eyJoaXN0b3J5IjpbLTEzMTY2OTQyNSw5MDc5Njk5NjMsMzMyMT
+M5NDc3LDc5MDU2NTIzMywtMTY1OTA2NTU4MywxODAwMTE0ODM4
+LDgxMjEwNTA1NywxMTk5MzgzNTUxLC0xMzkzMDQxNjYzLC0xMz
+g2NTk2OTgsMTg3NzIwOTAzMiwxMTU1NzMxNDAwLDE3OTAyNjk5
+MzEsLTE1OTc2MTE0OCwtMjA2Njk4NTMyOSwtNjgxOTk2ODg1LC
+04NDYyMDYxMjRdfQ==
 -->
