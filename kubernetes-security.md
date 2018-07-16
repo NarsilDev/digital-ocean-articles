@@ -2045,7 +2045,7 @@ You just **modified** the node's hostname through the container, in theory, appl
 The combination of the above conditions allowed a simple hack. Using the concepts learned in the prior sections you can mitigate the inherent risk of this scenario. If you try creating the same pod in the **default** namespace it will fail for several reasons:
 
 - For starters you need authorizing the user **sammy** for using an appropriate PSP.
-- As explained previously, admission controllers can mutate pods meaning that even when no security context is specified the PSP can force the container to run with a non-root user. The problem is that it won't allow a `hostPath` volume and will fail.
+- As explained previously, admission controllers can mutate pods meaning that even when no security context is specified the PSP can force the container running with a non-root user. The problem is that it won't allow a `hostPath` volume and will fail.
 
 Any application with intentions of running in the **default** namespace is expected to:
 
@@ -2205,6 +2205,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTY2OTIyNywtMjA2Njk4NTMyOSwtNj
+eyJoaXN0b3J5IjpbLTE1OTc2MTE0OCwtMjA2Njk4NTMyOSwtNj
 gxOTk2ODg1LC04NDYyMDYxMjRdfQ==
 -->
