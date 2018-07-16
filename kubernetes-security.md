@@ -603,7 +603,7 @@ nano ~/kube-security/pod-viewer.yaml
 Paste into the file the following content:
 
 ```
-[label pod-viewer.yaml]
+[label ~/kube-security/pod-viewer.yaml]
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -2214,11 +2214,11 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODY3MTQwNCw2ODM1NzgzNTYsNzg0Mz
-kwOTg0LDE3Mzc5MjY1NCwtNTU5NDM2Nzg0LC01NDQ2NDk4MzIs
-OTkzOTcwMzU2LC0yNjIyNjYyNywxMzAwNTM0MTk1LC0xOTA5NT
-czMDY3LC0yMzIyNTk2NTIsLTE3MzQ1MjM1NTQsNzkwMTIyNzk3
-LDIxMTk3MTg2MDMsLTEyNDE1MDkwMzEsMjYzNjEwODUyLC0xNz
-IzOTMyNzQzLDU5NTM5MTg2Niw4NzI3NjEzNCwtMTE2OTg2Nzg5
-MV19
+eyJoaXN0b3J5IjpbMjI1OTU2NTY0LC04MTg2NzE0MDQsNjgzNT
+c4MzU2LDc4NDM5MDk4NCwxNzM3OTI2NTQsLTU1OTQzNjc4NCwt
+NTQ0NjQ5ODMyLDk5Mzk3MDM1NiwtMjYyMjY2MjcsMTMwMDUzND
+E5NSwtMTkwOTU3MzA2NywtMjMyMjU5NjUyLC0xNzM0NTIzNTU0
+LDc5MDEyMjc5NywyMTE5NzE4NjAzLC0xMjQxNTA5MDMxLDI2Mz
+YxMDg1MiwtMTcyMzkzMjc0Myw1OTUzOTE4NjYsODcyNzYxMzRd
+fQ==
 -->
