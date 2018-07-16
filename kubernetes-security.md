@@ -2030,6 +2030,13 @@ The new output should look similar to the following:
 
 ```
 [secondary_label Output]
+[secondary_label Output]
+############  MY AWESOME APP  ############
+#                                        #
+#  Pod  hostname :  standard-app-pod
+#  Node hostname:  <^>worker<^>
+#----------------------------------------#
+
 ############  MY AWESOME APP  ############
 #                                        #
 #  Container ID :  standard-app-pod
@@ -2205,6 +2212,6 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjY5ODUzMjksLTY4MTk5Njg4NSwtOD
-Q2MjA2MTI0XX0=
+eyJoaXN0b3J5IjpbLTE0MzA3MzYyNjcsLTIwNjY5ODUzMjksLT
+Y4MTk5Njg4NSwtODQ2MjA2MTI0XX0=
 -->
