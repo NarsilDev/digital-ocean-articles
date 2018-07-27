@@ -2215,11 +2215,5 @@ Throughout this guide, you have learned what can be considered as a Kubernetes e
 
 Combining all the suggestions covered in this article you will have a solid foundation for a production Kubernetes cluster deployment, from there you can start hardening individual aspects depending on your scenario.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTAyMDM5MiwtMTI2ODI4MDU3MSwxMT
-E5Nzk1MjY0LC0xMjY4MjgwNTcxLDE4MjUwMjAzOTIsLTEyNjgy
-ODA1NzEsLTE3ODU5MjE3ODYsLTgxODY3MTQwNCw2ODM1NzgzNT
-YsNzg0MzkwOTg0LDE3Mzc5MjY1NCwtNTU5NDM2Nzg0LC01NDQ2
-NDk4MzIsOTkzOTcwMzU2LC0yNjIyNjYyNywxMzAwNTM0MTk1LC
-0xOTA5NTczMDY3LC0yMzIyNTk2NTIsLTE3MzQ1MjM1NTQsNzkw
-MTIyNzk3XX0=
+eyJoaXN0b3J5IjpbMTgyNTAyMDM5Ml19
 -->
